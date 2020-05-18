@@ -1,0 +1,2 @@
+include Makefile.timing
+include Makefile.generated-files

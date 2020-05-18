@@ -1,0 +1,655 @@
+Params: n= 7000
+Tactic call build ran for 0.006 secs (0.005u,0.s) (success)
+Tactic call typecheck ran for 0.336 secs (0.336u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.342 secs (0.342u,0.s) (success)
+Tactic call refine ran for 0.341 secs (0.339u,0.s) (success)
+Params: n= 7100
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.348 secs (0.344u,0.003s) (success)
+Tactic call build-and-typecheck ran for 0.348 secs (0.344u,0.003s) (success)
+Tactic call refine ran for 0.349 secs (0.349u,0.s) (success)
+Params: n= 7200
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.358 secs (0.358u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.358 secs (0.358u,0.s) (success)
+Tactic call refine ran for 0.361 secs (0.361u,0.s) (success)
+Params: n= 7300
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.367 secs (0.367u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.367 secs (0.367u,0.s) (success)
+Tactic call refine ran for 0.367 secs (0.367u,0.s) (success)
+Params: n= 7400
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.377 secs (0.377u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.377 secs (0.377u,0.s) (success)
+Tactic call refine ran for 0.378 secs (0.378u,0.s) (success)
+Params: n= 7500
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.386 secs (0.386u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.386 secs (0.386u,0.s) (success)
+Tactic call refine ran for 0.386 secs (0.386u,0.s) (success)
+Params: n= 7600
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.395 secs (0.395u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.396 secs (0.396u,0.s) (success)
+Tactic call refine ran for 0.397 secs (0.397u,0.s) (success)
+Params: n= 7700
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.409 secs (0.409u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.409 secs (0.409u,0.s) (success)
+Tactic call refine ran for 0.41 secs (0.406u,0.003s) (success)
+Params: n= 7800
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.417 secs (0.417u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.417 secs (0.417u,0.s) (success)
+Tactic call refine ran for 0.419 secs (0.419u,0.s) (success)
+Params: n= 7900
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.429 secs (0.429u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.429 secs (0.429u,0.s) (success)
+Tactic call refine ran for 0.433 secs (0.433u,0.s) (success)
+Params: n= 8000
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.443 secs (0.443u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.443 secs (0.443u,0.s) (success)
+Tactic call refine ran for 0.444 secs (0.44u,0.003s) (success)
+Params: n= 8100
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.451 secs (0.451u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.451 secs (0.451u,0.s) (success)
+Tactic call refine ran for 0.453 secs (0.453u,0.s) (success)
+Params: n= 8200
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.463 secs (0.463u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.464 secs (0.464u,0.s) (success)
+Tactic call refine ran for 0.465 secs (0.465u,0.s) (success)
+Params: n= 8300
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.473 secs (0.473u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.474 secs (0.474u,0.s) (success)
+Tactic call refine ran for 0.475 secs (0.475u,0.s) (success)
+Params: n= 8400
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.485 secs (0.485u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.486 secs (0.486u,0.s) (success)
+Tactic call refine ran for 0.49 secs (0.49u,0.s) (success)
+Params: n= 8500
+Tactic call build ran for 0.001 secs (0.001u,0.s) (success)
+Tactic call typecheck ran for 0.498 secs (0.498u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.499 secs (0.499u,0.s) (success)
+Tactic call refine ran for 0.502 secs (0.502u,0.s) (success)
+Params: n= 8600
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 0.51 secs (0.51u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.514 secs (0.514u,0.s) (success)
+Tactic call refine ran for 0.512 secs (0.512u,0.s) (success)
+Params: n= 8700
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 0.523 secs (0.523u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.529 secs (0.527u,0.s) (success)
+Tactic call refine ran for 0.527 secs (0.527u,0.s) (success)
+Params: n= 8800
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 0.532 secs (0.532u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.536 secs (0.536u,0.s) (success)
+Tactic call refine ran for 0.536 secs (0.532u,0.003s) (success)
+Params: n= 8900
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 0.548 secs (0.544u,0.003s) (success)
+Tactic call build-and-typecheck ran for 0.552 secs (0.548u,0.003s) (success)
+Tactic call refine ran for 0.55 secs (0.55u,0.s) (success)
+Params: n= 9000
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 0.557 secs (0.557u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.562 secs (0.562u,0.s) (success)
+Tactic call refine ran for 0.561 secs (0.561u,0.s) (success)
+Params: n= 9100
+Tactic call build ran for 0.005 secs (0.001u,0.003s) (success)
+Tactic call typecheck ran for 0.568 secs (0.568u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.573 secs (0.569u,0.003s) (success)
+Tactic call refine ran for 0.571 secs (0.571u,0.s) (success)
+Params: n= 9200
+Tactic call build ran for 0.003 secs (0.003u,0.s) (success)
+Tactic call typecheck ran for 0.586 secs (0.586u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.59 secs (0.59u,0.s) (success)
+Tactic call refine ran for 0.591 secs (0.587u,0.003s) (success)
+Params: n= 9300
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 0.598 secs (0.598u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.602 secs (0.602u,0.s) (success)
+Tactic call refine ran for 0.602 secs (0.602u,0.s) (success)
+Params: n= 9400
+Tactic call build ran for 0.002 secs (0.002u,0.s) (success)
+Tactic call typecheck ran for 0.61 secs (0.61u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.612 secs (0.612u,0.s) (success)
+Tactic call refine ran for 0.612 secs (0.612u,0.s) (success)
+Params: n= 9500
+Tactic call build ran for 0.012 secs (0.012u,0.s) (success)
+Tactic call typecheck ran for 0.623 secs (0.623u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.636 secs (0.636u,0.s) (success)
+Tactic call refine ran for 0.628 secs (0.628u,0.s) (success)
+Params: n= 9600
+Tactic call build ran for 0.01 secs (0.01u,0.s) (success)
+Tactic call typecheck ran for 0.635 secs (0.635u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.645 secs (0.645u,0.s) (success)
+Tactic call refine ran for 0.64 secs (0.636u,0.003s) (success)
+Params: n= 9700
+Tactic call build ran for 0.009 secs (0.009u,0.s) (success)
+Tactic call typecheck ran for 0.651 secs (0.651u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.66 secs (0.66u,0.s) (success)
+Tactic call refine ran for 0.656 secs (0.656u,0.s) (success)
+Params: n= 9800
+Tactic call build ran for 0.006 secs (0.006u,0.s) (success)
+Tactic call typecheck ran for 0.657 secs (0.657u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.664 secs (0.664u,0.s) (success)
+Tactic call refine ran for 0.661 secs (0.661u,0.s) (success)
+Params: n= 9900
+Tactic call build ran for 0.006 secs (0.006u,0.s) (success)
+Tactic call typecheck ran for 0.67 secs (0.67u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.677 secs (0.677u,0.s) (success)
+Tactic call refine ran for 0.674 secs (0.674u,0.s) (success)
+Params: n= 10000
+Tactic call build ran for 0.006 secs (0.006u,0.s) (success)
+Tactic call typecheck ran for 0.685 secs (0.685u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.691 secs (0.691u,0.s) (success)
+Tactic call refine ran for 0.688 secs (0.684u,0.003s) (success)
+Params: n= 10100
+Tactic call build ran for 0.006 secs (0.006u,0.s) (success)
+Tactic call typecheck ran for 0.695 secs (0.695u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.701 secs (0.701u,0.s) (success)
+Tactic call refine ran for 0.698 secs (0.698u,0.s) (success)
+Params: n= 10200
+Tactic call build ran for 0.006 secs (0.006u,0.s) (success)
+Tactic call typecheck ran for 0.71 secs (0.71u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.717 secs (0.717u,0.s) (success)
+Tactic call refine ran for 0.713 secs (0.713u,0.s) (success)
+Params: n= 10300
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.728 secs (0.728u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.728 secs (0.728u,0.s) (success)
+Tactic call refine ran for 0.729 secs (0.729u,0.s) (success)
+Params: n= 10400
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.996 secs (0.996u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.996 secs (0.996u,0.s) (success)
+Tactic call refine ran for 0.999 secs (0.999u,0.s) (success)
+Params: n= 10500
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.753 secs (0.753u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.753 secs (0.753u,0.s) (success)
+Tactic call refine ran for 0.755 secs (0.755u,0.s) (success)
+Params: n= 10600
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.767 secs (0.767u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.767 secs (0.767u,0.s) (success)
+Tactic call refine ran for 0.769 secs (0.769u,0.s) (success)
+Params: n= 10700
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.779 secs (0.779u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.78 secs (0.78u,0.s) (success)
+Tactic call refine ran for 0.781 secs (0.781u,0.s) (success)
+Params: n= 10800
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.793 secs (0.793u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.793 secs (0.793u,0.s) (success)
+Tactic call refine ran for 0.796 secs (0.796u,0.s) (success)
+Params: n= 10900
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.809 secs (0.805u,0.003s) (success)
+Tactic call build-and-typecheck ran for 0.81 secs (0.806u,0.003s) (success)
+Tactic call refine ran for 0.812 secs (0.812u,0.s) (success)
+Params: n= 11000
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.827 secs (0.827u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.828 secs (0.828u,0.s) (success)
+Tactic call refine ran for 0.829 secs (0.829u,0.s) (success)
+Params: n= 11100
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.838 secs (0.838u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.838 secs (0.838u,0.s) (success)
+Tactic call refine ran for 0.841 secs (0.841u,0.s) (success)
+Params: n= 11200
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.859 secs (0.859u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.86 secs (0.86u,0.s) (success)
+Tactic call refine ran for 0.86 secs (0.86u,0.s) (success)
+Params: n= 11300
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.871 secs (0.871u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.871 secs (0.871u,0.s) (success)
+Tactic call refine ran for 0.873 secs (0.873u,0.s) (success)
+Params: n= 11400
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.886 secs (0.886u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.886 secs (0.886u,0.s) (success)
+Tactic call refine ran for 0.886 secs (0.886u,0.s) (success)
+Params: n= 11500
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.906 secs (0.906u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.906 secs (0.906u,0.s) (success)
+Tactic call refine ran for 0.907 secs (0.907u,0.s) (success)
+Params: n= 11600
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.92 secs (0.92u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.92 secs (0.92u,0.s) (success)
+Tactic call refine ran for 0.92 secs (0.92u,0.s) (success)
+Params: n= 11700
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.939 secs (0.939u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.939 secs (0.939u,0.s) (success)
+Tactic call refine ran for 0.939 secs (0.939u,0.s) (success)
+Params: n= 11800
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.954 secs (0.954u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.954 secs (0.954u,0.s) (success)
+Tactic call refine ran for 0.957 secs (0.957u,0.s) (success)
+Params: n= 11900
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0.966 secs (0.966u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.967 secs (0.967u,0.s) (success)
+Tactic call refine ran for 0.967 secs (0.967u,0.s) (success)
+Params: n= 12000
+Tactic call build ran for 0.013 secs (0.013u,0.s) (success)
+Tactic call typecheck ran for 0.982 secs (0.982u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.995 secs (0.995u,0.s) (success)
+Tactic call refine ran for 0.988 secs (0.988u,0.s) (success)
+Params: n= 12100
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.003 secs (1.003u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.004 secs (1.004u,0.s) (success)
+Tactic call refine ran for 1.003 secs (1.003u,0.s) (success)
+Params: n= 12200
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.019 secs (1.019u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.02 secs (1.02u,0.s) (success)
+Tactic call refine ran for 1.021 secs (1.021u,0.s) (success)
+Params: n= 12300
+Tactic call build ran for 0.006 secs (0.006u,0.s) (success)
+Tactic call typecheck ran for 1.016 secs (1.016u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.022 secs (1.022u,0.s) (success)
+Tactic call refine ran for 1.018 secs (1.018u,0.s) (success)
+Params: n= 12400
+Tactic call build ran for 0.002 secs (0.002u,0.s) (success)
+Tactic call typecheck ran for 1.053 secs (1.053u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.056 secs (1.056u,0.s) (success)
+Tactic call refine ran for 1.057 secs (1.057u,0.s) (success)
+Params: n= 12500
+Tactic call build ran for 0.001 secs (0.001u,0.s) (success)
+Tactic call typecheck ran for 1.071 secs (1.071u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.073 secs (1.073u,0.s) (success)
+Tactic call refine ran for 1.075 secs (1.075u,0.s) (success)
+Params: n= 12600
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.084 secs (1.084u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.085 secs (1.085u,0.s) (success)
+Tactic call refine ran for 1.09 secs (1.086u,0.003s) (success)
+Params: n= 12700
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.102 secs (1.102u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.102 secs (1.102u,0.s) (success)
+Tactic call refine ran for 1.105 secs (1.105u,0.s) (success)
+Params: n= 12800
+Tactic call build ran for 0.002 secs (0.002u,0.s) (success)
+Tactic call typecheck ran for 1.117 secs (1.117u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.119 secs (1.119u,0.s) (success)
+Tactic call refine ran for 1.121 secs (1.121u,0.s) (success)
+Params: n= 12900
+Tactic call build ran for 0.007 secs (0.007u,0.s) (success)
+Tactic call typecheck ran for 1.185 secs (1.185u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.193 secs (1.193u,0.s) (success)
+Tactic call refine ran for 1.185 secs (1.185u,0.s) (success)
+Params: n= 13000
+Tactic call build ran for 0.003 secs (0.003u,0.s) (success)
+Tactic call typecheck ran for 1.15 secs (1.15u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.154 secs (1.154u,0.s) (success)
+Tactic call refine ran for 1.155 secs (1.155u,0.s) (success)
+Params: n= 13100
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 1.169 secs (1.169u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.173 secs (1.173u,0.s) (success)
+Tactic call refine ran for 1.171 secs (1.171u,0.s) (success)
+Params: n= 13200
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 1.192 secs (1.192u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.197 secs (1.197u,0.s) (success)
+Tactic call refine ran for 1.196 secs (1.196u,0.s) (success)
+Params: n= 13300
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 1.208 secs (1.208u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.212 secs (1.212u,0.s) (success)
+Tactic call refine ran for 1.21 secs (1.21u,0.s) (success)
+Params: n= 13400
+Tactic call build ran for 0.003 secs (0.003u,0.s) (success)
+Tactic call typecheck ran for 1.226 secs (1.226u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.23 secs (1.23u,0.s) (success)
+Tactic call refine ran for 1.231 secs (1.231u,0.s) (success)
+Params: n= 13500
+Tactic call build ran for 0.003 secs (0.003u,0.s) (success)
+Tactic call typecheck ran for 1.247 secs (1.247u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.251 secs (1.251u,0.s) (success)
+Tactic call refine ran for 1.249 secs (1.249u,0.s) (success)
+Params: n= 13600
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 1.258 secs (1.254u,0.003s) (success)
+Tactic call build-and-typecheck ran for 1.263 secs (1.259u,0.003s) (success)
+Tactic call refine ran for 1.262 secs (1.262u,0.s) (success)
+Params: n= 13700
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 1.286 secs (1.286u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.291 secs (1.291u,0.s) (success)
+Tactic call refine ran for 1.289 secs (1.289u,0.s) (success)
+Params: n= 13800
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 1.296 secs (1.296u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.301 secs (1.301u,0.s) (success)
+Tactic call refine ran for 1.301 secs (1.301u,0.s) (success)
+Params: n= 13900
+Tactic call build ran for 0.003 secs (0.003u,0.s) (success)
+Tactic call typecheck ran for 1.322 secs (1.322u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.326 secs (1.326u,0.s) (success)
+Tactic call refine ran for 1.327 secs (1.327u,0.s) (success)
+Params: n= 14000
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 1.342 secs (1.342u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.346 secs (1.346u,0.s) (success)
+Tactic call refine ran for 1.347 secs (1.347u,0.s) (success)
+Params: n= 14100
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.36 secs (1.36u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.36 secs (1.36u,0.s) (success)
+Tactic call refine ran for 1.361 secs (1.361u,0.s) (success)
+Params: n= 14200
+Tactic call build ran for 0.012 secs (0.012u,0.s) (success)
+Tactic call typecheck ran for 1.377 secs (1.377u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.389 secs (1.389u,0.s) (success)
+Tactic call refine ran for 1.386 secs (1.386u,0.s) (success)
+Params: n= 14300
+Tactic call build ran for 0.009 secs (0.009u,0.s) (success)
+Tactic call typecheck ran for 1.392 secs (1.392u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.402 secs (1.402u,0.s) (success)
+Tactic call refine ran for 1.398 secs (1.398u,0.s) (success)
+Params: n= 14400
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.42 secs (1.42u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.42 secs (1.42u,0.s) (success)
+Tactic call refine ran for 1.419 secs (1.419u,0.s) (success)
+Params: n= 14500
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.439 secs (1.439u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.439 secs (1.439u,0.s) (success)
+Tactic call refine ran for 1.44 secs (1.44u,0.s) (success)
+Params: n= 14600
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.459 secs (1.459u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.459 secs (1.459u,0.s) (success)
+Tactic call refine ran for 1.459 secs (1.459u,0.s) (success)
+Params: n= 14700
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.473 secs (1.473u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.473 secs (1.473u,0.s) (success)
+Tactic call refine ran for 1.474 secs (1.474u,0.s) (success)
+Params: n= 14800
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.87 secs (1.87u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.871 secs (1.871u,0.s) (success)
+Tactic call refine ran for 1.871 secs (1.859u,0.011s) (success)
+Params: n= 14900
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.512 secs (1.512u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.513 secs (1.513u,0.s) (success)
+Tactic call refine ran for 1.518 secs (1.518u,0.s) (success)
+Params: n= 15000
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.541 secs (1.541u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.542 secs (1.542u,0.s) (success)
+Tactic call refine ran for 1.543 secs (1.543u,0.s) (success)
+Params: n= 15100
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.556 secs (1.556u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.557 secs (1.557u,0.s) (success)
+Tactic call refine ran for 1.559 secs (1.559u,0.s) (success)
+Params: n= 15200
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.573 secs (1.573u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.574 secs (1.574u,0.s) (success)
+Tactic call refine ran for 1.576 secs (1.572u,0.003s) (success)
+Params: n= 15300
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.605 secs (1.605u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.605 secs (1.605u,0.s) (success)
+Tactic call refine ran for 1.606 secs (1.606u,0.s) (success)
+Params: n= 15400
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.624 secs (1.624u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.624 secs (1.624u,0.s) (success)
+Tactic call refine ran for 1.623 secs (1.623u,0.s) (success)
+Params: n= 15500
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.642 secs (1.642u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.643 secs (1.643u,0.s) (success)
+Tactic call refine ran for 1.644 secs (1.644u,0.s) (success)
+Params: n= 15600
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.659 secs (1.659u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.659 secs (1.659u,0.s) (success)
+Tactic call refine ran for 1.661 secs (1.661u,0.s) (success)
+Params: n= 15700
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.679 secs (1.679u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.679 secs (1.679u,0.s) (success)
+Tactic call refine ran for 1.679 secs (1.679u,0.s) (success)
+Params: n= 15800
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.706 secs (1.706u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.706 secs (1.706u,0.s) (success)
+Tactic call refine ran for 1.709 secs (1.709u,0.s) (success)
+Params: n= 15900
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.723 secs (1.723u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.724 secs (1.724u,0.s) (success)
+Tactic call refine ran for 1.725 secs (1.725u,0.s) (success)
+Params: n= 16000
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.74 secs (1.74u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.741 secs (1.741u,0.s) (success)
+Tactic call refine ran for 1.742 secs (1.742u,0.s) (success)
+Params: n= 16100
+Tactic call build ran for 0.01 secs (0.01u,0.s) (success)
+Tactic call typecheck ran for 1.772 secs (1.772u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.783 secs (1.783u,0.s) (success)
+Tactic call refine ran for 1.782 secs (1.782u,0.s) (success)
+Params: n= 16200
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.798 secs (1.798u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.798 secs (1.798u,0.s) (success)
+Tactic call refine ran for 1.797 secs (1.797u,0.s) (success)
+Params: n= 16300
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.809 secs (1.809u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.81 secs (1.81u,0.s) (success)
+Tactic call refine ran for 1.811 secs (1.811u,0.s) (success)
+Params: n= 16400
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.832 secs (1.832u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.832 secs (1.832u,0.s) (success)
+Tactic call refine ran for 1.833 secs (1.833u,0.s) (success)
+Params: n= 16500
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 1.857 secs (1.857u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.861 secs (1.861u,0.s) (success)
+Tactic call refine ran for 1.862 secs (1.862u,0.s) (success)
+Params: n= 16600
+Tactic call build ran for 0.001 secs (0.001u,0.s) (success)
+Tactic call typecheck ran for 1.874 secs (1.874u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.876 secs (1.876u,0.s) (success)
+Tactic call refine ran for 1.88 secs (1.88u,0.s) (success)
+Params: n= 16700
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.898 secs (1.894u,0.003s) (success)
+Tactic call build-and-typecheck ran for 1.898 secs (1.894u,0.003s) (success)
+Tactic call refine ran for 1.903 secs (1.903u,0.s) (success)
+Params: n= 16800
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.928 secs (1.928u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.928 secs (1.928u,0.s) (success)
+Tactic call refine ran for 1.933 secs (1.933u,0.s) (success)
+Params: n= 16900
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.947 secs (1.947u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.947 secs (1.947u,0.s) (success)
+Tactic call refine ran for 1.951 secs (1.951u,0.s) (success)
+Params: n= 17000
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 1.977 secs (1.977u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.977 secs (1.977u,0.s) (success)
+Tactic call refine ran for 1.981 secs (1.981u,0.s) (success)
+Params: n= 17100
+Tactic call build ran for 0.001 secs (0.001u,0.s) (success)
+Tactic call typecheck ran for 1.99 secs (1.99u,0.s) (success)
+Tactic call build-and-typecheck ran for 1.991 secs (1.991u,0.s) (success)
+Tactic call refine ran for 1.996 secs (1.996u,0.s) (success)
+Params: n= 17200
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 2.009 secs (2.009u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.013 secs (2.013u,0.s) (success)
+Tactic call refine ran for 2.013 secs (2.013u,0.s) (success)
+Params: n= 17300
+Tactic call build ran for 0.003 secs (0.003u,0.s) (success)
+Tactic call typecheck ran for 2.196 secs (2.196u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.2 secs (2.2u,0.s) (success)
+Tactic call refine ran for 2.199 secs (2.199u,0.s) (success)
+Params: n= 17400
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 2.058 secs (2.058u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.062 secs (2.062u,0.s) (success)
+Tactic call refine ran for 2.062 secs (2.062u,0.s) (success)
+Params: n= 17500
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 2.092 secs (2.092u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.097 secs (2.097u,0.s) (success)
+Tactic call refine ran for 2.098 secs (2.098u,0.s) (success)
+Params: n= 17600
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 2.118 secs (2.118u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.122 secs (2.122u,0.s) (success)
+Tactic call refine ran for 2.124 secs (2.124u,0.s) (success)
+Params: n= 17700
+Tactic call build ran for 0.003 secs (0.003u,0.s) (success)
+Tactic call typecheck ran for 2.142 secs (2.142u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.146 secs (2.146u,0.s) (success)
+Tactic call refine ran for 2.147 secs (2.147u,0.s) (success)
+Params: n= 17800
+Tactic call build ran for 0.004 secs (0.004u,0.s) (success)
+Tactic call typecheck ran for 2.157 secs (2.157u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.161 secs (2.161u,0.s) (success)
+Tactic call refine ran for 2.162 secs (2.162u,0.s) (success)
+Params: n= 17900
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.183 secs (2.183u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.184 secs (2.184u,0.s) (success)
+Tactic call refine ran for 2.186 secs (2.186u,0.s) (success)
+Params: n= 18000
+Tactic call build ran for 0.01 secs (0.01u,0.s) (success)
+Tactic call typecheck ran for 2.203 secs (2.203u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.213 secs (2.213u,0.s) (success)
+Tactic call refine ran for 2.211 secs (2.211u,0.s) (success)
+Params: n= 18100
+Tactic call build ran for 0.006 secs (0.006u,0.s) (success)
+Tactic call typecheck ran for 2.232 secs (2.232u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.238 secs (2.238u,0.s) (success)
+Tactic call refine ran for 2.24 secs (2.24u,0.s) (success)
+Params: n= 18200
+Tactic call build ran for 0.006 secs (0.006u,0.s) (success)
+Tactic call typecheck ran for 2.256 secs (2.252u,0.003s) (success)
+Tactic call build-and-typecheck ran for 2.262 secs (2.258u,0.003s) (success)
+Tactic call refine ran for 2.262 secs (2.262u,0.s) (success)
+Params: n= 18300
+Tactic call build ran for 0.006 secs (0.006u,0.s) (success)
+Tactic call typecheck ran for 2.289 secs (2.289u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.295 secs (2.295u,0.s) (success)
+Tactic call refine ran for 2.294 secs (2.29u,0.004s) (success)
+Params: n= 18400
+Tactic call build ran for 0.006 secs (0.006u,0.s) (success)
+Tactic call typecheck ran for 2.307 secs (2.307u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.313 secs (2.313u,0.s) (success)
+Tactic call refine ran for 2.313 secs (2.313u,0.s) (success)
+Params: n= 18500
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.334 secs (2.33u,0.003s) (success)
+Tactic call build-and-typecheck ran for 2.335 secs (2.331u,0.003s) (success)
+Tactic call refine ran for 2.337 secs (2.337u,0.s) (success)
+Params: n= 18600
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.368 secs (2.364u,0.003s) (success)
+Tactic call build-and-typecheck ran for 2.368 secs (2.364u,0.003s) (success)
+Tactic call refine ran for 2.371 secs (2.371u,0.s) (success)
+Params: n= 18700
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.378 secs (2.378u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.379 secs (2.379u,0.s) (success)
+Tactic call refine ran for 2.383 secs (2.383u,0.s) (success)
+Params: n= 18800
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.408 secs (2.408u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.409 secs (2.409u,0.s) (success)
+Tactic call refine ran for 2.409 secs (2.405u,0.003s) (success)
+Params: n= 18900
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.44 secs (2.436u,0.003s) (success)
+Tactic call build-and-typecheck ran for 2.44 secs (2.436u,0.003s) (success)
+Tactic call refine ran for 2.441 secs (2.441u,0.s) (success)
+Params: n= 19000
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.459 secs (2.459u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.46 secs (2.46u,0.s) (success)
+Tactic call refine ran for 2.462 secs (2.462u,0.s) (success)
+Params: n= 19100
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.486 secs (2.486u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.486 secs (2.486u,0.s) (success)
+Tactic call refine ran for 2.489 secs (2.489u,0.s) (success)
+Params: n= 19200
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.511 secs (2.511u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.511 secs (2.511u,0.s) (success)
+Tactic call refine ran for 2.514 secs (2.514u,0.s) (success)
+Params: n= 19300
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.536 secs (2.536u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.537 secs (2.537u,0.s) (success)
+Tactic call refine ran for 2.539 secs (2.539u,0.s) (success)
+Params: n= 19400
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.576 secs (2.576u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.577 secs (2.577u,0.s) (success)
+Tactic call refine ran for 2.581 secs (2.581u,0.s) (success)
+Params: n= 19500
+Tactic call build ran for 0.011 secs (0.011u,0.s) (success)
+Tactic call typecheck ran for 2.586 secs (2.586u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.598 secs (2.598u,0.s) (success)
+Tactic call refine ran for 2.596 secs (2.596u,0.s) (success)
+Params: n= 19600
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.614 secs (2.61u,0.003s) (success)
+Tactic call build-and-typecheck ran for 2.615 secs (2.611u,0.003s) (success)
+Tactic call refine ran for 2.617 secs (2.617u,0.s) (success)
+Params: n= 19700
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.645 secs (2.645u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.646 secs (2.646u,0.s) (success)
+Tactic call refine ran for 2.648 secs (2.648u,0.s) (success)
+Params: n= 19800
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.683 secs (2.683u,0.s) (success)
+Tactic call build-and-typecheck ran for 2.684 secs (2.684u,0.s) (success)
+Tactic call refine ran for 2.688 secs (2.688u,0.s) (success)
+Params: n= 19900
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.699 secs (2.695u,0.003s) (success)
+Tactic call build-and-typecheck ran for 2.7 secs (2.696u,0.003s) (success)
+Tactic call refine ran for 2.703 secs (2.703u,0.s) (success)
+Params: n= 20000
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 2.736 secs (2.732u,0.004s) (success)
+Tactic call build-and-typecheck ran for 2.737 secs (2.733u,0.004s) (success)
+Tactic call refine ran for 2.739 secs (2.739u,0.s) (success)

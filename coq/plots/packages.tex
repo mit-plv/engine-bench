@@ -1,0 +1,11 @@
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{gnuplottex}[2016/08/21]%must be before listings package; min date is for compat with tikzexternalize
+\usepackage{pgfkeys}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.15}
+\usepackage{currfile}
+
+\usepgfplotslibrary{external}
+\tikzexternalize
+\tikzsetfigurename{\tikzexternalrealjob-\currfilebase-figure}

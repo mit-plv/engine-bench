@@ -1,0 +1,37 @@
+name: CI (LaTeX)
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: install deps
+      run: |
+        sudo apt-get -o Acquire::Retries=30 update -q
+        sudo apt-get -o Acquire::Retries=30 install -y --allow-unauthenticated \
+          texlive \
+          texlive-latex-extra \
+          texlive-bibtex-extra \
+          texlive-generic-extra \
+          texlive-science \
+          texlive-luatex \
+          texlive-lang-greek \
+          lmodern \
+          biber \
+          gnuplot-nox \
+          wget \
+          curl \
+          sed \
+          grep \
+          python \
+          python-pygments
+    - uses: actions/checkout@v2
+    - name: make pdf
+      run: make pdf
+    - name: make copy-pdf
+      run: make copy-pdf

@@ -56,4 +56,4 @@ jobs:
         echo "::endgroup::"
     - uses: actions/checkout@v2
     - name: make coq
-      run: make
+      run: make coq TIMED=1

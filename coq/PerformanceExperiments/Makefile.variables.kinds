@@ -1,0 +1,14 @@
+KINDS := \
+	do_n_open_constr_True \
+	open_constr_n_lambda_no_types_different_names \
+	open_constr_n_lambda_no_types_no_names \
+	open_constr_n_lambda_no_types_same_names \
+	app_n_uconstr \
+	app_n_ltac2
+
+SH_KINDS :=
+
+SPECIAL_KINDS :=
+
+ALL_VKINDS := $(KINDS) $(SPECIAL_KINDS)
+ALL_KINDS := $(ALL_VKINDS) $(SH_KINDS)
