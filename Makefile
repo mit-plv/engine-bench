@@ -18,7 +18,8 @@ kinds::
 targets::
 	@ echo "$(ALL_COMPONENTS)"
 
-$(addsuffix .pdf,$(COMPONENTS)) : %.pdf :
+$(patsubst %,doc-build/%.pdf,$(COMPONENTS)) : doc-build/%.pdf :
+	$(HIDE)mkdir -p doc-build
 	$(HIDE)+$(MAKE) --no-print-directory -C $* copy-pdf OUTPUT=../$@
 
 .PHONY: copy-pdf

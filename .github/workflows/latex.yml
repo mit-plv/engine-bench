@@ -35,3 +35,9 @@ jobs:
       run: make pdf
     - name: make copy-pdf
       run: make copy-pdf
+    - name: Deploy pdfs
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: doc-build
