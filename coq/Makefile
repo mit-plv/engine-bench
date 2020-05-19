@@ -1,8 +1,12 @@
 .DEFAULT_GOAL := coq
 
+SUBFOLDERS := PerformanceExperiments PerformanceDemos
+.PHONY: $(SUBFOLDERS)
+$(SUBFOLDERS):
+	+$(MAKE) --no-print-directory -C $@
+
 .PHONY: coq
-coq:
-	+$(MAKE) --no-print-directory -C PerformanceExperiments
+coq: $(SUBFOLDERS)
 
 .PHONY: perf
 perf:

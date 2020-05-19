@@ -18,6 +18,7 @@ Performance Criterion: Adding a new binder underneath n binders should be Õ(1)
 
 Performance criterion (convenient, not limiting): Typechecking an application of a function to n arguments with no conversion should be Õ(n)
 - Can be constructed if you can prove conjunction/pairing without quadratic overhead
+- Coq: See [`coq/PerformanceDemos/app_n.v`](./coq/PerformanceDemos/app_n.v), [`coq/PerformanceExperiments/app_n_uconstr.v`](./coq/PerformanceExperiments/app_n_uconstr.v), and [`coq/PerformanceExperiments/app_n_ltac2.v`](./coq/PerformanceExperiments/app_n_ltac2.v)
 
 Note: not talk about display names at all; if you want to have them, all operations need to be basically Õ(1)
 

@@ -7,20 +7,14 @@ KNOWNTARGETS := update-_CoqProject clean cleanall
 KNOWNFILES   := \
 	Makefile \
 	_CoqProject \
-	Makefile.variables \
-	Makefile.characters \
-	Makefile.coq-versions \
-	Makefile.timing
+	../../Makefile.show
 
 .DEFAULT_GOAL := all
 
-include Makefile.characters
-include Makefile.timing
-include Makefile.coq-versions
-include Makefile.variables
-
 all:: invoke-coqmakefile
 .PHONY: all
+
+include ../../Makefile.show
 
 WARNINGS:=-notation-overridden
 
@@ -28,7 +22,7 @@ SORT_COQPROJECT = sed 's,[^/]*/,~&,g' | env LC_COLLATE=C sort | sed 's,~,,g' | u
 .PHONY: update-_CoqProject
 update-_CoqProject:
 	$(SHOW)'ECHO > _CoqProject'
-	$(HIDE)(echo '-R . $(PERF_LIB)'; echo '-arg -w -arg $(WARNINGS)'; (git ls-files "*.v" | $(SORT_COQPROJECT))) > _CoqProject
+	$(HIDE)(echo '-R . PerformanceDemos'; echo '-arg -w -arg $(WARNINGS)'; (git ls-files "*.v" | $(SORT_COQPROJECT))) > _CoqProject
 
 Makefile.coq: Makefile _CoqProject
 	$(COQBIN)coq_makefile -f _CoqProject -o Makefile.coq

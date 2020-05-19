@@ -1,0 +1,4 @@
+-R . PerformanceDemos
+-arg -w -arg -notation-overridden
+app_n.v
+evar_creation.v
