@@ -17,6 +17,7 @@ def generate_tex(name, txt_lines):
         return x
     header = txt_lines[0].strip().split(' ')
     ylabels = header[1:]
+    ylabels_dict = {ylabel:float(val) for ylabel, val in zip(txt_lines[0].strip().split(' '), txt_lines[-1].strip().split(' '))}
     contents = ''.join(txt_lines)
     short_name = to_valid_tex_cmd(name)
     if len(header) < 2: raise Exception('Invalid header with not enough columns: %s' % repr(txt_lines[0]))
@@ -24,11 +25,10 @@ def generate_tex(name, txt_lines):
     xlabel = header[0][len('param-'):]
     plots = [fr'''        \addplot[only marks,mark={mark},color={color}] table[x=param-{xlabel},y={ylabel}]{{\{short_name}}};
         \addlegendentry{{{ylabel}}}'''
-             for mark, color, ylabel, xlabel
+             for mark, color, ylabel
              in zip(MARKS + ['*'] * len(ylabels),
                     COLORS + ['black'] * len(ylabels),
-                    ylabels,
-                    [xlabel] * len(ylabels))]
+                    reversed(sorted(ylabels, key=ylabels_dict.get)))]
     plots_txt = '\n'.join(plots)
     return r'''
 \begin{figure*}
