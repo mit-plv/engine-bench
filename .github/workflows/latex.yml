@@ -41,3 +41,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
         FOLDER: doc-build
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
