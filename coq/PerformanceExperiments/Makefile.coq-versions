@@ -59,4 +59,4 @@ $(MACHINE_FILE)::
 
 $(MACHINE_EXTENDED_FILE)::
 	$(SHOW)'etc/machine-extended.sh > $@'
-	$(HIDE)$(ETC_DIR)/machine-extended.sh > $@ 2>&1
+	$(HIDE)$(ETC_DIR)/machine-extended.sh > $@

@@ -14,7 +14,7 @@ CPU family:           6
 Model:                63
 Model name:           Intel(R) Core(TM) i7-5930K CPU @ 3.50GHz
 Stepping:             2
-CPU MHz:              3254.528
+CPU MHz:              3184.645
 CPU max MHz:          3700.0000
 CPU min MHz:          1200.0000
 BogoMIPS:             7012.73
@@ -28,7 +28,6 @@ Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca c
 + uname -a
 Linux jgross-Leopard-WS 4.15.0-74-generic #84-Ubuntu SMP Thu Dec 19 08:06:28 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
 + lsb_release -a
-No LSB modules are available.
 Distributor ID:	Ubuntu
 Description:	Ubuntu 18.04.4 LTS
 Release:	18.04
