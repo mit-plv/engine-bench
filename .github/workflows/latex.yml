@@ -28,13 +28,14 @@ jobs:
           curl \
           sed \
           grep \
+          pdf2svg \
           python \
           python-pygments
     - uses: actions/checkout@v2
-    - name: make pdf
-      run: make pdf
-    - name: make copy-pdf
-      run: make copy-pdf
+    - run: make pdf
+    - run: make doc
+    - run: make copy-pdf
+    - run: make copy-doc
     - name: Deploy pdfs
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:

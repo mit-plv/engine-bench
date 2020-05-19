@@ -28,3 +28,12 @@ pdf:
 .PHONY: copy-pdf
 copy-pdf:
 	cp plots/all.pdf $(OUTPUT)
+
+.PHONY: doc
+doc:
+	+$(MAKE) --no-print-directory -C plots svg
+
+
+.PHONY: copy-doc
+copy-doc:
+	cp -t $(OUTPUT) plots/*.svg

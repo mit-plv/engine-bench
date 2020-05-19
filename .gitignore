@@ -325,4 +325,8 @@ TSWLatexianTemp*
 *-parameters.dat
 coq/plots/generated/
 coq/plots/*.log
+coq/plots/*.svg
 doc-build/*.pdf
+doc-build/*.svg
+doc-build/*/*.pdf
+doc-build/*/*.svg

@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := coq
 
 COMPONENTS := coq
-KINDS := perf pdf install
+KINDS := perf pdf doc install
 ALL_COMPONENTS := $(COMPONENTS)
 
 include Makefile.show
@@ -24,6 +24,13 @@ $(patsubst %,doc-build/%.pdf,$(COMPONENTS)) : doc-build/%.pdf :
 
 .PHONY: copy-pdf
 copy-pdf: $(patsubst %,doc-build/%.pdf,$(COMPONENTS))
+
+$(patsubst %,doc-build/%,$(COMPONENTS)) : doc-build/% :
+	$(HIDE)mkdir -p $@
+	$(HIDE)+$(MAKE) --no-print-directory -C $* copy-doc OUTPUT=../$@
+
+.PHONY: copy-doc
+copy-doc: $(patsubst %,doc-build/%,$(COMPONENTS))
 
 define add_kind
 $(eval $(1)_COMPONENTS := $(addsuffix -$(1),$(COMPONENTS)))
