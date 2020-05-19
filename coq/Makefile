@@ -5,8 +5,16 @@ SUBFOLDERS := PerformanceExperiments PerformanceDemos
 $(SUBFOLDERS):
 	+$(MAKE) --no-print-directory -C $@
 
+SUBFOLDERS_INSTALL := $(addsuffix -install,$(SUBFOLDERS))
+.PHONY: $(SUBFOLDERS_INSTALL)
+$(SUBFOLDERS_INSTALL) : %-install :
+	+$(MAKE) --no-print-directory -C $* install
+
 .PHONY: coq
 coq: $(SUBFOLDERS)
+
+.PHONY: install
+install: $(SUBFOLDERS_INSTALL)
 
 .PHONY: perf
 perf:
