@@ -12,26 +12,39 @@ Global Open Scope nat_scope.
 Global Open Scope list_scope.
 
 (** divisions should be roughly:
+- The [Sanity] tests should be just enough to ensure that the code compiles and runs.
 - All [SuperFast] tests in a file should finish in under 10 seconds total
 - The [Fast] tests should take under 10 seconds each
 - The [Medium] tests should go up to about a minute each
 - The [Slow] tests should go up to about 10 minutes each
 - The [VerySlow] tests may take longer than 10 minutes each *)
 
-Inductive size := SuperFast | Fast | Medium | Slow | VerySlow.
+Inductive size := Sanity | SuperFast | Fast | Medium | Slow | VerySlow.
+
+Definition nat_of_size (sz : size) : nat
+  := match sz with
+     | Sanity => 0
+     | SuperFast => 1
+     | Fast => 2
+     | Medium => 3
+     | Slow => 4
+     | VerySlow => 5
+     end%nat.
 
 Definition smaller_sizes (sz : size) : list size
   := match sz with
-     | SuperFast => []
-     | Fast => [SuperFast]
-     | Medium => [SuperFast; Fast]
-     | Slow => [SuperFast; Fast; Medium]
-     | VerySlow => [SuperFast; Fast; Medium; Slow]
+     | Sanity => []
+     | SuperFast => [Sanity]
+     | Fast => [Sanity; SuperFast]
+     | Medium => [Sanity; SuperFast; Fast]
+     | Slow => [Sanity; SuperFast; Fast; Medium]
+     | VerySlow => [Sanity; SuperFast; Fast; Medium; Slow]
      end.
 
 Definition size_pred (sz : size) : option size
   := match sz with
-     | SuperFast => None
+     | Sanity => None
+     | SuperFast => Some Sanity
      | Fast => Some SuperFast
      | Medium => Some Fast
      | Slow => Some Medium

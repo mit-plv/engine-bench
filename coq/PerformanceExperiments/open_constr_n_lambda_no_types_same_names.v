@@ -9,6 +9,7 @@ Ltac make_uconstr n :=
 
 Definition args_of_size (s : size) : list nat
   := match s with
+     | Sanity => seq 0 3
      | SuperFast => seq 0 500
      | Fast => (List.map (fun x => x * 10) (seq 0 100))
                  ++ (List.map (fun x => x * 100) (seq 0 31))

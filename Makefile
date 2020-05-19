@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := coq
 
 COMPONENTS := coq
-KINDS := perf pdf doc install
+KINDS := perf pdf doc install perf-Sanity
 ALL_COMPONENTS := $(COMPONENTS)
 
 include Makefile.show

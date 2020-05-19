@@ -3,7 +3,7 @@ PERF_DIR:=.
 mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
 PERF_ABS_DIR := $(patsubst %/,%,$(dir $(mkfile_path)))
 
-include Makefile.variables.kinds
+include $(PERF_ABS_DIR)/Makefile.variables.kinds
 
 SIZES:=$(subst |,,$(shell grep -o 'Inductive size := [^\.]*' $(PERF_ABS_DIR)/Harness.v | sed s'/Inductive size := //g'))
 

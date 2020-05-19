@@ -18,8 +18,9 @@ install: $(SUBFOLDERS_INSTALL)
 
 .PHONY: perf
 perf:
-	+$(MAKE) --no-print-directory -C PerformanceExperiments perf-SuperFast perf-Fast
+	+$(MAKE) --no-print-directory -C PerformanceExperiments perf-Sanity perf-SuperFast perf-Fast
 	+$(MAKE) --no-print-directory -C PerformanceExperiments perf-csv
+
 
 .PHONY: pdf
 pdf:
@@ -37,3 +38,9 @@ doc:
 .PHONY: copy-doc
 copy-doc:
 	cp -t $(OUTPUT) plots/*.svg
+
+include PerformanceExperiments/Makefile.variables
+PERF_KINDS := $(addprefix perf-,$(SIZES))
+.PHONY: $(PERF_KINDS)
+$(PERF_KINDS):
+	+$(MAKE) --no-print-directory -C PerformanceExperiments $@

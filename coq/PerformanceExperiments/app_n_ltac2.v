@@ -16,6 +16,7 @@ Definition goal (n : nat) := n_units n -> unit.
 
 Definition args_of_size (s : size) : list nat
   := match s with
+     | Sanity => seq 0 3
      | SuperFast => List.map (fun x => x * 100) (seq 0 70)
      | Fast => List.map (fun x => x * 100) (seq 0 201)
      | Medium => []

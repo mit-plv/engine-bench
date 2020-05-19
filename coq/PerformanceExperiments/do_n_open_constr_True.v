@@ -2,6 +2,7 @@ Require Import PerformanceExperiments.Harness.
 
 Definition args_of_size (s : size) : list nat
   := match s with
+     | Sanity => seq 0 3
      | SuperFast => seq 0 300
      | Fast => (List.map (fun x => x * 2) (seq 0 200))
                  ++ (List.map (fun x => 400 + 10 * x) (seq 0 30))
