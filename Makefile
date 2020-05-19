@@ -23,7 +23,7 @@ $(patsubst %,doc-build/%.pdf,$(COMPONENTS)) : doc-build/%.pdf :
 	$(HIDE)+$(MAKE) --no-print-directory -C $* copy-pdf OUTPUT=../$@
 
 .PHONY: copy-pdf
-copy-pdf: $(addsuffix .pdf,$(COMPONENTS))
+copy-pdf: $(patsubst %,doc-build/%.pdf,$(COMPONENTS))
 
 define add_kind
 $(eval $(1)_COMPONENTS := $(addsuffix -$(1),$(COMPONENTS)))
