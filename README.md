@@ -20,6 +20,10 @@ Performance criterion (convenient, not limiting): Typechecking an application of
 - Can be constructed if you can prove conjunction/pairing without quadratic overhead
 - Coq: See [`coq/PerformanceDemos/app_n.v`](./coq/PerformanceDemos/app_n.v), [`coq/PerformanceExperiments/app_n_uconstr.v`](./coq/PerformanceExperiments/app_n_uconstr.v), and [`coq/PerformanceExperiments/app_n_ltac2.v`](./coq/PerformanceExperiments/app_n_ltac2.v)
 
+  app_n_uconstr | app_n_ltac2
+  --|--
+  <img src="https://mit-plv.github.io/engine-bench/coq/app-n-uconstr.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/app-n-ltac2.svg" height=100px />
+
 Note: not talk about display names at all; if you want to have them, all operations need to be basically Õ(1)
 
 Performance Criterion: fast alpha-equivalence check (Õ(term size))
@@ -42,6 +46,11 @@ Performance Criterion: composing non-identity evar substitution should Õ(size 
 
 
 Performance Criterion: Evar creation should be Õ(1)
+- Coq: See [`coq/PerformanceExperiments/do_n_open_constr_True.v`](./coq/PerformanceExperiments/do_n_open_constr_True.v)
+
+  do_n_open_constr_True |
+  --|
+  <img src="https://mit-plv.github.io/engine-bench/coq/do-n-open-constr-True.svg" height=100px /> |
 
 Performance Criterion: 1-step delta on k constants should Õ(output term size)
 
