@@ -36,6 +36,9 @@ jobs:
         echo "::group::lsb_release -a"
         lsb_release -a
         echo "::endgroup::"
+        echo "::group::etc/machine.sh"
+        etc/machine.sh
+        echo "::endgroup::"
         echo "::group::ocamlc -config"
         ocamlc -config
         echo "::endgroup::"
@@ -46,7 +49,7 @@ jobs:
         coqc --version
         echo "::endgroup::"
         echo "::group::echo | coqtop"
-        echo | coqtop
+        true | coqtop
         echo "::endgroup::"
     - uses: actions/checkout@v2
     - name: make coq

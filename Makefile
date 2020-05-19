@@ -38,3 +38,6 @@ $(1): $(addsuffix -$(1),$(COMPONENTS))
 endef
 
 $(foreach kind,$(KINDS),$(eval $(call add_kind,$(kind))))
+
+etc/tscfreq: etc/tscfreq.c
+	$(CC) etc/tscfreq.c -s -Os -o etc/tscfreq
