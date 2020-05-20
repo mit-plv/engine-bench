@@ -56,6 +56,7 @@ Makefile.coq
 Makefile.coq.conf
 
 # Generated .v files for perf
+*_Sanity.v
 *_SuperFast.v
 *_Fast.v
 *_Medium.v
