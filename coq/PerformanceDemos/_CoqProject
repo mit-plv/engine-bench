@@ -5,6 +5,7 @@ constr_eq.v
 do_n_intro.v
 do_n_pose.v
 evar_creation.v
+lift_identity_evar_subst.v
 repeated_conj.v
 rewrite_strat_repeated_app.v
 rewrite_strat_under_binders.v

@@ -42,6 +42,7 @@ Unification problem (context changing):
 - `eq_refl : (fun y => y) = (fun y => (fun z => ?e2@{z, no y}) y)`
 
 Performance Criterion: lifting identity evar substitution should Õ(1)
+- See [`coq/PerformanceDemos/lift_identity_evar_subst.v`](./coq/PerformanceDemos/lift_identity_evar_subst.v)
 
 Performance Criterion: composing identity evar substitution should Õ(1)
 - Needed for: modular performance behavior
