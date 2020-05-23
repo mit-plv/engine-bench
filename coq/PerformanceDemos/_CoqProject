@@ -1,4 +1,10 @@
 -R . PerformanceDemos
 -arg -w -arg -notation-overridden
 app_n.v
+constr_eq.v
+do_n_intro.v
+do_n_pose.v
 evar_creation.v
+repeated_conj.v
+rewrite_strat_repeated_app.v
+rewrite_strat_under_binders.v

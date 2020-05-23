@@ -10,11 +10,16 @@ Assumption: Proof engine API has partial (proof) terms, and is modular
 - Tactics should reference quantified assumptions in the same way they reference global constants
 
 Performance Criterion: Adding a new let binder underneath n lets should be Õ(1)
+- See [`coq/PerformanceDemos/do_n_pose.v`](./coq/PerformanceDemos/do_n_pose.v), [`coq/PerformanceDemos/do_n_intro.v`](./coq/PerformanceDemos/do_n_intro.v)
 
 Performance Criterion: Adding a new binder underneath n binders should be Õ(1)
+- See [`coq/PerformanceDemos/do_n_intro.v`](./coq/PerformanceDemos/do_n_intro.v)
 - Needed for: good performance of rewrite/rewrite_strat under binders
+  + See [`coq/PerformanceDemos/rewrite_strat_under_binders.v`](./coq/PerformanceDemos/rewrite_strat_under_binders.v)
 - Needed for: good performance of proving large conjunctions without structural types
+  + See [`coq/PerformanceDemos/repeated_conj.v`](./coq/PerformanceDemos/repeated_conj.v)
 - Needed for: good performance of turning f (f (... (f x))) = g (g (... (g x))) given f x = g x (or x = y -> f x = g y) w/ rewrite_strat
+  + See [`coq/PerformanceDemos/rewrite_strat_repeated_app.v`](./coq/PerformanceDemos/rewrite_strat_repeated_app.v)
 
 Performance criterion (convenient, not limiting): Typechecking an application of a function to n arguments with no conversion should be Õ(n)
 - Can be constructed if you can prove conjunction/pairing without quadratic overhead
@@ -25,6 +30,7 @@ Performance criterion (convenient, not limiting): Typechecking an application of
   <img src="https://mit-plv.github.io/engine-bench/coq/app-n-uconstr.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/app-n-ltac2.svg" height=100px />
 
 Note: not talk about display names at all; if you want to have them, all operations need to be basically Õ(1)
+- See [`coq/PerformanceDemos/constr_eq.v`](./coq/PerformanceDemos/constr_eq.v)
 
 Performance Criterion: fast alpha-equivalence check (Õ(term size))
 - we might also want alpha-variation as a fast primitive (even if the original term took arbitraily long to typecheck)
