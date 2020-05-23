@@ -30,10 +30,10 @@ Performance criterion (convenient, not limiting): Typechecking an application of
   <img src="https://mit-plv.github.io/engine-bench/coq/app-n-uconstr.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/app-n-ltac2.svg" height=100px />
 
 Note: not talk about display names at all; if you want to have them, all operations need to be basically Õ(1)
-- See [`coq/PerformanceDemos/constr_eq.v`](./coq/PerformanceDemos/constr_eq.v)
 
 Performance Criterion: fast alpha-equivalence check (Õ(term size))
 - we might also want alpha-variation as a fast primitive (even if the original term took arbitraily long to typecheck)
+- See [`coq/PerformanceDemos/constr_eq.v`](./coq/PerformanceDemos/constr_eq.v)
 
 Unification problem (context changing):
 - `eq_refl : (fun y => y) = ((fun e y => e y) ?e)`
