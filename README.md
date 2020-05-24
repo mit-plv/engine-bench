@@ -1,4 +1,6 @@
 # engine-bench
+![CI (Coq)](https://github.com/mit-plv/engine-bench/workflows/CI%20(Coq)/badge.svg?branch=master) ![CI (LaTeX)](https://github.com/mit-plv/engine-bench/workflows/CI%20(LaTeX)/badge.svg?branch=master)
+
 Benchmarks for various proof engines
 
 # Performance Graphs
