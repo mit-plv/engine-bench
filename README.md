@@ -48,6 +48,7 @@ Performance Criterion: composing identity evar substitution should Õ(1)
 - Needed for: modular performance behavior
 
 Performance Criterion: lifting non-identity evar substitution should Õ(size of subst)
+- See [`coq/PerformanceDemos/lift_non_identity_evar_subst.v`](./coq/PerformanceDemos/lift_non_identity_evar_subst.v)
 
 Performance Criterion: composing non-identity evar substitution should Õ(size of subst)
 
@@ -70,6 +71,7 @@ Performance Criterion: Inserting a cast node should be Õ(conversion checking t
 
 
 Performance Criterion: Full reduction on a function of complexity O(f) should be Õ(f + input term size + output term size)
+- See [`coq/PerformanceDemos/quadratic_reduction.v`](./coq/PerformanceDemos/quadratic_reduction.v)
 
 Performance Criterion: lifting term across n consecutive binders should be Õ(term size)
 - maybe we should require this to be O(1) so we don't have to batch lifting?
@@ -78,9 +80,11 @@ Performance Criterion: substitution-of-variables-for-variables should be Õ(ter
 - TODO: This can maybe be subsumed into beta?
 
 Performance Criterion: pattern on k variables should be Õ(term size + k + cost of retypechecking the output term (only if input term is not simply typed))
+- See [`coq/PerformanceDemos/pattern.v`](./coq/PerformanceDemos/pattern.v)
 
 Performance Criterion: pattern should be Õ(term size * size of thing being patterned + cost of retypechecking the output term (only if input term is not simply typed))
 - Note: Andres is not confident in this
+- See [`coq/PerformanceDemos/pattern.v`](./coq/PerformanceDemos/pattern.v)
 
 ```
 x, y := x |- pattern x in (eq_refl x : x = y)
@@ -105,30 +109,34 @@ Backtracking???? maybe discuss that this is really about functional interface / 
 
 Tactics for the paper:
 
-- pattern
-- destruct / induction
-- assert
-- rewrite
-- setoid_rewrite (rewrite with binders)
-- autorewrite
-- rewrite_strat / autosetoid_rewrite
-- intro / intros / revert / generalize / set / clear / clearbody
-- refine / exact / assumption
-- change / refine + unification
-- unify, roughly how an unuification algorithm can do its job by calling intantiate / refine-in-evar / reduction-step-with/in-evar
-- constr:(...) / open_constr:(...)
-- match goal / match constr (readback problem)
+- `pattern`
+- `destruct` / `induction`
+- `assert`
+- `rewrite`
+- `setoid_rewrite` (rewrite with binders)
+- `autorewrite`
+- `rewrite_strat` / `autosetoid_rewrite`
+- `intro` / `intros` / `revert` / `generalize` / `set` / `clear` / `clearbody`
+- `refine` / `exact` / `assumption`
+- `change` / `refine` + unification
+- `unify`, roughly how an unuification algorithm can do its job by calling intantiate / refine-in-evar / reduction-step-with/in-evar
+- `constr:(⋯)` / `open_constr:(⋯)`
+- `match goal` / `match` constr (readback problem)
 - moving constrs / out-of-band-things across contexts?
-- 1-step-reduction / multi-step-reduction / cbv / lazy / vm_compute / ... (probably not much detail, either use the steps above or use a skyhook vm)
-- pose / pose proof
+- 1-step-reduction / multi-step-reduction / `cbv` / `lazy` / `vm_compute` / ⋯ (probably not much detail, either use the steps above or use a skyhook vm)
+- `pose` / `pose proof`
 - run tactic under binders (i.e., readback under binders)
-- lia by simplex by pose? or perhaps congruence? (analyze performance overhead over just doing the computation)
-- non-reflective ring tactic? try to estaiblish correspondance between time spent in a reflective and in a non-reflective implementation, to show that our proof engine can do okay on things previously pushed to reflection
-- apply (rapply!) / apply in / auto
+- `lia` by simplex by `pose`? or perhaps `congruence`? (analyze performance overhead over just doing the computation)
+- non-reflective `ring` tactic? try to estaiblish correspondance between time spent in a reflective and in a non-reflective implementation, to show that our proof engine can do okay on things previously pushed to reflection
+- `apply` (`rapply`!) / `apply ⋯ in ⋯` / `auto`
 
 
-there are "goal management" tactics like clear / cycle / shelve that seem totally orthogonoal to everything here
+there are "goal management" tactics like `clear` / `cycle` / `shelve` that seem totally orthogonoal to everything here
+
 also let's pretend multisuccess doesn't exist
 
+
+
 only multi-goal thing: yes you can do things in any evar.
-how do we transfer constr-s between evars?
+
+how do we transfer `constr`-s between evars?
