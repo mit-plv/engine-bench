@@ -9,7 +9,7 @@ Fixpoint biga (n : nat) (P : Prop)
 Fixpoint bigb (n : nat) (P : Prop)
 := match n with
    | 0 => P
-   | S n => forall b : Prop, biga n (b -> P)
+   | S n => forall b : Prop, bigb n (b -> P)
    end.
 
 Definition goal n := biga n True = bigb n True.
