@@ -18,7 +18,7 @@ Performance Criterion: Adding a new binder underneath n binders should be Õ(1)
   + See [`coq/PerformanceDemos/rewrite_strat_under_binders.v`](./coq/PerformanceDemos/rewrite_strat_under_binders.v)
 - Needed for: good performance of proving large conjunctions without structural types
   + See [`coq/PerformanceDemos/repeated_conj.v`](./coq/PerformanceDemos/repeated_conj.v)
-- Needed for: good performance of turning f (f (... (f x))) = g (g (... (g x))) given f x = g x (or x = y -> f x = g y) w/ rewrite_strat
+- Needed for: good performance of turning `f (f (... (f x))) = g (g (... (g x)))` given `f x = g x` (or `x = y -> f x = g y`) w/ rewrite_strat
   + See [`coq/PerformanceDemos/rewrite_strat_repeated_app.v`](./coq/PerformanceDemos/rewrite_strat_repeated_app.v)
 
 Performance criterion (convenient, not limiting): Typechecking an application of a function to n arguments with no conversion should be Õ(n)
