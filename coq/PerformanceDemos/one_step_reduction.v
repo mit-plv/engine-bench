@@ -266,14 +266,13 @@ Definition big_slow_zeta1 (n : nat) := Eval cbv beta iota delta [big_tree2 slow]
 Definition big_fast_zeta1 (n : nat) := Eval cbv beta iota delta [big_tree2 fast] in let v := fast in big_tree2 n v v.
 Definition big_slow_zeta2 (n : nat) := Eval cbv beta iota delta [big_tree2 slow] in let v1 := slow in let v2 := slow in big_tree2 n v1 v2.
 Definition big_fast_zeta2 (n : nat) := Eval cbv beta iota delta [big_tree2 fast] in let v1 := fast in let v2 := fast in big_tree2 n v1 v2.
-(*
+
 Ltac test_slow_zeta1 with_abstract n :=
   optimize_heap;
-  let v := (eval cbv beta iota delta [big_slow_zeta1] in (big_slow_beta1 n)) in
-  let v := beta_id v in
+  let v := (eval cbv beta iota delta [big_slow_zeta1] in (big_slow_zeta1 n)) in
   restart_timer;
-  let v2 := (eval cbv beta in v) in
-  finish_timing ("Tactic call β-1-slow1");
+  let v2 := (eval cbv zeta in v) in
+  finish_timing ("Tactic call ζ-1-slow1");
   time "unify-slow1" unify v v2;
   lazymatch with_abstract with
   | true => let __ := constr:(ltac:(time "abstract-unify-slow1" abstract exact_no_check (eq_refl v)) : v = v2) in
@@ -281,13 +280,12 @@ Ltac test_slow_zeta1 with_abstract n :=
   | false => idtac
   end.
 
-Ltac test_slow2 with_abstract n :=
+Ltac test_slow_zeta2 with_abstract n :=
   optimize_heap;
-  let v := (eval cbv [big_slow_beta2] in (big_slow_beta2 n)) in
-  let v := beta_id v in
+  let v := (eval cbv beta iota delta [big_slow_zeta2] in (big_slow_zeta2 n)) in
   restart_timer;
-  let v2 := (eval cbv beta in v) in
-  finish_timing ("Tactic call β-1-slow2");
+  let v2 := (eval cbv zeta in v) in
+  finish_timing ("Tactic call ζ-2-slow2");
   time "unify-slow2" unify v v2;
   lazymatch with_abstract with
   | true => let __ := constr:(ltac:(time "abstract-unify-slow2" abstract exact_no_check (eq_refl v)) : v = v2) in
@@ -295,13 +293,12 @@ Ltac test_slow2 with_abstract n :=
   | false => idtac
   end.
 
-Ltac test_fast1 with_abstract n :=
+Ltac test_fast_zeta1 with_abstract n :=
   optimize_heap;
-  let v := (eval cbv [big_fast_beta1] in (big_fast_beta1 n)) in
-  let v := beta_id v in
+  let v := (eval cbv beta iota delta [big_fast_zeta1] in (big_fast_zeta1 n)) in
   restart_timer;
-  let v2 := (eval cbv beta in v) in
-  finish_timing ("Tactic call β-1-fast1");
+  let v2 := (eval cbv zeta in v) in
+  finish_timing ("Tactic call ζ-1-fast1");
   time "unify-fast1" unify v v2;
   lazymatch with_abstract with
   | true => let __ := constr:(ltac:(time "abstract-unify-fast1" abstract exact_no_check (eq_refl v)) : v = v2) in
@@ -309,68 +306,67 @@ Ltac test_fast1 with_abstract n :=
   | false => idtac
   end.
 
-Ltac test_fast2 with_abstract n :=
+Ltac test_fast_zeta2 with_abstract n :=
   optimize_heap;
-  let v := (eval cbv [big_fast_beta2] in (big_fast_beta2 n)) in
-  let v := beta_id v in
+  let v := (eval cbv beta iota delta [big_fast_zeta2] in (big_fast_zeta2 n)) in
   restart_timer;
-  let v2 := (eval cbv beta in v) in
-  finish_timing ("Tactic call β-1-fast2");
+  let v2 := (eval cbv zeta in v) in
+  finish_timing ("Tactic call ζ-2-fast2");
   time "unify-fast2" unify v v2;
   lazymatch with_abstract with
   | true => let __ := constr:(ltac:(time "abstract-unify-fast2" abstract exact_no_check (eq_refl v)) : v = v2) in
             idtac
   | false => idtac
   end.
+
 Goal True.
-  idtac 1; test_slow1 true 1; test_fast1 true 1; test_slow2 true 1; test_fast2 true 1;
-    idtac 2; test_slow1 true 2; test_fast1 true 2; test_slow2 true 2; test_fast2 true 2;
-      idtac 14; test_slow1 false 14; test_fast1 false 14; test_slow2 false 14; test_fast2 false 14;
-        idtac 15; test_slow1 false 15; test_fast1 false 15; test_slow2 false 15; test_fast2 false 15.
+  idtac 1; test_slow_zeta1 true 1; test_fast_zeta1 true 1; test_slow_zeta2 true 1; test_fast_zeta2 true 1;
+    idtac 2; test_slow_zeta1 true 2; test_fast_zeta1 true 2; test_slow_zeta2 true 2; test_fast_zeta2 true 2;
+      idtac 14; test_slow_zeta1 false 14; test_fast_zeta1 false 14; test_slow_zeta2 false 14; test_fast_zeta2 false 14;
+        idtac 15; test_slow_zeta1 false 15; test_fast_zeta1 false 15; test_slow_zeta2 false 15; test_fast_zeta2 false 15.
 Abort.
 (* 1
-Tactic call β-1-slow1 ran for 0. secs (0.u,0.s)
+Tactic call ζ-1-slow1 ran for 0. secs (0.u,0.s)
 Tactic call unify-slow1 ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-unify-slow1 ran for 3.062 secs (3.062u,0.s) (success)
-Tactic call β-1-fast1 ran for 0. secs (0.u,0.s)
+Tactic call abstract-unify-slow1 ran for 3.052 secs (3.052u,0.s) (success)
+Tactic call ζ-1-fast1 ran for 0. secs (0.u,0.s)
 Tactic call unify-fast1 ran for 0. secs (0.u,0.s) (success)
 Tactic call abstract-unify-fast1 ran for 0. secs (0.u,0.s) (success)
-Tactic call β-1-slow2 ran for 0. secs (0.u,0.s)
+Tactic call ζ-2-slow2 ran for 0. secs (0.u,0.s)
 Tactic call unify-slow2 ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-unify-slow2 ran for 4.096 secs (4.096u,0.s) (success)
-Tactic call β-1-fast2 ran for 0. secs (0.u,0.s)
+Tactic call abstract-unify-slow2 ran for 4.07 secs (4.07u,0.s) (success)
+Tactic call ζ-2-fast2 ran for 0. secs (0.u,0.s)
 Tactic call unify-fast2 ran for 0. secs (0.u,0.s) (success)
 Tactic call abstract-unify-fast2 ran for 0. secs (0.u,0.s) (success)
 2
-Tactic call β-1-slow1 ran for 0. secs (0.u,0.s)
+Tactic call ζ-1-slow1 ran for 0. secs (0.u,0.s)
 Tactic call unify-slow1 ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-unify-slow1 ran for 5.15 secs (5.15u,0.s) (success)
-Tactic call β-1-fast1 ran for 0. secs (0.u,0.s)
+Tactic call abstract-unify-slow1 ran for 5.056 secs (5.056u,0.s) (success)
+Tactic call ζ-1-fast1 ran for 0. secs (0.u,0.s)
 Tactic call unify-fast1 ran for 0. secs (0.u,0.s) (success)
 Tactic call abstract-unify-fast1 ran for 0. secs (0.u,0.s) (success)
-Tactic call β-1-slow2 ran for 0. secs (0.u,0.s)
+Tactic call ζ-2-slow2 ran for 0. secs (0.u,0.s)
 Tactic call unify-slow2 ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-unify-slow2 ran for 6.177 secs (6.173u,0.003s) (success)
-Tactic call β-1-fast2 ran for 0. secs (0.u,0.s)
+Tactic call abstract-unify-slow2 ran for 6.051 secs (6.051u,0.s) (success)
+Tactic call ζ-2-fast2 ran for 0. secs (0.u,0.s)
 Tactic call unify-fast2 ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-unify-fast2 ran for 0.001 secs (0.001u,0.s) (success)
+Tactic call abstract-unify-fast2 ran for 0. secs (0.u,0.s) (success)
 14
-Tactic call β-1-slow1 ran for 0.046 secs (0.046u,0.s)
-Tactic call unify-slow1 ran for 0.576 secs (0.576u,0.s) (success)
-Tactic call β-1-fast1 ran for 0.046 secs (0.046u,0.s)
-Tactic call unify-fast1 ran for 0.592 secs (0.592u,0.s) (success)
-Tactic call β-1-slow2 ran for 0.047 secs (0.047u,0.s)
-Tactic call unify-slow2 ran for 0.589 secs (0.589u,0.s) (success)
-Tactic call β-1-fast2 ran for 0.049 secs (0.049u,0.s)
-Tactic call unify-fast2 ran for 0.624 secs (0.624u,0.s) (success)
+Tactic call ζ-1-slow1 ran for 0.047 secs (0.047u,0.s)
+Tactic call unify-slow1 ran for 0.575 secs (0.575u,0.s) (success)
+Tactic call ζ-1-fast1 ran for 0.046 secs (0.046u,0.s)
+Tactic call unify-fast1 ran for 0.589 secs (0.589u,0.s) (success)
+Tactic call ζ-2-slow2 ran for 0.046 secs (0.046u,0.s)
+Tactic call unify-slow2 ran for 0.586 secs (0.586u,0.s) (success)
+Tactic call ζ-2-fast2 ran for 0.046 secs (0.046u,0.s)
+Tactic call unify-fast2 ran for 0.622 secs (0.618u,0.003s) (success)
 15
-Tactic call β-1-slow1 ran for 0.097 secs (0.097u,0.s)
-Tactic call unify-slow1 ran for 1.319 secs (1.303u,0.015s) (success)
-Tactic call β-1-fast1 ran for 0.098 secs (0.098u,0.s)
-Tactic call unify-fast1 ran for 1.322 secs (1.306u,0.016s) (success)
-Tactic call β-1-slow2 ran for 0.098 secs (0.098u,0.s)
-Tactic call unify-slow2 ran for 1.331 secs (1.327u,0.003s) (success)
-Tactic call β-1-fast2 ran for 0.098 secs (0.098u,0.s)
-Tactic call unify-fast2 ran for 1.348 secs (1.348u,0.s) (success)
-*)
+Tactic call ζ-1-slow1 ran for 0.097 secs (0.097u,0.s)
+Tactic call unify-slow1 ran for 1.318 secs (1.282u,0.035s) (success)
+Tactic call ζ-1-fast1 ran for 0.097 secs (0.097u,0.s)
+Tactic call unify-fast1 ran for 1.322 secs (1.31u,0.011s) (success)
+Tactic call ζ-2-slow2 ran for 0.098 secs (0.098u,0.s)
+Tactic call unify-slow2 ran for 1.332 secs (1.332u,0.s) (success)
+Tactic call ζ-2-fast2 ran for 0.097 secs (0.097u,0.s)
+Tactic call unify-fast2 ran for 1.345 secs (1.345u,0.s) (success)
 *)
