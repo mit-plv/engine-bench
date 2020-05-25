@@ -237,6 +237,8 @@ Tactic call deta-id-FX ran for 0. secs (0.u,0.s)
 Tactic call beta-FX ran for 0. secs (0.u,0.s)
 Finished transaction in 1.306 secs (1.266u,0.04s) (successful)
 *)
+(* Fatal error: out of memory. *)
+(*
 Goal True. Time time_evars 2000 100 100. Abort.
 (* Tactic call make_fun ran for 0.015 secs (0.015u,0.s)
 Tactic call make_evars ran for 0.085 secs (0.085u,0.s)
@@ -338,4 +340,5 @@ Goal True. Time time_evars 1000 1000 2000. Abort.
 (* *)
 Goal True. Time time_tts 1000 1000 2000. Abort.
 (* *)
+*)
 *)
