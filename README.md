@@ -142,3 +142,55 @@ also let's pretend multisuccess doesn't exist
 only multi-goal thing: yes you can do things in any evar.
 
 how do we transfer `constr`-s between evars?
+
+# Miscellaneous Text
+
+Here is some text associated with this project that seems worth recording, that hasn't found a better home yet.
+
+## Signal Conversion between Andres and Jason on 2020-05-24
+
+Jason (Sun 6:06pm): I could code up tests for this
+
+Jason (Sun 6:08pm):
+
+> (I don't understand when substitutions are composed)
+
+Yeah, this one is fuzzy in my head too.  I think this might involve benching Optimize Proof as a function of the number of nested evars?
+
+Andres (Sun 6:09pm): ltac2 calling something like `unsafe_change`?
+
+or just returning terms without establishing conversion? that would be too easy
+
+
+> Yeah, this one is fuzzy in my head too.  I think this might involve benching Optimize Proof as a function of the number of nested evars?
+
+in that case, perhaps we should try to define our performance criteria without talking about substitutions?
+
+Jason (Sun 6:11pm):
+
+> or just returning terms without establishing conversion? that would be too easy
+
+Yeah, just returning the term without establishing conversion.  We can separately bench the conversation problem if you want (benching the one-step conversion problem is actually quite easy, though I expect the times to be quite sensitive to the size of the rest of the term, etc).  It's figuring out how to bench the computation of the reduced term without benching anything else that's hard.
+
+> in that case, perhaps we should try to define our performance criteria without talking about substitutions?
+
+No, composition of substitutions is needed to instantiate evars with other evars
+
+Andres (Sun 6:13pm): . yeah if we ever end up losing it in a table we should show both parts
+
+> No, composition of substitutions is needed to instantiate evars with other evars
+
+so define the desired performance of instantiating one evar with another :P
+
+Jason (Sun 6:14pm): It's just that Coq is very lazy about when it does the actual substitutions, and I'm not very familiar with this part of the machinery.  It used to happen on every single tactic invocation, and this is what made `cbv beta` in a small goal take a long time depending on how big the context was
+
+
+> so define the desired performance of instantiating one evar with another :P
+
+Sure, we could do that.  I'm not sure how to bench it though.  In particular, I'm not sure how to define it precisely and know what the relevant axes are (one evar with another when they're in the same context?  Or different ones?)
+
+Andres (Sun 6:17pm): that story might be worth telling
+
+my proof engine would do log of scope depth difference, though of course that's without counting catching up on new beta reduction opportunities
+
+I don't have any idea what coq does
