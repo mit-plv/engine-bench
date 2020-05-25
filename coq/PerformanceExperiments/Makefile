@@ -6,10 +6,10 @@ KNOWNTARGETS := update-_CoqProject clean cleanall
 # on them always get rebuilt
 KNOWNFILES   := \
 	Makefile \
-	_CoqProject \
 	Makefile.variables \
 	Makefile.characters \
 	Makefile.coq-versions \
+	Makefile.coq-versions-files \
 	Makefile.timing
 
 .DEFAULT_GOAL := all
@@ -25,10 +25,9 @@ all:: invoke-coqmakefile
 WARNINGS:=-notation-overridden
 
 SORT_COQPROJECT = sed 's,[^/]*/,~&,g' | env LC_COLLATE=C sort | sed 's,~,,g' | uniq
-.PHONY: update-_CoqProject
-update-_CoqProject:
+_CoqProject::
 	$(SHOW)'ECHO > _CoqProject'
-	$(HIDE)(echo '-R . $(PERF_LIB)'; echo '-arg -w -arg $(WARNINGS)'; (git ls-files "*.v" | $(SORT_COQPROJECT))) > _CoqProject
+	$(HIDE)(echo '-R . $(PERF_LIB)'; echo '-arg -w -arg $(WARNINGS)'; ((echo '$(COMPATIBILITY_FILES)' | tr ' ' '\n'); git ls-files "*.v" | $(SORT_COQPROJECT))) > _CoqProject
 
 Makefile.coq: Makefile _CoqProject
 	$(COQBIN)coq_makefile -f _CoqProject -o Makefile.coq

@@ -4,7 +4,12 @@ KINDS := \
 	open_constr_n_lambda_no_types_no_names \
 	open_constr_n_lambda_no_types_same_names \
 	app_n_uconstr \
-	app_n_ltac2
+	app_n_ltac2 \
+	do_n_pose \
+	let_n_uconstr \
+	let_n_ltac2 \
+	intros_n_let \
+	# end of list
 
 SH_KINDS :=
 

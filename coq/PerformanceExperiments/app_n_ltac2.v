@@ -28,31 +28,6 @@ Definition args_of_size (s : size) : list nat
 Module Import WithLtac2.
   Import Ltac2.Notations.
 
-  Module Array.
-    (** modified from https://github.com/coq/coq/blob/227520b14e978e19d58368de873521a283aecedd/user-contrib/Ltac2/Array.v#L161-L182 *)
-    Ltac2 rec of_list_aux (ls : 'a list) (dst : 'a array) (pos : int) :=
-      match ls with
-      | [] => ()
-      | hd::tl =>
-        Array.set dst pos hd;
-  of_list_aux tl dst (Int.add pos 1)
-    end.
-
-    Ltac2 of_list (ls : 'a list) :=
-      let rec list_length (ls : 'a list) :=
-          match ls with
-          | [] => 0
-          | _ :: tl => Int.add 1 (list_length tl)
-          end in
-      match ls with
-      | [] => Array.make 0 'I
-      | hd::tl =>
-        let anew := Array.make (list_length ls) hd in
-        of_list_aux ls anew 0;
-  anew
-    end.
-  End Array.
-
   Ltac2 build_app (n : int) (f : constr) :=
     match Int.lt 0 n with
     | false => f
