@@ -7,6 +7,7 @@ do_n_pose.v
 evar_creation.v
 lift_identity_evar_subst.v
 lift_non_identity_evar_subst.v
+one_step_reduction.v
 pattern.v
 quadratic_reduction.v
 repeated_conj.v

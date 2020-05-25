@@ -62,11 +62,11 @@ Performance Criterion: Evar creation should be Õ(1)
   --|
   <img src="https://mit-plv.github.io/engine-bench/coq/do-n-open-constr-True.svg" height=100px /> |
 
-Performance Criterion: 1-step delta on k constants should Õ(output term size)
-
-Performance Criterion: 1-step iota should be Õ(output term size)
-
-Performance Criterion: 1-step beta on k arguments of the same application node where each argument is mentioned multiple times should be Õ(input term size + output term size)
+Performance Criteria:
+ - 1-step delta on k constants should Õ(output term size)
+ - 1-step iota should be Õ(output term size)
+ - 1-step beta on k arguments of the same application node where each argument is mentioned multiple times should be Õ(input term size + output term size)
+ - See [`coq/PerformanceDemos/one_step_reduction.v`](./coq/PerformanceDemos/one_step_reduction.v)
 
 
 Performance Criterion: Inserting a cast node should be Õ(conversion checking the types)
