@@ -12,10 +12,10 @@ Assumption: Proof engine API has partial (proof) terms, and is modular
 - Tactics should reference quantified assumptions in the same way they reference global constants
 
 Performance Criterion: Adding a new let binder underneath n lets should be Õ(1)
-- See [`coq/PerformanceDemos/do_n_pose.v`](./coq/PerformanceDemos/do_n_pose.v), [`coq/PerformanceDemos/do_n_intro.v`](./coq/PerformanceDemos/do_n_intro.v)
+- See [`coq/PerformanceDemos/do_n_let_binder.v`](./coq/PerformanceDemos/do_n_let_binder.v)
 
 Performance Criterion: Adding a new binder underneath n binders should be Õ(1)
-- See [`coq/PerformanceDemos/do_n_intro.v`](./coq/PerformanceDemos/do_n_intro.v)
+- See [`coq/PerformanceDemos/do_n_binder.v`](./coq/PerformanceDemos/do_n_binder.v)
 - Needed for: good performance of rewrite/rewrite_strat under binders
   + See [`coq/PerformanceDemos/rewrite_strat_under_binders.v`](./coq/PerformanceDemos/rewrite_strat_under_binders.v)
 - Needed for: good performance of proving large conjunctions without structural types

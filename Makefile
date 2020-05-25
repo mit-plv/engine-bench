@@ -1,10 +1,13 @@
-.DEFAULT_GOAL := coq
+.DEFAULT_GOAL := all
 
 COMPONENTS := coq
 KINDS := perf pdf doc install perf-Sanity
 ALL_COMPONENTS := $(COMPONENTS)
 
 include Makefile.show
+
+.PHONY: all
+all: coq
 
 .PHONY: $(COMPONENTS)
 $(COMPONENTS):
@@ -45,6 +48,19 @@ $(1): $(addsuffix -$(1),$(COMPONENTS))
 endef
 
 $(foreach kind,$(KINDS),$(eval $(call add_kind,$(kind))))
+
+.PHONY: test-README-links
+all: test-README-links
+GET_README_LINKS:=grep -o '\[[^]]*\](\./[^)]*)' README.md | sed 's/\[[^]]*]//g; s/^(//g; s/)$$//g' | sort | uniq
+README_FILES:=$(shell $(GET_README_LINKS))
+BAD_README_LINKS:=$(filter-out $(wildcard $(README_FILES)),$(README_FILES))
+ifneq ($(BAD_README_LINKS),)
+test-README-links:
+	@echo 'ERROR: The following files do not exist: $(BAD_README_LINKS)'
+	@false
+else
+test-README-links: ;
+endif
 
 etc/tscfreq: etc/tscfreq.c
 	$(CC) etc/tscfreq.c -s -Os -o etc/tscfreq

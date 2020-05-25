@@ -2,8 +2,8 @@
 -arg -w -arg -notation-overridden
 app_n.v
 constr_eq.v
-do_n_intro.v
-do_n_pose.v
+do_n_binder.v
+do_n_let_binder.v
 evar_creation.v
 lift_identity_evar_subst.v
 lift_non_identity_evar_subst.v
