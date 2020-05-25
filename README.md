@@ -149,9 +149,21 @@ Here is some text associated with this project that seems worth recording, that 
 
 ## Signal Conversion between Andres and Jason on 2020-05-24
 
-Jason (Sun 6:06pm): I could code up tests for this
+Andres (Sun 5:48pm): why do you think one-step reductions do not make sense to bench?
 
-Jason (Sun 6:08pm):
+Jason (Sun 6:03pm): Ultimately it's because Coq doesn't expose a satisfactory one-step reduction.  (But maybe you claim the thing to do is to just bench the version that we can hack up in Coq, even when we know most of the time isn't spent in the single step of reduction?)  I think it's hard to construct them in a way where you're actually benching the single step.  If we do it via Ltac match + constr hacks, I expect we incur overhead in retypechecking and Ltac matching (I suppose I might be wrong, but we'd have to be dealing with truly enormous terms before we expect one-step reduction to take more than 0.0004 seconds (Coq can only measure down to 0.001).  Alternatively, we could do a non-one-step reduction when there's only one step to do, but it's not clear to me to what extent this is benching what we want to bench.  Alternatively we could try to bench a conversion problem where there's just one step of reduction to do, but again I think we'll end up just measuring the conversation overhead
+
+Andres (Sun 6:05pm): please save this explanation somewhere
+
+in that case I have nothing to add
+
+(I don't understand when substitutions are composed)
+
+Jason (Sun 6:06pm): I guess alternatively we could write our own single-step reduction primitive in Ltac2 (in which case I expect we incur the 100x--300x overhead of Ltac2 being interpreted) or as an OCaml plugin, and bench these
+
+Maybe we should do this?
+
+I could code up tests for this
 
 > (I don't understand when substitutions are composed)
 
