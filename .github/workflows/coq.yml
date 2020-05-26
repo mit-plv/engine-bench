@@ -14,8 +14,8 @@ jobs:
     strategy:
       matrix:
         env:
-        - { COQ_VERSION: "8.11.1", COQ_PACKAGE: "coq-8.11.1 libcoq-8.11.1-ocaml-dev", PPA: "ppa:jgross-h/many-coq-versions-ocaml-4-05" }
-        - { COQ_VERSION: "master", COQ_PACKAGE: "coq libcoq-ocaml-dev"              , PPA: "ppa:jgross-h/coq-master-daily" }
+        - { COQ_VERSION: "8.11.1", COQ_PACKAGE: "coq-8.11.1 libcoq-8.11.1-ocaml-dev", PPA: "ppa:jgross-h/many-coq-versions-ocaml-4-05" , TIMED: "1" }
+        - { COQ_VERSION: "master", COQ_PACKAGE: "coq libcoq-ocaml-dev"              , PPA: "ppa:jgross-h/coq-master-daily"             , TIMED: "1" }
 
     env: ${{ matrix.env }}
 
@@ -52,7 +52,7 @@ jobs:
         echo "::group::echo | coqtop"
         true | coqtop
         echo "::endgroup::"
-    - name: make coq
-      run: make coq TIMED=1
-    - name: make coq-perf-Sanity
-      run: make coq-perf-Sanity TIMED=1
+    - run: make coq
+    - run: make coq-perf-Sanity
+    - run: make coq-install
+    - run: make coq-install-perf-Sanity

@@ -21,6 +21,13 @@ perf:
 	+$(MAKE) --no-print-directory -C PerformanceExperiments perf-Sanity perf-SuperFast perf-Fast
 	+$(MAKE) --no-print-directory -C PerformanceExperiments perf-csv
 
+.PHONY: install-perf
+install-perf:
+	+$(MAKE) --no-print-directory -C PerformanceExperiments install-perf-Sanity install-perf-SuperFast install-perf-Fast
+
+.PHONY: install-perf-Sanity
+install-perf-Sanity:
+	+$(MAKE) --no-print-directory -C PerformanceExperiments install-perf-Sanity
 
 .PHONY: pdf
 pdf:

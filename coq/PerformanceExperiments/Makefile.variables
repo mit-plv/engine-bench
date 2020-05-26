@@ -53,6 +53,11 @@ $$($(1)_PERF_LOGS) : %.log : %.v $(PERF_DIR)/$(1).vo
 
 .PHONY: perf-$(1)
 perf-$(1):: $($(1)_PERF_LOGS)
+
+.PHONY: install-perf-$(1)
+install-perf-$(1)::
+	$(MAKE) -f Makefile.coq --no-print-directory install VFILES='$$($(1)_PERF_VFILES)'
+	$(MAKE) -f Makefile.coq --no-print-directory install FILESTOINSTALL='$$($(1)_PERF_LOGS)'
 endef
 
 define makekind_sh
