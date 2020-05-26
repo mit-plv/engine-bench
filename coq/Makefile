@@ -3,7 +3,7 @@
 SUBFOLDERS := PerformanceExperiments PerformanceDemos
 .PHONY: $(SUBFOLDERS)
 $(SUBFOLDERS):
-	+$(MAKE) --no-print-directory -C $@
+	+$(MAKE) -C $@
 
 SUBFOLDERS_INSTALL := $(addsuffix -install,$(SUBFOLDERS))
 .PHONY: $(SUBFOLDERS_INSTALL)
