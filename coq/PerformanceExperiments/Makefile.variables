@@ -94,6 +94,6 @@ perf-$(1):: $($(1)_PERF_LOGS)
 
 .PHONY: install-perf-$(1)
 install-perf-$(1)::
-	$(MAKE) -f Makefile.coq --no-print-directory install VFILES='$$($(1)_PERF_VFILES)'
-	$(MAKE) -f Makefile.coq --no-print-directory install FILESTOINSTALL='$$($(1)_PERF_LOGS)'
+	+$(MAKE) -f Makefile.coq --no-print-directory install VFILES='$$($(1)_PERF_VFILES)'
+	+$(MAKE) -f Makefile.coq --no-print-directory install FILESTOINSTALL='$$($(1)_PERF_LOGS) $$(wildcard *.txt)'
 endef
