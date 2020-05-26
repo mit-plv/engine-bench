@@ -54,5 +54,5 @@ jobs:
         echo "::endgroup::"
     - run: make coq
     - run: make coq-perf-Sanity
-    - run: make coq-install
-    - run: make coq-install-perf-Sanity
+    - run: sudo make coq-install
+    - run: sudo make coq-install-perf-Sanity
