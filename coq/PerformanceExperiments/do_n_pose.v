@@ -1,4 +1,3 @@
-Require Import Coq.ZArith.ZArith.
 Require Import PerformanceExperiments.Harness.
 Global Open Scope Z_scope.
 Definition args_of_size (s : size) : list Z

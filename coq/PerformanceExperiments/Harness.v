@@ -3,7 +3,7 @@ Require Import Coq.micromega.Lia.
 Require Import Coq.Bool.Bool.
 Require Import Coq.Sorting.Mergesort.
 Require Export Coq.Lists.List.
-Require Import Coq.ZArith.ZArith.
+Require Export Coq.ZArith.ZArith.
 Export ListNotations.
 
 Global Set Printing Width 200.

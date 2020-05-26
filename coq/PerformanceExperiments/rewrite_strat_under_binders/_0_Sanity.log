@@ -1,0 +1,6 @@
+Params: n= 0
+Tactic call repeat-rewrite_strat-topdown ran for 0.003 secs (0.003u,0.s) (success)
+Params: n= 1
+Tactic call repeat-rewrite_strat-topdown ran for 0.006 secs (0.006u,0.s) (success)
+Params: n= 2
+Tactic call repeat-rewrite_strat-topdown ran for 0.011 secs (0.01u,0.s) (success)

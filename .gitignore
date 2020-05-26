@@ -62,7 +62,10 @@ Makefile.coq.conf
 *_Medium.v
 *_Slow.v
 *_VerySlow.v
+
+# Generated files
 coq/PerformanceExperiments/Ltac2Compat/*.v
+coq/PerformanceExperiments/_CoqProject
 
 # Generated perf files
 coq/PerformanceExperiments/perf.csv

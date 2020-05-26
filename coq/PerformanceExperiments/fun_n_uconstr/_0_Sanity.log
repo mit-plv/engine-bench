@@ -1,0 +1,9 @@
+Params: n= 0
+Tactic call make_uconstr ran for 0. secs (0.u,0.s)
+Tactic call constr ran for 0. secs (0.u,0.s)
+Params: n= 1
+Tactic call make_uconstr ran for 0. secs (0.u,0.s)
+Tactic call constr ran for 0. secs (0.u,0.s)
+Params: n= 2
+Tactic call make_uconstr ran for 0. secs (0.u,0.s)
+Tactic call constr ran for 0. secs (0.u,0.s)

@@ -1,4 +1,3 @@
-Require Import Coq.ZArith.ZArith.
 Require Import PerformanceExperiments.Harness.
 
 Ltac make_uconstr n :=

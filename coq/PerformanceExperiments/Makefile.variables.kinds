@@ -9,6 +9,11 @@ KINDS := \
 	let_n_uconstr \
 	let_n_ltac2 \
 	intros_n_let \
+	fun_n_uconstr \
+	fun_n_ltac2 \
+	intros_n_fun \
+	repeat_setoid_rewrite_under_binders \
+	rewrite_strat_under_binders \
 	# end of list
 
 SH_KINDS :=

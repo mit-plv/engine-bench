@@ -1,0 +1,48 @@
+Params: n= 7000
+Tactic call make_uconstr ran for 0.213 secs (0.186u,0.027s)
+Tactic call constr ran for 0.617 secs (0.617u,0.s)
+Params: n= 7500
+Tactic call make_uconstr ran for 0.148 secs (0.148u,0.s)
+Tactic call constr ran for 0.629 secs (0.626u,0.003s)
+Params: n= 8000
+Tactic call make_uconstr ran for 0.184 secs (0.184u,0.s)
+Tactic call constr ran for 0.708 secs (0.708u,0.s)
+Params: n= 8500
+Tactic call make_uconstr ran for 0.162 secs (0.162u,0.s)
+Tactic call constr ran for 0.803 secs (0.8u,0.003s)
+Params: n= 9000
+Tactic call make_uconstr ran for 0.186 secs (0.182u,0.003s)
+Tactic call constr ran for 0.88 secs (0.872u,0.008s)
+Params: n= 9500
+Tactic call make_uconstr ran for 0.206 secs (0.206u,0.s)
+Tactic call constr ran for 1.001 secs (0.997u,0.003s)
+Params: n= 10000
+Tactic call make_uconstr ran for 0.209 secs (0.205u,0.003s)
+Tactic call constr ran for 1.067 secs (1.063u,0.003s)
+Params: n= 10500
+Tactic call make_uconstr ran for 0.191 secs (0.191u,0.s)
+Tactic call constr ran for 1.173 secs (1.165u,0.008s)
+Params: n= 11000
+Tactic call make_uconstr ran for 0.208 secs (0.208u,0.s)
+Tactic call constr ran for 1.239 secs (1.235u,0.003s)
+Params: n= 11500
+Tactic call make_uconstr ran for 0.254 secs (0.254u,0.s)
+Tactic call constr ran for 1.377 secs (1.377u,0.s)
+Params: n= 12000
+Tactic call make_uconstr ran for 0.225 secs (0.225u,0.s)
+Tactic call constr ran for 1.502 secs (1.502u,0.s)
+Params: n= 12500
+Tactic call make_uconstr ran for 0.231 secs (0.231u,0.s)
+Tactic call constr ran for 1.586 secs (1.586u,0.s)
+Params: n= 13000
+Tactic call make_uconstr ran for 0.247 secs (0.247u,0.s)
+Tactic call constr ran for 1.714 secs (1.714u,0.s)
+Params: n= 13500
+Tactic call make_uconstr ran for 0.283 secs (0.283u,0.s)
+Tactic call constr ran for 1.83 secs (1.822u,0.007s)
+Params: n= 14000
+Tactic call make_uconstr ran for 0.258 secs (0.254u,0.003s)
+Tactic call constr ran for 1.931 secs (1.927u,0.003s)
+Params: n= 14500
+Tactic call make_uconstr ran for 0.273 secs (0.273u,0.s)
+Tactic call constr ran for 2.116 secs (2.116u,0.s)

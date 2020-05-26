@@ -12,12 +12,27 @@ Assumption: Proof engine API has partial (proof) terms, and is modular
 - Tactics should reference quantified assumptions in the same way they reference global constants
 
 Performance Criterion: Adding a new let binder underneath n lets should be Õ(1)
-- See [`coq/PerformanceDemos/do_n_let_binder.v`](./coq/PerformanceDemos/do_n_let_binder.v)
+- Coq: See [`coq/PerformanceDemos/do_n_let_binder.v`](./coq/PerformanceDemos/do_n_let_binder.v), [`coq/PerformanceExperiments/intros_n_let.v`](./coq/PerformanceExperiments/intros_n_let.v), [`coq/PerformanceExperiments/do_n_pose.v`](./coq/PerformanceExperiments/do_n_pose.v), [`coq/PerformanceExperiments/let_n_uconstr.v`](./coq/PerformanceExperiments/let_n_uconstr.v), and [`coq/PerformanceExperiments/let_n_ltac2.v`](./coq/PerformanceExperiments/let_n_ltac2.v)
+
+  intros_n_let | do_n_pose | let_n_uconstr | let_n_ltac2
+  --|--|--|--
+  <img src="https://mit-plv.github.io/engine-bench/coq/intros-n-let.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/do-n-pose.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/let-n-uconstr.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/let-n-ltac2.svg" height=100px />
+
 
 Performance Criterion: Adding a new binder underneath n binders should be Õ(1)
-- See [`coq/PerformanceDemos/do_n_binder.v`](./coq/PerformanceDemos/do_n_binder.v)
+- Coq: See [`coq/PerformanceDemos/do_n_binder.v`](./coq/PerformanceDemos/do_n_binder.v), [`coq/PerformanceExperiments/intros_n_fun.v`](./coq/PerformanceExperiments/intros_n_fun.v), [`coq/PerformanceExperiments/fun_n_uconstr.v`](./coq/PerformanceExperiments/fun_n_uconstr.v), and [`coq/PerformanceExperiments/fun_n_ltac2.v`](./coq/PerformanceExperiments/fun_n_ltac2.v)
+
+  intros_n_fun | fun_n_uconstr | fun_n_ltac2
+  --|--|--
+  <img src="https://mit-plv.github.io/engine-bench/coq/intros-n-fun.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/fun-n-uconstr.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/fun-n-ltac2.svg" height=100px />
+
 - Needed for: good performance of rewrite/rewrite_strat under binders
-  + See [`coq/PerformanceDemos/rewrite_strat_under_binders.v`](./coq/PerformanceDemos/rewrite_strat_under_binders.v)
+  + Coq: See [`coq/PerformanceDemos/rewrite_strat_under_binders.v`](./coq/PerformanceDemos/rewrite_strat_under_binders.v), [`coq/PerformanceExperiments/repeat_setoid_rewrite_under_binders.v`](./coq/PerformanceExperiments/repeat_setoid_rewrite_under_binders.v), and [`coq/PerformanceExperiments/rewrite_strat_under_binders.v`](./coq/PerformanceExperiments/rewrite_strat_under_binders.v)
+
+    repeat_setoid_rewrite_under_binders | rewrite_strat_under_binders
+    --|--
+    <img src="https://mit-plv.github.io/engine-bench/coq/repeat-setoid-rewrite-under-binders.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-strat-under-binders.svg" height=100px />
+
 - Needed for: good performance of proving large conjunctions without structural types
   + See [`coq/PerformanceDemos/repeated_conj.v`](./coq/PerformanceDemos/repeated_conj.v)
 - Needed for: good performance of turning `f (f (... (f x))) = g (g (... (g x)))` given `f x = g x` (or `x = y -> f x = g y`) w/ rewrite_strat

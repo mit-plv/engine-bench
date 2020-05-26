@@ -1,4 +1,3 @@
-Require Import Coq.ZArith.ZArith.
 Require Import Ltac2.Ltac2.
 Require Import Ltac2.Constr.
 Require Import PerformanceExperiments.Ltac2Compat.Constr.
