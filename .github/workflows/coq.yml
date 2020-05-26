@@ -54,3 +54,5 @@ jobs:
         echo "::endgroup::"
     - name: make coq
       run: make coq TIMED=1
+    - name: make coq-perf-Sanity
+      run: make coq-perf-Sanity TIMED=1
