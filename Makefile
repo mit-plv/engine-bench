@@ -11,7 +11,7 @@ all: coq
 
 .PHONY: $(COMPONENTS)
 $(COMPONENTS):
-	$(HIDE)+$(MAKE) --no-print-directory -C $@
+	$(HIDE)+$(MAKE) -C $@
 
 .PHONY: kinds
 kinds::
