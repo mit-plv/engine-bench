@@ -1,6 +1,6 @@
 Params: a-num-binders= 0 , n= 0
-Tactic call native_compute ran for 0.071 secs (0.001u,0.004s) (success)
+Tactic call native_compute ran for 0.071 secs (0.003u,0.003s) (success)
 Params: a-num-binders= 1 , n= 1
-Tactic call native_compute ran for 0.048 secs (0.001u,0.004s) (success)
+Tactic call native_compute ran for 0.049 secs (0.002u,0.003s) (success)
 Params: a-num-binders= 4 , n= 2
-Tactic call native_compute ran for 0.058 secs (0.u,0.007s) (success)
+Tactic call native_compute ran for 0.053 secs (0.u,0.006s) (success)

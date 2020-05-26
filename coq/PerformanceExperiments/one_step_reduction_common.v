@@ -49,10 +49,10 @@ Ltac test_delta1_slow with_abstract n :=
   let v := (eval cbv [big_slow] in (big_slow n)) in
   restart_timer;
   let v2 := (eval cbv delta [slow] in v) in
-  finish_timing ("Tactic call δ-1-slow");
-  time "unify-δ-1-slow" unify v v2;
+  finish_timing ("Tactic call delta-1-slow");
+  time "unify-delta-1-slow" unify v v2;
   lazymatch with_abstract with
-  | true => let __ := constr:(ltac:(time "abstract-unify-δ-1-slow" abstract exact_no_check (eq_refl v)) : v = v2) in
+  | true => let __ := constr:(ltac:(time "abstract-unify-delta-1-slow" abstract exact_no_check (eq_refl v)) : v = v2) in
             idtac
   | false => idtac
   end.
@@ -62,10 +62,10 @@ Ltac test_delta1_fast with_abstract n :=
   let v := (eval cbv [big_fast] in (big_fast n)) in
   restart_timer;
   let v2 := (eval cbv delta [fast] in v) in
-  finish_timing ("Tactic call δ-1-fast");
-  time "unify-δ-1-fast" unify v v2;
+  finish_timing ("Tactic call delta-1-fast");
+  time "unify-delta-1-fast" unify v v2;
   lazymatch with_abstract with
-  | true => let __ := constr:(ltac:(time "abstract-unify-δ-1-fast" abstract exact_no_check (eq_refl v)) : v = v2) in
+  | true => let __ := constr:(ltac:(time "abstract-unify-delta-1-fast" abstract exact_no_check (eq_refl v)) : v = v2) in
             idtac
   | false => idtac
   end.
@@ -94,10 +94,10 @@ Ltac test_beta1_slow with_abstract n :=
   let v := beta_id v in
   restart_timer;
   let v2 := (eval cbv beta in v) in
-  finish_timing ("Tactic call β-1-slow");
-  time "unify-β-1-slow" unify v v2;
+  finish_timing ("Tactic call beta-1-slow");
+  time "unify-beta-1-slow" unify v v2;
   lazymatch with_abstract with
-  | true => let __ := constr:(ltac:(time "abstract-unify-β-1-slow" abstract exact_no_check (eq_refl v)) : v = v2) in
+  | true => let __ := constr:(ltac:(time "abstract-unify-beta-1-slow" abstract exact_no_check (eq_refl v)) : v = v2) in
             idtac
   | false => idtac
   end.
@@ -108,10 +108,10 @@ Ltac test_beta2_slow with_abstract n :=
   let v := beta_id v in
   restart_timer;
   let v2 := (eval cbv beta in v) in
-  finish_timing ("Tactic call β-2-slow");
-  time "unify-β-2-slow" unify v v2;
+  finish_timing ("Tactic call beta-2-slow");
+  time "unify-beta-2-slow" unify v v2;
   lazymatch with_abstract with
-  | true => let __ := constr:(ltac:(time "abstract-unify-β-2-slow" abstract exact_no_check (eq_refl v)) : v = v2) in
+  | true => let __ := constr:(ltac:(time "abstract-unify-beta-2-slow" abstract exact_no_check (eq_refl v)) : v = v2) in
             idtac
   | false => idtac
   end.
@@ -122,10 +122,10 @@ Ltac test_beta1_fast with_abstract n :=
   let v := beta_id v in
   restart_timer;
   let v2 := (eval cbv beta in v) in
-  finish_timing ("Tactic call β-1-fast");
-  time "unify-β-1-fast" unify v v2;
+  finish_timing ("Tactic call beta-1-fast");
+  time "unify-beta-1-fast" unify v v2;
   lazymatch with_abstract with
-  | true => let __ := constr:(ltac:(time "abstract-unify-β-1-fast" abstract exact_no_check (eq_refl v)) : v = v2) in
+  | true => let __ := constr:(ltac:(time "abstract-unify-beta-1-fast" abstract exact_no_check (eq_refl v)) : v = v2) in
             idtac
   | false => idtac
   end.
@@ -136,10 +136,10 @@ Ltac test_beta2_fast with_abstract n :=
   let v := beta_id v in
   restart_timer;
   let v2 := (eval cbv beta in v) in
-  finish_timing ("Tactic call β-2-fast");
-  time "unify-β-2-fast" unify v v2;
+  finish_timing ("Tactic call beta-2-fast");
+  time "unify-beta-2-fast" unify v v2;
   lazymatch with_abstract with
-  | true => let __ := constr:(ltac:(time "abstract-unify-β-2-fast" abstract exact_no_check (eq_refl v)) : v = v2) in
+  | true => let __ := constr:(ltac:(time "abstract-unify-beta-2-fast" abstract exact_no_check (eq_refl v)) : v = v2) in
             idtac
   | false => idtac
   end.
@@ -156,10 +156,10 @@ Ltac test_zeta1_slow with_abstract n :=
   let v := (eval cbv beta iota delta [big_slow_zeta1] in (big_slow_zeta1 n)) in
   restart_timer;
   let v2 := (eval cbv zeta in v) in
-  finish_timing ("Tactic call ζ-1-slow");
-  time "unify-ζ-1-slow" unify v v2;
+  finish_timing ("Tactic call zeta-1-slow");
+  time "unify-zeta-1-slow" unify v v2;
   lazymatch with_abstract with
-  | true => let __ := constr:(ltac:(time "abstract-unify-ζ-1-slow" abstract exact_no_check (eq_refl v)) : v = v2) in
+  | true => let __ := constr:(ltac:(time "abstract-unify-zeta-1-slow" abstract exact_no_check (eq_refl v)) : v = v2) in
             idtac
   | false => idtac
   end.
@@ -169,10 +169,10 @@ Ltac test_zeta2_slow with_abstract n :=
   let v := (eval cbv beta iota delta [big_slow_zeta2] in (big_slow_zeta2 n)) in
   restart_timer;
   let v2 := (eval cbv zeta in v) in
-  finish_timing ("Tactic call ζ-2-slow");
-  time "unify-ζ-2-slow" unify v v2;
+  finish_timing ("Tactic call zeta-2-slow");
+  time "unify-zeta-2-slow" unify v v2;
   lazymatch with_abstract with
-  | true => let __ := constr:(ltac:(time "abstract-unify-ζ-2-slow" abstract exact_no_check (eq_refl v)) : v = v2) in
+  | true => let __ := constr:(ltac:(time "abstract-unify-zeta-2-slow" abstract exact_no_check (eq_refl v)) : v = v2) in
             idtac
   | false => idtac
   end.
@@ -182,10 +182,10 @@ Ltac test_zeta1_fast with_abstract n :=
   let v := (eval cbv beta iota delta [big_fast_zeta1] in (big_fast_zeta1 n)) in
   restart_timer;
   let v2 := (eval cbv zeta in v) in
-  finish_timing ("Tactic call ζ-1-fast");
-  time "unify-ζ-1-fast" unify v v2;
+  finish_timing ("Tactic call zeta-1-fast");
+  time "unify-zeta-1-fast" unify v v2;
   lazymatch with_abstract with
-  | true => let __ := constr:(ltac:(time "abstract-unify-ζ-1-fast" abstract exact_no_check (eq_refl v)) : v = v2) in
+  | true => let __ := constr:(ltac:(time "abstract-unify-zeta-1-fast" abstract exact_no_check (eq_refl v)) : v = v2) in
             idtac
   | false => idtac
   end.
@@ -195,10 +195,10 @@ Ltac test_zeta2_fast with_abstract n :=
   let v := (eval cbv beta iota delta [big_fast_zeta2] in (big_fast_zeta2 n)) in
   restart_timer;
   let v2 := (eval cbv zeta in v) in
-  finish_timing ("Tactic call ζ-2-fast");
-  time "unify-ζ-2-fast" unify v v2;
+  finish_timing ("Tactic call zeta-2-fast");
+  time "unify-zeta-2-fast" unify v v2;
   lazymatch with_abstract with
-  | true => let __ := constr:(ltac:(time "abstract-unify-ζ-2-fast" abstract exact_no_check (eq_refl v)) : v = v2) in
+  | true => let __ := constr:(ltac:(time "abstract-unify-zeta-2-fast" abstract exact_no_check (eq_refl v)) : v = v2) in
             idtac
   | false => idtac
   end.
