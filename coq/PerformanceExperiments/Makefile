@@ -1,5 +1,5 @@
 # KNOWNTARGETS will not be passed along to CoqMakefile
-KNOWNTARGETS := update-_CoqProject clean cleanall
+KNOWNTARGETS := clean cleanall
 # KNOWNFILES will not get implicit targets from the final rule, and so
 # depending on them won't invoke the submake
 # Warning: These files get declared as PHONY, so any targets depending
@@ -24,9 +24,15 @@ all:: invoke-coqmakefile
 
 WARNINGS:=-notation-overridden
 
+ifneq ($(wildcard ../../.git),)
+FILE_FINDER := git ls-files
+else
+$(warning Not a git clone, using find instead)
+FILE_FINDER := find -name
+endif
 SORT_COQPROJECT = sed 's,[^/]*/,~&,g' | env LC_COLLATE=C sort | sed 's,~,,g' | uniq
 OLD_COQPROJECT_CONTENTS:=$(shell cat _CoqProject 2>/dev/null)
-COQPROJECT_CONTENTS_CMD:=(echo '-R . $(PERF_LIB)'; echo '-arg -w -arg $(WARNINGS)'; ((echo '$(COMPATIBILITY_FILES)' | tr ' ' '\n'); git ls-files "*.v" | $(SORT_COQPROJECT)))
+COQPROJECT_CONTENTS_CMD:=(echo '-R . $(PERF_LIB)'; echo '-arg -w -arg $(WARNINGS)'; ((echo '$(COMPATIBILITY_FILES)' | tr ' ' '\n'); $(FILE_FINDER) "*.v" | $(SORT_COQPROJECT)))
 COQPROJECT_CONTENTS:=$(shell $(COQPROJECT_CONTENTS_CMD))
 ifneq ($(OLD_COQPROJECT_CONTENTS),$(COQPROJECT_CONTENTS))
 _CoqProject::
