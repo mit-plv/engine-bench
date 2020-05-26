@@ -130,17 +130,17 @@ Local Notation default_z := 100 (only parsing).
 Ltac describe_goal_x x :=
   let y := constr:(default_y) in
   let z := constr:(default_z) in
-  idtac "Params: nevars=" x ", ctx-size=" y ", extra-binders=" z.
+  idtac "Params: a-nevars=" x ", ctx-size=" y ", extra-binders=" z.
 Ltac time_solve_goal_x x := time_both x constr:(default_y) constr:(default_z).
 Ltac describe_goal_y y :=
   let x := constr:(default_x) in
   let z := constr:(default_z) in
-  idtac "Params: ctx-size=" y ", nevars=" x ", extra-binders=" z.
+  idtac "Params: a-ctx-size=" y ", nevars=" x ", extra-binders=" z.
 Ltac time_solve_goal_y y := time_both constr:(default_x) y constr:(default_z).
 Ltac describe_goal_z z :=
   let x := constr:(default_x) in
   let y := constr:(default_y) in
-  idtac "Params: extra-binders=" z ", nevars=" x ", ctx-size=" y.
+  idtac "Params: a-extra-binders=" z ", nevars=" x ", ctx-size=" y.
 Ltac time_solve_goal_z z := time_both constr:(default_x) constr:(default_y) z.
 
 Definition args_of_size_x (s : size) : list nat

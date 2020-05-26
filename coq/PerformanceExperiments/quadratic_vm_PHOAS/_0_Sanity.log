@@ -1,6 +1,6 @@
-Params: num-binders= 0 , n= 0
+Params: a-num-binders= 0 , n= 0
 Tactic call vm_compute ran for 0. secs (0.u,0.s) (success)
-Params: num-binders= 1 , n= 1
+Params: a-num-binders= 1 , n= 1
 Tactic call vm_compute ran for 0. secs (0.u,0.s) (success)
-Params: num-binders= 4 , n= 2
+Params: a-num-binders= 4 , n= 2
 Tactic call vm_compute ran for 0. secs (0.u,0.s) (success)

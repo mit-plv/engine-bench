@@ -77,7 +77,7 @@ Axiom P : forall {T}, T -> Prop.
 Ltac mkgoal n := constr:(P (fun x var => make_cps (T:=LIST NAT) (var:=var) n n (Ident (ident_literal x)) (@reify_list var))).
 Ltac describe_goal n :=
   let n2 := (eval cbv in (n * n)) in
-  idtac "Params: num-binders=" n2 ", n=" n.
+  idtac "Params: a-num-binders=" n2 ", n=" n.
 Ltac redgoal _ := vm_compute.
 Ltac get_term _ :=
   let preterm := lazymatch goal with |- P ?preterm => preterm end in
