@@ -1,8 +1,8 @@
 Params: n= 50
-Tactic call repeat-setoid_rewrite ran for 0.317 secs (0.316u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 0.326 secs (0.286u,0.039s) (success)
 Params: n= 100
-Tactic call repeat-setoid_rewrite ran for 1.478 secs (1.476u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 1.631 secs (1.623u,0.007s) (success)
 Params: n= 150
-Tactic call repeat-setoid_rewrite ran for 4.5 secs (4.488u,0.007s) (success)
+Tactic call repeat-setoid_rewrite ran for 4.79 secs (4.777u,0.012s) (success)
 Params: n= 200
-Tactic call repeat-setoid_rewrite ran for 10.12 secs (10.11u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 10.627 secs (10.607u,0.019s) (success)

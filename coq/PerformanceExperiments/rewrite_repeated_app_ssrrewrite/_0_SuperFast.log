@@ -1,0 +1,32 @@
+Params: n= 50
+Tactic call ssr-rewrite! ran for 0.099 secs (0.083u,0.015s) (success)
+Tactic call abstract+tac ran for 0.13 secs (0.114u,0.016s) (success)
+Tactic call close-abstract ran for 0.03 secs (0.029u,0.s)
+Params: n= 100
+Tactic call ssr-rewrite! ran for 0.1 secs (0.1u,0.s) (success)
+Tactic call abstract+tac ran for 0.248 secs (0.248u,0.s) (success)
+Tactic call close-abstract ran for 0.148 secs (0.148u,0.s)
+Params: n= 150
+Tactic call ssr-rewrite! ran for 0.24 secs (0.236u,0.003s) (success)
+Tactic call abstract+tac ran for 0.551 secs (0.547u,0.003s) (success)
+Tactic call close-abstract ran for 0.31 secs (0.31u,0.s)
+Params: n= 200
+Tactic call ssr-rewrite! ran for 0.418 secs (0.418u,0.s) (success)
+Tactic call abstract+tac ran for 0.922 secs (0.922u,0.s) (success)
+Tactic call close-abstract ran for 0.503 secs (0.503u,0.s)
+Params: n= 250
+Tactic call ssr-rewrite! ran for 0.623 secs (0.623u,0.s) (success)
+Tactic call abstract+tac ran for 1.456 secs (1.455u,0.s) (success)
+Tactic call close-abstract ran for 0.831 secs (0.831u,0.s)
+Params: n= 300
+Tactic call ssr-rewrite! ran for 0.957 secs (0.941u,0.015s) (success)
+Tactic call abstract+tac ran for 2.148 secs (2.127u,0.019s) (success)
+Tactic call close-abstract ran for 1.189 secs (1.185u,0.003s)
+Params: n= 350
+Tactic call ssr-rewrite! ran for 1.259 secs (1.255u,0.003s) (success)
+Tactic call abstract+tac ran for 2.918 secs (2.913u,0.004s) (success)
+Tactic call close-abstract ran for 1.657 secs (1.657u,0.s)
+Params: n= 400
+Tactic call ssr-rewrite! ran for 1.699 secs (1.691u,0.007s) (success)
+Tactic call abstract+tac ran for 3.703 secs (3.686u,0.015s) (success)
+Tactic call close-abstract ran for 2.002 secs (1.994u,0.007s)

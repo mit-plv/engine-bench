@@ -25,9 +25,16 @@ all:: invoke-coqmakefile
 WARNINGS:=-notation-overridden
 
 SORT_COQPROJECT = sed 's,[^/]*/,~&,g' | env LC_COLLATE=C sort | sed 's,~,,g' | uniq
+OLD_COQPROJECT_CONTENTS:=$(shell cat _CoqProject 2>/dev/null)
+COQPROJECT_CONTENTS_CMD:=(echo '-R . $(PERF_LIB)'; echo '-arg -w -arg $(WARNINGS)'; ((echo '$(COMPATIBILITY_FILES)' | tr ' ' '\n'); git ls-files "*.v" | $(SORT_COQPROJECT)))
+COQPROJECT_CONTENTS:=$(shell $(COQPROJECT_CONTENTS_CMD))
+ifneq ($(OLD_COQPROJECT_CONTENTS),$(COQPROJECT_CONTENTS))
 _CoqProject::
 	$(SHOW)'ECHO > _CoqProject'
-	$(HIDE)(echo '-R . $(PERF_LIB)'; echo '-arg -w -arg $(WARNINGS)'; ((echo '$(COMPATIBILITY_FILES)' | tr ' ' '\n'); git ls-files "*.v" | $(SORT_COQPROJECT))) > _CoqProject
+	$(HIDE)$(COQPROJECT_CONTENTS_CMD) > _CoqProject
+else
+_CoqProject: ;
+endif
 
 Makefile.coq: Makefile _CoqProject
 	$(COQBIN)coq_makefile -f _CoqProject -o Makefile.coq

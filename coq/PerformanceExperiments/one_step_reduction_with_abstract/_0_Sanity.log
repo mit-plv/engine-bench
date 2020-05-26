@@ -1,0 +1,7 @@
+Params: n= 1
+Tactic call δ-1-fast ran for 0. secs (0.u,0.s)
+Tactic call unify-δ-1-fast ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-δ-1-fast ran for 0. secs (0.u,0.s) (success)
+Tactic call δ-1-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-δ-1-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-δ-1-slow ran for 2.439 secs (2.394u,0.043s) (success)

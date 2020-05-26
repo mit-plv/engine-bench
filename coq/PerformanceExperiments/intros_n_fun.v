@@ -22,12 +22,13 @@ Ltac redgoal _ := idtac.
 Ltac time_solve_goal0 n :=
   cut True;
   [ intros _;
-    abstract (
-        cbv beta iota delta [foralln];
-        time "intros" intros;
-        restart_timer;
-        exact I
-      )
+    time "abstract-intros"
+         abstract (
+           cbv beta iota delta [foralln];
+           time "intros" intros;
+           restart_timer;
+           exact I
+         )
   | finish_timing ("Tactic call close-abstract") ].
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal0 sz.
 (*

@@ -1,0 +1,9 @@
+Params: num-binders= 0 , n= 0
+Tactic call cbv ran for 0. secs (0.u,0.s) (success)
+Tactic call lazy ran for 0. secs (0.u,0.s) (success)
+Params: num-binders= 1 , n= 1
+Tactic call cbv ran for 0. secs (0.u,0.s) (success)
+Tactic call lazy ran for 0. secs (0.u,0.s) (success)
+Params: num-binders= 4 , n= 2
+Tactic call cbv ran for 0. secs (0.u,0.s) (success)
+Tactic call lazy ran for 0. secs (0.u,0.s) (success)

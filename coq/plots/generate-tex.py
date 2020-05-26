@@ -11,16 +11,14 @@ def to_valid_tex_cmd(s):
     return s.replace(' ', '').replace('-', '').replace('_', '')
 
 def generate_tex(name, txt_lines):
-    def foo(x, y):
-        print(x)
-        print(y)
-        return x
     header = txt_lines[0].strip().split(' ')
-    ylabels = header[1:]
+    ylabels = [h for h in header[1:] if not h.startswith('param-')]
+    cols = [line.strip().split(' ')[i] for line in txt_lines[1:] for i in range(len(header))]
+    extra_params_descr = (' ' + ', '.join(u"%s \u2208 {%s}" % (h, ', '.join(sorted(set(col)))) for h, col in zip(header, cols)[1:] if h.startswith('param-'))).strip()
     ylabels_dict = {ylabel:float(val) for ylabel, val in zip(txt_lines[0].strip().split(' '), txt_lines[-1].strip().split(' '))}
     contents = ''.join(txt_lines)
     short_name = to_valid_tex_cmd(name)
-    if len(header) < 2: raise Exception('Invalid header with not enough columns: %s' % repr(txt_lines[0]))
+    if len(ylabels) < 1: raise Exception('Invalid header with not enough columns: %s' % repr(txt_lines[0]))
     if not header[0].startswith('param-'): raise Exception('Invalid header: first column %s does not start with param-' % header[0])
     xlabel = header[0][len('param-'):]
     plots = [fr'''        \addplot[only marks,mark={mark},color={color}] table[x=param-{xlabel},y={ylabel}]{{\{short_name}}};
@@ -48,7 +46,7 @@ def generate_tex(name, txt_lines):
 %(plots_txt)s
     \end{axis}
   \end{tikzpicture}
-  \caption{timing-%(name)s} \label{fig:timing-%(name)s}
+  \caption{timing-%(name)s%(extra_params_descr)s} \label{fig:timing-%(name)s}
 \end{figure*}''' % locals()
 
 if __name__ == '__main__':

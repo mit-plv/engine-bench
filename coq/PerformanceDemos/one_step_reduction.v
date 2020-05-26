@@ -260,7 +260,7 @@ Tactic call β-1-fast2 ran for 0.098 secs (0.098u,0.s)
 Tactic call unify-fast2 ran for 1.348 secs (1.348u,0.s) (success)
 *)
 
-(** Now we set up a similar test for β reduction, using variants with
+(** Now we set up a similar test for ζ reduction, using variants with
     1 and 2 arguments. *)
 Definition big_slow_zeta1 (n : nat) := Eval cbv beta iota delta [big_tree2 slow] in let v := slow in big_tree2 n v v.
 Definition big_fast_zeta1 (n : nat) := Eval cbv beta iota delta [big_tree2 fast] in let v := fast in big_tree2 n v v.

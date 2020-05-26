@@ -34,9 +34,18 @@ Performance Criterion: Adding a new binder underneath n binders should be Õ(1)
     <img src="https://mit-plv.github.io/engine-bench/coq/repeat-setoid-rewrite-under-binders.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-strat-under-binders.svg" height=100px />
 
 - Needed for: good performance of proving large conjunctions without structural types
-  + See [`coq/PerformanceDemos/repeated_conj.v`](./coq/PerformanceDemos/repeated_conj.v)
-- Needed for: good performance of turning `f (f (... (f x))) = g (g (... (g x)))` given `f x = g x` (or `x = y -> f x = g y`) w/ rewrite_strat
-  + See [`coq/PerformanceDemos/rewrite_strat_repeated_app.v`](./coq/PerformanceDemos/rewrite_strat_repeated_app.v)
+  + Coq: See [`coq/PerformanceDemos/repeated_conj.v`](./coq/PerformanceDemos/repeated_conj.v), [`coq/PerformanceExperiments/conj_True_repeat_constructor.v`](./coq/PerformanceExperiments/conj_True_repeat_constructor.v), and [`coq/PerformanceExperiments/conj_True_fast_conj.v`](./coq/PerformanceExperiments/conj_True_fast_conj.v)
+
+    conj_True_repeat_constructor | conj_True_fast_conj
+    --|--
+    <img src="https://mit-plv.github.io/engine-bench/coq/conj-True-repeat-constructor.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/conj-True-fast-conj.svg" height=100px />
+
+- Needed for: good performance of turning `f (f (... (f x))) = g (g (... (g x)))` given `f x = g x` (or `x = y -> f x = g y`) w/ `rewrite_strat`
+  + Coq: See [`coq/PerformanceDemos/rewrite_strat_repeated_app.v`](./coq/PerformanceDemos/rewrite_strat_repeated_app.v), [`coq/PerformanceExperiments/rewrite_repeated_app_autorewrite.v`](./coq/PerformanceExperiments/rewrite_repeated_app_autorewrite.v), [`coq/PerformanceExperiments/rewrite_repeated_app_ssrrewrite.v`](./coq/PerformanceExperiments/rewrite_repeated_app_ssrrewrite.v), [`coq/PerformanceExperiments/rewrite_repeated_app_rewrite_strat.v`](./coq/PerformanceExperiments/rewrite_repeated_app_rewrite_strat.v), and [`coq/PerformanceExperiments/rewrite_repeated_app_fast_rewrite.v`](./coq/PerformanceExperiments/rewrite_repeated_app_fast_rewrite.v)
+
+    rewrite_repeated_app_autorewrite | rewrite_repeated_app_ssrrewrite | rewrite_repeated_app_rewrite_strat | rewrite_repeated_app_fast_rewrite
+    --|--|--|--
+    <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-repeated-app-autorewrite.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-repeated-app-ssrrewrite.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-repeated-app-rewrite-strat.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-repeated-app-fast-rewrite.svg" height=100px />
 
 Performance criterion (convenient, not limiting): Typechecking an application of a function to n arguments with no conversion should be Õ(n)
 - Can be constructed if you can prove conjunction/pairing without quadratic overhead
@@ -50,7 +59,12 @@ Note: not talk about display names at all; if you want to have them, all operati
 
 Performance Criterion: fast alpha-equivalence check (Õ(term size))
 - we might also want alpha-variation as a fast primitive (even if the original term took arbitraily long to typecheck)
-- See [`coq/PerformanceDemos/constr_eq.v`](./coq/PerformanceDemos/constr_eq.v)
+- Coq: See [`coq/PerformanceDemos/constr_eq.v`](./coq/PerformanceDemos/constr_eq.v) and [`coq/PerformanceExperiments/constr_eq_alpha.v`](./coq/PerformanceExperiments/constr_eq_alpha.v)
+
+  constr_eq_alpha |
+  --|
+  <img src="https://mit-plv.github.io/engine-bench/coq/constr-eq-alpha.svg" height=100px /> |
+
 
 Unification problem (context changing):
 - `eq_refl : (fun y => y) = ((fun e y => e y) ?e)`
@@ -59,13 +73,23 @@ Unification problem (context changing):
 - `eq_refl : (fun y => y) = (fun y => (fun z => ?e2@{z, no y}) y)`
 
 Performance Criterion: lifting identity evar substitution should Õ(1)
-- See [`coq/PerformanceDemos/lift_identity_evar_subst.v`](./coq/PerformanceDemos/lift_identity_evar_subst.v)
+- Coq: See [`coq/PerformanceDemos/lift_identity_evar_subst.v`](./coq/PerformanceDemos/lift_identity_evar_subst.v), [`coq/PerformanceExperiments/lift_identity_evar_subst_nevars.v`](./coq/PerformanceExperiments/lift_identity_evar_subst_nevars.v), [`coq/PerformanceExperiments/lift_identity_evar_subst_ctx.v`](./coq/PerformanceExperiments/lift_identity_evar_subst_ctx.v), and [`coq/PerformanceExperiments/lift_identity_evar_subst_binders.v`](./coq/PerformanceExperiments/lift_identity_evar_subst_binders.v)
+
+  lift_identity_evar_subst_nevars | lift_identity_evar_subst_ctx | lift_identity_evar_subst_binders
+  --|--|--
+  <img src="https://mit-plv.github.io/engine-bench/coq/lift-identity-evar-subst-nevars.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/lift-identity-evar-subst-ctx.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/lift-identity-evar-subst-binders.svg" height=100px />
+
 
 Performance Criterion: composing identity evar substitution should Õ(1)
 - Needed for: modular performance behavior
 
 Performance Criterion: lifting non-identity evar substitution should Õ(size of subst)
-- See [`coq/PerformanceDemos/lift_non_identity_evar_subst.v`](./coq/PerformanceDemos/lift_non_identity_evar_subst.v)
+- Coq: See [`coq/PerformanceDemos/lift_non_identity_evar_subst.v`](./coq/PerformanceDemos/lift_non_identity_evar_subst.v), [`coq/PerformanceExperiments/lift_non_identity_evar_subst_nevars.v`](./coq/PerformanceExperiments/lift_non_identity_evar_subst_nevars.v), [`coq/PerformanceExperiments/lift_non_identity_evar_subst_ctx.v`](./coq/PerformanceExperiments/lift_non_identity_evar_subst_ctx.v), and [`coq/PerformanceExperiments/lift_non_identity_evar_subst_binders.v`](./coq/PerformanceExperiments/lift_non_identity_evar_subst_binders.v)
+
+  lift_non_identity_evar_subst_nevars | lift_non_identity_evar_subst_ctx | lift_non_identity_evar_subst_binders
+  --|--|--
+  <img src="https://mit-plv.github.io/engine-bench/coq/lift-non-identity-evar-subst-nevars.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/lift-non-identity-evar-subst-ctx.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/lift-non-identity-evar-subst-binders.svg" height=100px />
+
 
 Performance Criterion: composing non-identity evar substitution should Õ(size of subst)
 
@@ -81,14 +105,23 @@ Performance Criteria:
  - 1-step delta on k constants should Õ(output term size)
  - 1-step iota should be Õ(output term size)
  - 1-step beta on k arguments of the same application node where each argument is mentioned multiple times should be Õ(input term size + output term size)
- - See [`coq/PerformanceDemos/one_step_reduction.v`](./coq/PerformanceDemos/one_step_reduction.v)
+ - Coq: See [`coq/PerformanceDemos/one_step_reduction.v`](./coq/PerformanceDemos/one_step_reduction.v), [`coq/PerformanceExperiments/one_step_reduction.v`](./coq/PerformanceExperiments/one_step_reduction.v), and [`coq/PerformanceExperiments/one_step_reduction_with_abstract.v`](./coq/PerformanceExperiments/one_step_reduction_with_abstract.v)
+
+  one_step_reduction | one_step_reduction_with_abstract
+  --|--
+  <img src="https://mit-plv.github.io/engine-bench/coq/one-step-reduction.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/one-step-reduction-with-abstract.svg" height=100px />
 
 
 Performance Criterion: Inserting a cast node should be Õ(conversion checking the types)
 
 
 Performance Criterion: Full reduction on a function of complexity O(f) should be Õ(f + input term size + output term size)
-- See [`coq/PerformanceDemos/quadratic_reduction.v`](./coq/PerformanceDemos/quadratic_reduction.v)
+- See [`coq/PerformanceDemos/quadratic_reduction.v`](./coq/PerformanceDemos/quadratic_reduction.v), [`coq/PerformanceExperiments/quadratic_cbv_lazy_PHOAS.v`](./coq/PerformanceExperiments/quadratic_cbv_lazy_PHOAS.v), [`coq/PerformanceExperiments/quadratic_native_PHOAS.v`](./coq/PerformanceExperiments/quadratic_native_PHOAS.v), and [`coq/PerformanceExperiments/quadratic_vm_PHOAS.v`](./coq/PerformanceExperiments/quadratic_vm_PHOAS.v)
+
+  quadratic_cbv_lazy_PHOAS | quadratic_native_PHOAS | quadratic_vm_PHOAS
+  --|--|--
+  <img src="https://mit-plv.github.io/engine-bench/coq/quadratic-cbv-lazy-PHOAS.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/quadratic-native-PHOAS.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/quadratic-vm-PHOAS.svg" height=100px />
+
 
 Performance Criterion: lifting term across n consecutive binders should be Õ(term size)
 - maybe we should require this to be O(1) so we don't have to batch lifting?
@@ -97,11 +130,21 @@ Performance Criterion: substitution-of-variables-for-variables should be Õ(ter
 - TODO: This can maybe be subsumed into beta?
 
 Performance Criterion: pattern on k variables should be Õ(term size + k + cost of retypechecking the output term (only if input term is not simply typed))
-- See [`coq/PerformanceDemos/pattern.v`](./coq/PerformanceDemos/pattern.v)
+- Coq: See [`coq/PerformanceDemos/pattern.v`](./coq/PerformanceDemos/pattern.v) and [`coq/PerformanceExperiments/pattern.v`](./coq/PerformanceExperiments/pattern.v)
+
+  pattern |
+  --|
+  <img src="https://mit-plv.github.io/engine-bench/coq/pattern.svg" height=100px /> |
+
 
 Performance Criterion: pattern should be Õ(term size * size of thing being patterned + cost of retypechecking the output term (only if input term is not simply typed))
 - Note: Andres is not confident in this
-- See [`coq/PerformanceDemos/pattern.v`](./coq/PerformanceDemos/pattern.v)
+- Coq: See [`coq/PerformanceDemos/pattern.v`](./coq/PerformanceDemos/pattern.v) and [`coq/PerformanceExperiments/pattern.v`](./coq/PerformanceExperiments/pattern.v)
+
+  pattern |
+  --|
+  <img src="https://mit-plv.github.io/engine-bench/coq/pattern.svg" height=100px /> |
+
 
 ```
 x, y := x |- pattern x in (eq_refl x : x = y)

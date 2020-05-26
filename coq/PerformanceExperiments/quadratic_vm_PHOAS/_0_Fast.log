@@ -1,0 +1,12 @@
+Params: num-binders= 14400 , n= 120
+Tactic call vm_compute ran for 1.452 secs (1.368u,0.083s) (success)
+Params: num-binders= 15625 , n= 125
+Tactic call vm_compute ran for 1.591 secs (1.519u,0.071s) (success)
+Params: num-binders= 16900 , n= 130
+Tactic call vm_compute ran for 1.825 secs (1.769u,0.055s) (success)
+Params: num-binders= 18225 , n= 135
+Tactic call vm_compute ran for 1.937 secs (1.929u,0.007s) (success)
+Params: num-binders= 19600 , n= 140
+Tactic call vm_compute ran for 2.281 secs (2.244u,0.036s) (success)
+Params: num-binders= 21025 , n= 145
+Tactic call vm_compute ran for 3.247 secs (3.175u,0.071s) (success)

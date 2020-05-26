@@ -263,7 +263,7 @@ Ltac runtests args_of_size describe_goal mkgoal redgoal time_solve_goal sz :=
       | ?x :: ?xs
         => describe_goal x;
            let T := mkgoal x in
-           try (solve [ assert T by (redgoal x; once (time_solve_goal x)) ]; []);
+           try (solve [ assert T by (redgoal x; once (time_solve_goal x + fail 2 "time_solve_goal failed!")) ]; []);
            iter xs
       end in
   iter args.
@@ -284,7 +284,7 @@ Ltac runtests_step_arg args_of_size describe_goal step_goal redgoal time_solve_g
       | ?x :: ?xs
         => step_goal_from_to step_goal cur x;
            describe_goal x;
-           try (solve [ redgoal x; once (time_solve_goal x extra_args) ]; []);
+           try (solve [ redgoal x; once (time_solve_goal x extra_args + fail 2 "time_solve_goal failed!") ]; []);
            iter x xs
       end in
   let zero := (eval cbv in (@zero T _)) in
