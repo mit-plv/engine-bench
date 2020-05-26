@@ -14,7 +14,7 @@ def generate_tex(name, txt_lines):
     header = txt_lines[0].strip().split(' ')
     ylabels = [h for h in header[1:] if not h.startswith('param-')]
     cols = [line.strip().split(' ')[i] for line in txt_lines[1:] for i in range(len(header))]
-    extra_params_descr = (' ' + ', '.join(u"%s \u2208 {%s}" % (h, ', '.join(sorted(set(col)))) for h, col in zip(header, cols)[1:] if h.startswith('param-'))).strip()
+    extra_params_descr = (' ' + ', '.join(u"%s \u2208 {%s}" % (h, ', '.join(sorted(set(col)))) for h, col in zip(header[1:], cols[1:]) if h.startswith('param-'))).strip()
     ylabels_dict = {ylabel:float(val) for ylabel, val in zip(txt_lines[0].strip().split(' '), txt_lines[-1].strip().split(' '))}
     contents = ''.join(txt_lines)
     short_name = to_valid_tex_cmd(name)
