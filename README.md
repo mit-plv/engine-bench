@@ -1,5 +1,5 @@
 # engine-bench
-![CI (Coq)](https://github.com/mit-plv/engine-bench/workflows/CI%20(Coq)/badge.svg?branch=master) ![CI (LaTeX)](https://github.com/mit-plv/engine-bench/workflows/CI%20(LaTeX)/badge.svg?branch=master)
+[![CI (Coq)](https://github.com/mit-plv/engine-bench/workflows/CI%20(Coq)/badge.svg?branch=master)](https://github.com/mit-plv/engine-bench/actions?query=workflow%3A%22CI+%28Coq%29%22+branch%3Amaster) [![CI (LaTeX)](https://github.com/mit-plv/engine-bench/workflows/CI%20(LaTeX)/badge.svg?branch=master)](https://github.com/mit-plv/engine-bench/actions?query=workflow%3A%22CI+%28LaTeX%29%22+branch%3Amaster)
 
 Benchmarks for various proof engines
 
