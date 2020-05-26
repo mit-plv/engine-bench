@@ -41,7 +41,7 @@ $(eval ALL_COMPONENTS += $(1) $($(1)_COMPONENTS))
 
 .PHONY: $(addsuffix -$(1),$(COMPONENTS))
 $(addsuffix -$(1),$(COMPONENTS)) : %-$(1) :
-	$$(HIDE)$$(MAKE) --no-print-directory -C $$* $(1)
+	$$(HIDE)+$$(MAKE) --no-print-directory -C $$* $(1)
 
 .PHONY: $(1)
 $(1): $(addsuffix -$(1),$(COMPONENTS))
