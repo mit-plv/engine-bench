@@ -29,6 +29,10 @@ KINDS := \
 	lift_non_identity_evar_subst_binders \
 	one_step_reduction \
 	one_step_reduction_with_abstract \
+	iota_reduction_fact8 \
+	iota_reduction_fact9 \
+	iota_reduction_with_abstract_fact8 \
+	iota_reduction_with_abstract_fact9 \
 	pattern \
 	quadratic_cbv_lazy_PHOAS \
 	quadratic_native_PHOAS \

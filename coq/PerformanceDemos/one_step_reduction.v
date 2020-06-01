@@ -61,9 +61,11 @@ Fixpoint walk (n : nat) : unit := match n with 0 => tt | S n => walk n end.
 Definition skip (n : nat) : unit := tt.
 Inductive value := the (A : Type) (_ : A).
 Arguments the : clear implicits.
-Time Definition slow := the (walk (fact 9) = tt) (eq_refl tt).
+Notation slown n := (the (walk (fact n) = tt) (eq_refl tt)) (only parsing).
+Time Definition slow := slown 9.
 (* Finished transaction in 1.069 secs (1.052u,0.016s) (successful) *)
-Definition fast := the (skip (fact 9) = tt) (eq_refl tt).
+Notation fastn n := (the (skip (fact n) = tt) (eq_refl tt)) (only parsing).
+Definition fast := fastn 9.
 Axiom Ax_fst : forall {A B}, A * B -> A.
 Axiom Ax_snd : forall {A B}, A * B -> B.
 Fixpoint big_tree {A} (v : A) (n : nat) : A
@@ -369,4 +371,99 @@ Tactic call ζ-2-slow2 ran for 0.098 secs (0.098u,0.s)
 Tactic call unify-slow2 ran for 1.332 secs (1.332u,0.s) (success)
 Tactic call ζ-2-fast2 ran for 0.097 secs (0.097u,0.s)
 Tactic call unify-fast2 ran for 1.345 secs (1.345u,0.s) (success)
+*)
+
+(** Now we run βι tests *)
+Notation iota_the v := match v return value with
+                       | the A a => the A a
+                       end.
+Ltac make_iota_the n v :=
+  lazymatch n with
+  | O => v
+  | S ?n => make_iota_the n uconstr:(iota_the v)
+  | ?v => fail 0 "Invalid non-nat:" v
+  end.
+
+Ltac test_slow_iota with_abstract n factn :=
+  optimize_heap;
+  let n := (eval cbv in n) in
+  let v := make_iota_the n constr:(slown factn) in
+  let v := constr:(v) in
+  restart_timer;
+  let v2 := (eval cbv beta iota in v) in
+  finish_timing ("Tactic call βι-slow");
+  time "unify-slow" unify v v2;
+  lazymatch with_abstract with
+  | true => let __ := constr:(ltac:(time "abstract-unify-slow" abstract exact_no_check (eq_refl v)) : v = v2) in
+            idtac
+  | false => idtac
+  end.
+
+Ltac test_fast_iota with_abstract n factn :=
+  optimize_heap;
+  let n := (eval cbv in n) in
+  let v := make_iota_the n constr:(fastn factn) in
+  let v := constr:(v) in
+  restart_timer;
+  let v2 := (eval cbv beta iota in v) in
+  finish_timing ("Tactic call βι-fast");
+  time "unify-fast" unify v v2;
+  lazymatch with_abstract with
+  | true => let __ := constr:(ltac:(time "abstract-unify-fast" abstract exact_no_check (eq_refl v)) : v = v2) in
+            idtac
+  | false => idtac
+  end.
+
+Local Set Warnings Append "-abstract-large-number".
+
+Goal True.
+  idtac 100 8; test_slow_iota true 100 8; test_fast_iota true 100 8;
+    idtac 1000 8; test_slow_iota true 1000 8; test_fast_iota true 1000 8;
+      idtac 10000 8; test_slow_iota true 10000 8; test_fast_iota true 10000 8;
+        idtac 100 9; test_slow_iota true 100 9; test_fast_iota true 100 9;
+          idtac 1000 9; test_slow_iota true 1000 9; test_fast_iota true 1000 9;
+            idtac 10000 9; test_slow_iota true 10000 9; test_fast_iota true 10000 9.
+Abort.
+(* 100 8
+Tactic call βι-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-slow ran for 0.148 secs (0.148u,0.s) (success)
+Tactic call βι-fast ran for 0. secs (0.u,0.s)
+Tactic call unify-fast ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-fast ran for 0.003 secs (0.003u,0.s) (success)
+1000 8
+Tactic call βι-slow ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-slow ran for 0.001 secs (0.001u,0.s) (success)
+Tactic call abstract-unify-slow ran for 0.188 secs (0.188u,0.s) (success)
+Tactic call βι-fast ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-fast ran for 0.001 secs (0.001u,0.s) (success)
+Tactic call abstract-unify-fast ran for 0.036 secs (0.036u,0.s) (success)
+10000 8
+Tactic call βι-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-slow ran for 0.017 secs (0.017u,0.s) (success)
+Tactic call abstract-unify-slow ran for 0.491 secs (0.491u,0.s) (success)
+Tactic call βι-fast ran for 0.012 secs (0.012u,0.s)
+Tactic call unify-fast ran for 0.013 secs (0.013u,0.s) (success)
+Tactic call abstract-unify-fast ran for 0.345 secs (0.341u,0.004s) (success)
+100 9
+Tactic call βι-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-slow ran for 1.64 secs (1.606u,0.031s) (success)
+Tactic call βι-fast ran for 0. secs (0.u,0.s)
+Tactic call unify-fast ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-fast ran for 0.05 secs (0.05u,0.s) (success)
+1000 9
+Tactic call βι-slow ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-slow ran for 0.001 secs (0.001u,0.s) (success)
+Tactic call abstract-unify-slow ran for 1.624 secs (1.623u,0.s) (success)
+Tactic call βι-fast ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-fast ran for 0.001 secs (0.001u,0.s) (success)
+Tactic call abstract-unify-fast ran for 0.095 secs (0.095u,0.s) (success)
+10000 9
+Tactic call βι-slow ran for 0.019 secs (0.019u,0.s)
+Tactic call unify-slow ran for 0.012 secs (0.012u,0.s) (success)
+Tactic call abstract-unify-slow ran for 1.976 secs (1.962u,0.011s) (success)
+Tactic call βι-fast ran for 0.012 secs (0.012u,0.s)
+Tactic call unify-fast ran for 0.014 secs (0.014u,0.s) (success)
+Tactic call abstract-unify-fast ran for 0.429 secs (0.425u,0.003s) (success)
 *)

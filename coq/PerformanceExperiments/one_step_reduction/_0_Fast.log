@@ -1,10 +1,10 @@
 Params: n= 14
-Tactic call delta-1-fast ran for 0.057 secs (0.057u,0.s)
-Tactic call unify-delta-1-fast ran for 0.747 secs (0.727u,0.02s) (success)
-Tactic call delta-1-slow ran for 0.056 secs (0.056u,0.s)
-Tactic call unify-delta-1-slow ran for 0.719 secs (0.715u,0.004s) (success)
+Tactic call delta-1-fast ran for 0.055 secs (0.055u,0.s)
+Tactic call unify-delta-1-fast ran for 0.722 secs (0.69u,0.031s) (success)
+Tactic call delta-1-slow ran for 0.055 secs (0.055u,0.s)
+Tactic call unify-delta-1-slow ran for 0.689 secs (0.685u,0.004s) (success)
 Params: n= 15
-Tactic call delta-1-fast ran for 0.117 secs (0.117u,0.s)
-Tactic call unify-delta-1-fast ran for 1.543 secs (1.503u,0.039s) (success)
-Tactic call delta-1-slow ran for 0.112 secs (0.112u,0.s)
-Tactic call unify-delta-1-slow ran for 1.515 secs (1.491u,0.023s) (success)
+Tactic call delta-1-fast ran for 0.113 secs (0.113u,0.s)
+Tactic call unify-delta-1-fast ran for 1.478 secs (1.446u,0.032s) (success)
+Tactic call delta-1-slow ran for 0.113 secs (0.113u,0.s)
+Tactic call unify-delta-1-slow ran for 1.467 secs (1.463u,0.003s) (success)

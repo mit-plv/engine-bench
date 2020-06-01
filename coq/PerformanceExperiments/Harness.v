@@ -268,27 +268,43 @@ Ltac runtests args_of_size describe_goal mkgoal redgoal time_solve_goal sz :=
       end in
   iter args.
 
-Ltac step_goal_from_to step_goal cur_n target_n :=
-  tryif constr_eq cur_n target_n
-  then idtac
-  else let next_n := (eval cbv in (succ cur_n)) in
-       step_goal next_n;
-       step_goal_from_to step_goal next_n target_n.
+Ltac step_goal_from_to_constr step_goal cur_n target_n G :=
+  let test := match constr:(Set) with
+              | _ => let __ := match constr:(Set) with _ => constr_eq cur_n target_n end in
+                     true
+              | _ => false
+              end in
+  lazymatch test with
+  | true => G
+  | false
+    => let next_n := (eval cbv in (succ cur_n)) in
+       let G := step_goal next_n G in
+       step_goal_from_to_constr step_goal next_n target_n G
+  end.
 
-Ltac runtests_step_arg args_of_size describe_goal step_goal redgoal time_solve_goal sz extra_args :=
+Ltac runtests_step_arg_constr args_of_size describe_goal step_goal redgoal_constr redgoal time_solve_goal sz G extra_args :=
   let args := (eval vm_compute in (remove_smaller_args_of_size_by_reflect sz args_of_size)) in
   let T := lazymatch type of args with list ?T => T end in
-  let rec iter cur ls :=
+  let rec iter cur ls G :=
       lazymatch ls with
       | [] => idtac
       | ?x :: ?xs
-        => step_goal_from_to step_goal cur x;
+        => let G := step_goal_from_to_constr step_goal cur x G in
+           let G := redgoal_constr x G in
            describe_goal x;
-           try (solve [ redgoal x; once (time_solve_goal x extra_args + fail 2 "time_solve_goal failed!") ]; []);
-           iter x xs
+           try (solve [ redgoal x; once (time_solve_goal x G extra_args + fail 2 "time_solve_goal failed!") ]; []);
+           iter x xs G
       end in
   let zero := (eval cbv in (@zero T _)) in
-  iter zero args.
+  iter zero args G.
+
+Ltac runtests_step_constr args_of_size describe_goal step_goal redgoal_constr time_solve_goal sz G :=
+  runtests_step_arg_constr args_of_size describe_goal step_goal redgoal_constr ltac:(fun _ => idtac) ltac:(fun n G args => time_solve_goal n G) sz G ().
+
+Ltac constr_run_tac f x :=
+  lazymatch goal with
+  | _ => f x
+  end.
 
 Ltac runtests_step args_of_size describe_goal step_goal redgoal time_solve_goal sz :=
-  runtests_step_arg args_of_size describe_goal step_goal redgoal ltac:(fun n args => time_solve_goal n) sz ().
+  runtests_step_arg_constr args_of_size describe_goal ltac:(fun n G => constr_run_tac step_goal n) ltac:(fun _ G => G) redgoal ltac:(fun n G args => time_solve_goal n) sz () ().

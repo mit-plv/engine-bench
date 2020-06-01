@@ -1,8 +1,8 @@
 Params: n= 10
-Tactic call repeat-rewrite_strat-bottomup ran for 0.142 secs (0.133u,0.008s) (success)
+Tactic call repeat-rewrite_strat-bottomup ran for 0.136 secs (0.116u,0.02s) (success)
 Params: n= 20
-Tactic call repeat-rewrite_strat-bottomup ran for 0.407 secs (0.407u,0.s) (success)
+Tactic call repeat-rewrite_strat-bottomup ran for 0.388 secs (0.388u,0.s) (success)
 Params: n= 30
-Tactic call repeat-rewrite_strat-bottomup ran for 1.34 secs (1.34u,0.s) (success)
+Tactic call repeat-rewrite_strat-bottomup ran for 1.281 secs (1.281u,0.s) (success)
 Params: n= 40
-Tactic call repeat-rewrite_strat-bottomup ran for 3.435 secs (3.434u,0.s) (success)
+Tactic call repeat-rewrite_strat-bottomup ran for 3.328 secs (3.326u,0.s) (success)

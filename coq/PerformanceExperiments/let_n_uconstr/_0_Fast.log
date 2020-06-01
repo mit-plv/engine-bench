@@ -1,48 +1,48 @@
 Params: n= 7000
-Tactic call make_uconstr ran for 0.192 secs (0.164u,0.028s)
-Tactic call constr ran for 0.588 secs (0.584u,0.003s)
+Tactic call make_uconstr ran for 0.217 secs (0.2u,0.016s)
+Tactic call constr ran for 0.613 secs (0.608u,0.004s)
 Params: n= 7500
-Tactic call make_uconstr ran for 0.138 secs (0.135u,0.003s)
-Tactic call constr ran for 0.608 secs (0.608u,0.s)
+Tactic call make_uconstr ran for 0.15 secs (0.15u,0.s)
+Tactic call constr ran for 0.642 secs (0.641u,0.s)
 Params: n= 8000
-Tactic call make_uconstr ran for 0.165 secs (0.165u,0.s)
-Tactic call constr ran for 0.68 secs (0.68u,0.s)
-Params: n= 8500
-Tactic call make_uconstr ran for 0.151 secs (0.151u,0.s)
-Tactic call constr ran for 0.756 secs (0.752u,0.003s)
-Params: n= 9000
-Tactic call make_uconstr ran for 0.165 secs (0.165u,0.s)
-Tactic call constr ran for 0.856 secs (0.848u,0.007s)
-Params: n= 9500
 Tactic call make_uconstr ran for 0.181 secs (0.181u,0.s)
-Tactic call constr ran for 0.957 secs (0.941u,0.015s)
+Tactic call constr ran for 0.711 secs (0.71u,0.s)
+Params: n= 8500
+Tactic call make_uconstr ran for 0.16 secs (0.16u,0.s)
+Tactic call constr ran for 0.802 secs (0.793u,0.007s)
+Params: n= 9000
+Tactic call make_uconstr ran for 0.183 secs (0.183u,0.s)
+Tactic call constr ran for 0.88 secs (0.879u,0.s)
+Params: n= 9500
+Tactic call make_uconstr ran for 0.205 secs (0.205u,0.s)
+Tactic call constr ran for 1.026 secs (1.021u,0.003s)
 Params: n= 10000
-Tactic call make_uconstr ran for 0.183 secs (0.179u,0.003s)
-Tactic call constr ran for 1.017 secs (1.013u,0.004s)
+Tactic call make_uconstr ran for 0.215 secs (0.211u,0.003s)
+Tactic call constr ran for 1.097 secs (1.092u,0.004s)
 Params: n= 10500
-Tactic call make_uconstr ran for 0.188 secs (0.184u,0.004s)
-Tactic call constr ran for 1.132 secs (1.128u,0.003s)
+Tactic call make_uconstr ran for 0.203 secs (0.199u,0.003s)
+Tactic call constr ran for 1.214 secs (1.209u,0.003s)
 Params: n= 11000
-Tactic call make_uconstr ran for 0.199 secs (0.199u,0.s)
-Tactic call constr ran for 1.195 secs (1.195u,0.s)
+Tactic call make_uconstr ran for 0.22 secs (0.216u,0.003s)
+Tactic call constr ran for 1.281 secs (1.277u,0.s)
 Params: n= 11500
-Tactic call make_uconstr ran for 0.235 secs (0.235u,0.s)
-Tactic call constr ran for 1.334 secs (1.326u,0.007s)
+Tactic call make_uconstr ran for 0.265 secs (0.264u,0.s)
+Tactic call constr ran for 1.428 secs (1.424u,0.s)
 Params: n= 12000
-Tactic call make_uconstr ran for 0.204 secs (0.204u,0.s)
-Tactic call constr ran for 1.466 secs (1.466u,0.s)
+Tactic call make_uconstr ran for 0.233 secs (0.233u,0.s)
+Tactic call constr ran for 1.531 secs (1.526u,0.s)
 Params: n= 12500
-Tactic call make_uconstr ran for 0.224 secs (0.224u,0.s)
-Tactic call constr ran for 1.522 secs (1.522u,0.s)
+Tactic call make_uconstr ran for 0.25 secs (0.25u,0.s)
+Tactic call constr ran for 1.638 secs (1.637u,0.s)
 Params: n= 13000
-Tactic call make_uconstr ran for 0.235 secs (0.235u,0.s)
-Tactic call constr ran for 1.652 secs (1.652u,0.s)
+Tactic call make_uconstr ran for 0.254 secs (0.253u,0.s)
+Tactic call constr ran for 1.762 secs (1.761u,0.s)
 Params: n= 13500
-Tactic call make_uconstr ran for 0.267 secs (0.267u,0.s)
-Tactic call constr ran for 1.795 secs (1.795u,0.s)
+Tactic call make_uconstr ran for 0.294 secs (0.293u,0.s)
+Tactic call constr ran for 1.898 secs (1.897u,0.s)
 Params: n= 14000
-Tactic call make_uconstr ran for 0.253 secs (0.253u,0.s)
-Tactic call constr ran for 1.872 secs (1.864u,0.007s)
+Tactic call make_uconstr ran for 0.274 secs (0.266u,0.007s)
+Tactic call constr ran for 2.031 secs (2.026u,0.003s)
 Params: n= 14500
-Tactic call make_uconstr ran for 0.264 secs (0.264u,0.s)
-Tactic call constr ran for 2.084 secs (2.08u,0.004s)
+Tactic call make_uconstr ran for 0.282 secs (0.282u,0.s)
+Tactic call constr ran for 2.224 secs (2.222u,0.s)

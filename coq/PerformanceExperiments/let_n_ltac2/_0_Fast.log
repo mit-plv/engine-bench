@@ -1,15 +1,15 @@
 Params: n= 7000
-Tactic call build ran for 0.046 secs (0.046u,0.s) (success)
+Tactic call build ran for 0.049 secs (0.049u,0.s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.046 secs (0.046u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.049 secs (0.049u,0.s) (success)
 Params: n= 7500
-Tactic call build ran for 0.047 secs (0.047u,0.s) (success)
+Tactic call build ran for 0.049 secs (0.048u,0.s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.047 secs (0.047u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.049 secs (0.049u,0.s) (success)
 Params: n= 8000
-Tactic call build ran for 0.053 secs (0.053u,0.s) (success)
+Tactic call build ran for 0.055 secs (0.055u,0.s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.053 secs (0.053u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.056 secs (0.056u,0.s) (success)
 Params: n= 8500
 Tactic call build ran for 0.066 secs (0.066u,0.s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
@@ -19,46 +19,46 @@ Tactic call build ran for 0.053 secs (0.053u,0.s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
 Tactic call build-and-typecheck ran for 0.053 secs (0.053u,0.s) (success)
 Params: n= 9500
-Tactic call build ran for 0.064 secs (0.064u,0.s) (success)
+Tactic call build ran for 0.063 secs (0.063u,0.s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.064 secs (0.064u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.063 secs (0.063u,0.s) (success)
 Params: n= 10000
-Tactic call build ran for 0.068 secs (0.068u,0.s) (success)
+Tactic call build ran for 0.067 secs (0.063u,0.003s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.068 secs (0.068u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.067 secs (0.063u,0.003s) (success)
 Params: n= 10500
-Tactic call build ran for 0.072 secs (0.072u,0.s) (success)
+Tactic call build ran for 0.071 secs (0.067u,0.003s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.072 secs (0.072u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.071 secs (0.067u,0.003s) (success)
 Params: n= 11000
-Tactic call build ran for 0.076 secs (0.072u,0.003s) (success)
+Tactic call build ran for 0.075 secs (0.075u,0.s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.076 secs (0.072u,0.003s) (success)
+Tactic call build-and-typecheck ran for 0.075 secs (0.075u,0.s) (success)
 Params: n= 11500
-Tactic call build ran for 0.086 secs (0.082u,0.004s) (success)
-Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.086 secs (0.082u,0.004s) (success)
-Params: n= 12000
-Tactic call build ran for 0.077 secs (0.077u,0.s) (success)
-Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.077 secs (0.077u,0.s) (success)
-Params: n= 12500
-Tactic call build ran for 0.11 secs (0.11u,0.s) (success)
-Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.11 secs (0.11u,0.s) (success)
-Params: n= 13000
 Tactic call build ran for 0.084 secs (0.084u,0.s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
 Tactic call build-and-typecheck ran for 0.084 secs (0.084u,0.s) (success)
+Params: n= 12000
+Tactic call build ran for 0.078 secs (0.078u,0.s) (success)
+Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.078 secs (0.078u,0.s) (success)
+Params: n= 12500
+Tactic call build ran for 0.111 secs (0.111u,0.s) (success)
+Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.111 secs (0.111u,0.s) (success)
+Params: n= 13000
+Tactic call build ran for 0.084 secs (0.084u,0.s) (success)
+Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.085 secs (0.085u,0.s) (success)
 Params: n= 13500
-Tactic call build ran for 0.086 secs (0.086u,0.s) (success)
+Tactic call build ran for 0.085 secs (0.085u,0.s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.086 secs (0.086u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.085 secs (0.085u,0.s) (success)
 Params: n= 14000
-Tactic call build ran for 0.091 secs (0.091u,0.s) (success)
+Tactic call build ran for 0.088 secs (0.088u,0.s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.091 secs (0.091u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.089 secs (0.089u,0.s) (success)
 Params: n= 14500
-Tactic call build ran for 0.1 secs (0.1u,0.s) (success)
+Tactic call build ran for 0.102 secs (0.102u,0.s) (success)
 Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
-Tactic call build-and-typecheck ran for 0.1 secs (0.1u,0.s) (success)
+Tactic call build-and-typecheck ran for 0.102 secs (0.102u,0.s) (success)

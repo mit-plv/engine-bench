@@ -105,11 +105,11 @@ Performance Criteria:
  - 1-step delta on k constants should Õ(output term size)
  - 1-step iota should be Õ(output term size)
  - 1-step beta on k arguments of the same application node where each argument is mentioned multiple times should be Õ(input term size + output term size)
- - Coq: See [`coq/PerformanceDemos/one_step_reduction.v`](./coq/PerformanceDemos/one_step_reduction.v), [`coq/PerformanceExperiments/one_step_reduction.v`](./coq/PerformanceExperiments/one_step_reduction.v), and [`coq/PerformanceExperiments/one_step_reduction_with_abstract.v`](./coq/PerformanceExperiments/one_step_reduction_with_abstract.v)
+ - Coq: See [`coq/PerformanceDemos/one_step_reduction.v`](./coq/PerformanceDemos/one_step_reduction.v), [`coq/PerformanceExperiments/one_step_reduction.v`](./coq/PerformanceExperiments/one_step_reduction.v), [`coq/PerformanceExperiments/one_step_reduction_with_abstract.v`](./coq/PerformanceExperiments/one_step_reduction_with_abstract.v), [`coq/PerformanceExperiments/iota_reduction_fact8.v`](./coq/PerformanceExperiments/iota_reduction_fact8.v), [`coq/PerformanceExperiments/iota_reduction_fact9.v`](./coq/PerformanceExperiments/iota_reduction_fact9.v), [`coq/PerformanceExperiments/iota_reduction_with_abstract_fact8.v`](./coq/PerformanceExperiments/iota_reduction_with_abstract_fact8.v), and [`coq/PerformanceExperiments/iota_reduction_with_abstract_fact9.v`](./coq/PerformanceExperiments/iota_reduction_with_abstract_fact9.v)
 
-  one_step_reduction | one_step_reduction_with_abstract
-  --|--
-  <img src="https://mit-plv.github.io/engine-bench/coq/one-step-reduction.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/one-step-reduction-with-abstract.svg" height=100px />
+  one_step_reduction | one_step_reduction_with_abstract | iota_reduction_fact8 | iota_reduction_fact9 | iota_reduction_with_abstract_fact8 | iota_reduction_with_abstract_fact9
+  --|--|--|--|--|--
+  <img src="https://mit-plv.github.io/engine-bench/coq/one-step-reduction.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/one-step-reduction-with-abstract.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/iota-reduction-fact8.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/iota-reduction-fact9.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/iota-reduction-with-abstract-fact8.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/iota-reduction-with-abstract-fact9.svg" height=100px />
 
 
 Performance Criterion: Inserting a cast node should be Õ(conversion checking the types)
