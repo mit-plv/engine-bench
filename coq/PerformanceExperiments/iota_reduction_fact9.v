@@ -10,7 +10,7 @@ Definition args_of_size (s : size) : list Z
   := match s with
      | Sanity => List.map Z.of_nat (seq 0 3)
      | SuperFast => List.map (fun x => Z.of_nat x * 100) (seq 1 10)
-     | Fast => List.map (fun x => Z.of_nat x * 100) (seq 1 100)
+     | Fast => List.map (fun x => Z.of_nat x * 100) (seq 1 200)
      | Medium => []
      | Slow => []
      | VerySlow => []
