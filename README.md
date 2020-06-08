@@ -28,7 +28,7 @@ We similarly do not investigate features whose sole purpose is to present the pr
 
 - creating a proof goal given context and statement / creating a new expression hole given context and type
 - creating an application node given function and arguments (using only syntactic conversion for type checking)
-- creating a let binder given bound expression (new hole/subproof for continuation)
+- creating a let binder given bound expression (new hole for continuation)
 - creating a lambda/quantifier given bound type (new hole/subproof for continuation)
 - creating a type annotation given term (using only syntactic conversion for type checking)
 - one-step reductions: lambda application, constructor elimination, definition unfolding 
