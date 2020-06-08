@@ -34,13 +34,18 @@ We similarly do not investigate features whose sole purpose is to present the pr
 - one-step reductions: lambda application, constructor elimination, definition unfolding 
 - using a expression/subproof from a smaller context to fill a hole in a larger context
 - replacing an expression with a reference to an alpha-equivalent variant
+- extracting subterms of a given term<a name="text_*">[\*](#*)</a>
 - optional: reducing an expression to normal form (with performance expectations with reference to a non-proof-assistant interpreter)
 
 As the job of the proof engine is to maintain *partial* proofs, we consider all of these operations with terms and contexts which may contain holes and unfinished subproofs.
 We do not specify a particular representation of partial proofs and constructions, anything that can be worked with using the operations described above is fair game; when matching existing operations to our specifications we will interpret the operation descriptions more loosely than the overarching requirements discussed earlier.
 Ideally, the amortized overhead due to operating in a rich context would be asymptotically polylogarithmic (or at least otherwise sublinear) and fast in practice. Needless to say, we are not aware of any proof engine that comes close to achieving this.
 
-
+<a name="*">[\*](#text_*)</a> This operation may seem obvious, and, indeed, we expect it to be trivial in any proof engine in which it is valid.
+However, in extensional type theories, just because `λ _ : False, f` is well-typed doesn't mean that `f` is well-typed in the empty context, even if it doesn't mention the binder.
+Furthermore, it's possible for `f x` to be well-typed without `f` and/or `x` being individually well-typed in some proof assistants such as Nuprl.
+(For example, `(λ _, true) (0 = ℕ)` may be well-typed because it reduces to `true`, even though `0 = ℕ` is not well-typed when `=` is heterogenous.
+TODO: Is this example actually correct?)
 
 # Performance Graphs
 
