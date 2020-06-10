@@ -87,7 +87,7 @@ Adding a new binder underneath n binders (should be Õ(1))
     --|--|--|--
     <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-repeated-app-autorewrite.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-repeated-app-ssrrewrite.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-repeated-app-rewrite-strat.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-repeated-app-fast-rewrite.svg" height=100px />
 
-Typechecking an application of a function to n arguments (very convenient if this is Õ(n))
+<a name="app_n">Typechecking an application of a function to n arguments (very convenient if this is Õ(n))</a>
 - Can be constructed if you can prove conjunction/pairing without quadratic overhead
 - Coq: See [`coq/PerformanceDemos/app_n.v`](./coq/PerformanceDemos/app_n.v), [`coq/PerformanceExperiments/app_n_uconstr.v`](./coq/PerformanceExperiments/app_n_uconstr.v), and [`coq/PerformanceExperiments/app_n_ltac2.v`](./coq/PerformanceExperiments/app_n_ltac2.v)
 
