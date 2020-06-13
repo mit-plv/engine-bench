@@ -41,7 +41,7 @@
         }
         \addplot[only marks,mark=asterisk,color=red] table[x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
         \addlegendentry{\texttt{repeat setoid\_rewrite <- plus\_n\_O}}
-        \addplotcubicregression[no markers, blue][x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
+        \addplotcubicregression[no markers, red][x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
         \xdef\setoidrewritea{\pgfplotstableregressiona}
         \xdef\setoidrewriteb{\pgfplotstableregressionb}
         \xdef\setoidrewritec{\pgfplotstableregressionc}
