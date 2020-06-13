@@ -48,14 +48,17 @@ def generate_tex(name, txt_lines):
     \end{axis}
   \end{tikzpicture}
   \caption{timing-%(name)s%(extra_params_descr)s} \label{fig:timing-%(name)s}
-\end{figure*}''' % locals()
+\end{figure*}''' % locals(), contents
 
 if __name__ == '__main__':
-    if len(sys.argv) != 4:
-        print(f'USAGE: {sys.argv[0]} NAME INPUT OUTPUT')
-    name, infile, outfile = sys.argv[1:]
+    if len(sys.argv) not in (4, 5):
+        print(f'USAGE: {sys.argv[0]} NAME INPUT OUTPUT [TABLE_FILE]')
+    name, infile, outfile, table_file = sys.argv[1:] if len(sys.argv) == 5 else sys.argv[1:] + [None]
     with open(infile, 'r') as f:
         intext = f.readlines()
-    res = generate_tex(name, intext)
+    res, table = generate_tex(name, intext)
     with open(outfile, 'w') as f:
         f.write(res)
+    if table_file is not None:
+        with open(table_file, 'w') as f:
+            f.write(table)

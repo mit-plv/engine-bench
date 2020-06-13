@@ -1,0 +1,24 @@
+\begin{figure*}
+  \beginTikzpictureStamped{
+    \einput{generated/repeat-setoid-rewrite-under-binders-table.txt}
+    \einput{generated/rewrite-strat-under-binders-table.txt}
+  }
+    \begin{axis}[xlabel=\# binders,
+        ylabel=time (s),
+        legend pos=north west,
+        width=0.95\textwidth,
+        axis lines=left,
+        xmin=0,
+        ymin=0,
+        scaled x ticks=false,
+        scaled y ticks=false]
+        \addplot[only marks,mark=o,color=green] table[x=param-n,y=repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addlegendentry{\texttt{repeat rewrite\_strat bottomup <- plus\_n\_O}}
+        \addplot[only marks,mark=star,color=blue] table[x=param-n,y=repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addlegendentry{\texttt{repeat rewrite\_strat topdown <- plus\_n\_O}}
+        \addplot[only marks,mark=asterisk,color=red] table[x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
+        \addlegendentry{\texttt{repeat setoid\_rewrite <- plus\_n\_O}}
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Timing of \texttt{rewrite\_strat} and \texttt{setoid\_rewrite} under binders} \label{fig:timing-rewrite-strat-vs-setoid-rewrite}
+\end{figure*}

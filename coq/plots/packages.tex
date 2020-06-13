@@ -160,3 +160,18 @@
 
 \newunicodecharpdftex{≅}{\ensuremath{\cong}}
 \newunicodecharpdftex{∘}{\ensuremath{\circ}}
+
+
+% to have the external picture be updated every time the input files are changed
+\makeatletter
+\newcommand{\einput}[1]{\@@input #1 \space}
+\newcommand{\beginTikzpictureStamped}[2][]{%
+    {%
+        \everyeof{\noexpand}% IDK why \noexpand is the magic one, but I got it from http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/oberdiek/catchfile.pdf
+        \long\xdef\@tikzstamp{#2}%
+    }%
+    \def\@dobegintikzpicture{\begin{tikzpicture}[#1]}%
+    \expandafter\@dobegintikzpicture\expandafter\def\expandafter\tikzstamp\expandafter{\@tikzstamp}%
+}
+\newcommand{\TikzpictureStamped}[3][]{\beginTikzpictureStamped[#1]{#2}#3\end{tikzpicture}}%
+\makeatother

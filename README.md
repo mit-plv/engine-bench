@@ -31,7 +31,7 @@ We similarly do not investigate features whose sole purpose is to present the pr
 - creating a let binder given bound expression (new hole for continuation)
 - creating a lambda/quantifier given bound type (new hole/subproof for continuation)
 - creating a type annotation given term (using only syntactic conversion for type checking)
-- one-step reductions: lambda application, constructor elimination, definition unfolding 
+- one-step reductions: lambda application, constructor elimination, definition unfolding
 - using a expression/subproof from a smaller context to fill a hole in a larger context
 - replacing an expression with a reference to an alpha-equivalent variant
 - extracting subterms of a given term<a name="text_*">[\*](#*)</a>
@@ -69,9 +69,9 @@ Adding a new binder underneath n binders (should be Õ(1))
 - Needed for: good performance of rewrite/rewrite_strat under binders
   + Coq: See [`coq/PerformanceDemos/rewrite_strat_under_binders.v`](./coq/PerformanceDemos/rewrite_strat_under_binders.v), [`coq/PerformanceExperiments/repeat_setoid_rewrite_under_binders.v`](./coq/PerformanceExperiments/repeat_setoid_rewrite_under_binders.v), and [`coq/PerformanceExperiments/rewrite_strat_under_binders.v`](./coq/PerformanceExperiments/rewrite_strat_under_binders.v)
 
-    repeat_setoid_rewrite_under_binders | rewrite_strat_under_binders
-    --|--
-    <img src="https://mit-plv.github.io/engine-bench/coq/repeat-setoid-rewrite-under-binders.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-strat-under-binders.svg" height=100px />
+    `rewrite_strat` & `setoid_rewrite` | repeat_setoid_rewrite_under_binders | rewrite_strat_under_binders
+    --|--|--
+    <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-strat-vs-setoid-rewrite.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/repeat-setoid-rewrite-under-binders.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-strat-under-binders.svg" height=100px />
 
 - Needed for: good performance of proving large conjunctions (structural types could be an alternative)
   + Coq: See [`coq/PerformanceDemos/repeated_conj.v`](./coq/PerformanceDemos/repeated_conj.v), [`coq/PerformanceExperiments/conj_True_repeat_constructor.v`](./coq/PerformanceExperiments/conj_True_repeat_constructor.v), and [`coq/PerformanceExperiments/conj_True_fast_conj.v`](./coq/PerformanceExperiments/conj_True_fast_conj.v)
