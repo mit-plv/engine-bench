@@ -14,10 +14,38 @@
         scaled y ticks=false]
         \addplot[only marks,mark=o,color=green] table[x=param-n,y=repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
         \addlegendentry{\texttt{repeat rewrite\_strat bottomup <- plus\_n\_O}}
+        \addplotquadraticregression[no markers, green][x=param-n,y=repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
+        \xdef\rewritestratbottomupa{\pgfplotstableregressiona}
+        \xdef\rewritestratbottomupb{\pgfplotstableregressionb}
+        \xdef\rewritestratbottomupc{\pgfplotstableregressionc}
+        \addlegendentry{
+            $\pgfmathprintnumber{\rewritestratbottomupa}(\text{\# binders})^2
+            \pgfmathprintnumber[print sign]{\rewritestratbottomupb}(\text{\# binders})
+            \pgfmathprintnumber[print sign]{\rewritestratbottomupc}$
+        }
+
         \addplot[only marks,mark=star,color=blue] table[x=param-n,y=repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
         \addlegendentry{\texttt{repeat rewrite\_strat topdown <- plus\_n\_O}}
+        \addplotquadraticregression[no markers, blue][x=param-n,y=repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
+        \xdef\rewritestrattopdowna{\pgfplotstableregressiona}
+        \xdef\rewritestrattopdownb{\pgfplotstableregressionb}
+        \xdef\rewritestrattopdownc{\pgfplotstableregressionc}
+        \addlegendentry{
+            $\pgfmathprintnumber{\rewritestrattopdowna}(\text{\# binders})^2
+            \pgfmathprintnumber[print sign]{\rewritestrattopdownb}(\text{\# binders})
+            \pgfmathprintnumber[print sign]{\rewritestrattopdownc}$
+        }
         \addplot[only marks,mark=asterisk,color=red] table[x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
         \addlegendentry{\texttt{repeat setoid\_rewrite <- plus\_n\_O}}
+        \addplotquadraticregression[no markers, blue][x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
+        \xdef\setoidrewritea{\pgfplotstableregressiona}
+        \xdef\setoidrewriteb{\pgfplotstableregressionb}
+        \xdef\setoidrewritec{\pgfplotstableregressionc}
+        \addlegendentry{
+            $\pgfmathprintnumber{\setoidrewritea}(\text{\# binders})^2
+            \pgfmathprintnumber[print sign]{\setoidrewriteb}(\text{\# binders})
+            \pgfmathprintnumber[print sign]{\setoidrewritec}$
+        }
     \end{axis}
   \end{tikzpicture}
   \caption{Timing of \texttt{rewrite\_strat} and \texttt{setoid\_rewrite} under binders} \label{fig:timing-rewrite-strat-vs-setoid-rewrite}
