@@ -14,37 +14,43 @@
         scaled y ticks=false]
         \addplot[only marks,mark=o,color=green] table[x=param-n,y=repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
         \addlegendentry{\texttt{repeat rewrite\_strat bottomup <- plus\_n\_O}}
-        \addplotquadraticregression[no markers, green][x=param-n,y=repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplotcubicregression[no markers, green][x=param-n,y=repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
         \xdef\rewritestratbottomupa{\pgfplotstableregressiona}
         \xdef\rewritestratbottomupb{\pgfplotstableregressionb}
         \xdef\rewritestratbottomupc{\pgfplotstableregressionc}
+        \xdef\rewritestratbottomupd{\pgfplotstableregressiond}
         \addlegendentry{
-            $\pgfmathprintnumber{\rewritestratbottomupa}(\text{\# binders})^2
-            \pgfmathprintnumber[print sign]{\rewritestratbottomupb}(\text{\# binders})
-            \pgfmathprintnumber[print sign]{\rewritestratbottomupc}$
+            $\pgfmathprintnumber{\rewritestratbottomupa}(\text{\# binders})^3
+            \pgfmathprintnumber[print sign]{\rewritestratbottomupb}(\text{\# binders})^2
+            \pgfmathprintnumber[print sign]{\rewritestratbottomupc}(\text{\# binders})
+            \pgfmathprintnumber[print sign]{\rewritestratbottomupd}$
         }
 
         \addplot[only marks,mark=star,color=blue] table[x=param-n,y=repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
         \addlegendentry{\texttt{repeat rewrite\_strat topdown <- plus\_n\_O}}
-        \addplotquadraticregression[no markers, blue][x=param-n,y=repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplotcubicregression[no markers, blue][x=param-n,y=repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
         \xdef\rewritestrattopdowna{\pgfplotstableregressiona}
         \xdef\rewritestrattopdownb{\pgfplotstableregressionb}
         \xdef\rewritestrattopdownc{\pgfplotstableregressionc}
+        \xdef\rewritestrattopdownd{\pgfplotstableregressiond}
         \addlegendentry{
-            $\pgfmathprintnumber{\rewritestrattopdowna}(\text{\# binders})^2
-            \pgfmathprintnumber[print sign]{\rewritestrattopdownb}(\text{\# binders})
-            \pgfmathprintnumber[print sign]{\rewritestrattopdownc}$
+            $\pgfmathprintnumber{\rewritestrattopdowna}(\text{\# binders})^3
+            \pgfmathprintnumber[print sign]{\rewritestrattopdownb}(\text{\# binders})^2
+            \pgfmathprintnumber[print sign]{\rewritestrattopdownc}(\text{\# binders})
+            \pgfmathprintnumber[print sign]{\rewritestrattopdownd}$
         }
         \addplot[only marks,mark=asterisk,color=red] table[x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
         \addlegendentry{\texttt{repeat setoid\_rewrite <- plus\_n\_O}}
-        \addplotquadraticregression[no markers, blue][x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
+        \addplotcubicregression[no markers, blue][x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
         \xdef\setoidrewritea{\pgfplotstableregressiona}
         \xdef\setoidrewriteb{\pgfplotstableregressionb}
         \xdef\setoidrewritec{\pgfplotstableregressionc}
+        \xdef\setoidrewrited{\pgfplotstableregressiond}
         \addlegendentry{
-            $\pgfmathprintnumber{\setoidrewritea}(\text{\# binders})^2
-            \pgfmathprintnumber[print sign]{\setoidrewriteb}(\text{\# binders})
-            \pgfmathprintnumber[print sign]{\setoidrewritec}$
+            $\pgfmathprintnumber{\setoidrewritea}(\text{\# binders})^3
+            \pgfmathprintnumber[print sign]{\setoidrewriteb}(\text{\# binders})^2
+            \pgfmathprintnumber[print sign]{\setoidrewritec}(\text{\# binders})
+            \pgfmathprintnumber[print sign]{\setoidrewrited}$
         }
     \end{axis}
   \end{tikzpicture}
