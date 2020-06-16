@@ -37,7 +37,7 @@ def generate_tex(name, txt_lines):
 }{\%(short_name)s}
     \begin{axis}[xlabel=$%(xlabel)s$,
         ylabel=time (s),
-        legend pos=north west,
+        legend pos=outer north east,
         width=0.95\textwidth,
         axis lines=left,
         xmin=0,
