@@ -5,7 +5,8 @@ OTHERFLAGS?=
 
 PDFS := all.pdf
 
-EXTRA_TEX := rewrite-strat-vs-setoid-rewrite
+EXTRA_TEX := rewrite-strat-vs-setoid-rewrite \
+	rewrite-strat-vs-setoid-rewrite-noop
 
 include ../../Makefile.show
 
