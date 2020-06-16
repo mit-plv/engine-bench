@@ -1,32 +1,48 @@
 Params: n= 10
-Tactic call repeat-setoid_rewrite ran for 0.021 secs (0.017u,0.003s) (success)
+Tactic call repeat-setoid_rewrite ran for 0.022 secs (0.013u,0.008s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 0.006 secs (0.003u,0.003s) (success)
 Params: n= 20
-Tactic call repeat-setoid_rewrite ran for 0.088 secs (0.064u,0.024s) (success)
+Tactic call repeat-setoid_rewrite ran for 0.095 secs (0.083u,0.011s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 0.014 secs (0.013u,0.s) (success)
 Params: n= 30
-Tactic call repeat-setoid_rewrite ran for 0.08 secs (0.08u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 0.084 secs (0.084u,0.s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 0.03 secs (0.03u,0.s) (success)
 Params: n= 40
-Tactic call repeat-setoid_rewrite ran for 0.153 secs (0.153u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 0.154 secs (0.153u,0.s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 0.058 secs (0.058u,0.s) (success)
 Params: n= 60
-Tactic call repeat-setoid_rewrite ran for 0.388 secs (0.388u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 0.407 secs (0.407u,0.s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 0.157 secs (0.157u,0.s) (success)
 Params: n= 70
-Tactic call repeat-setoid_rewrite ran for 0.574 secs (0.57u,0.003s) (success)
+Tactic call repeat-setoid_rewrite ran for 0.597 secs (0.597u,0.s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 0.238 secs (0.238u,0.s) (success)
 Params: n= 80
-Tactic call repeat-setoid_rewrite ran for 0.816 secs (0.816u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 0.844 secs (0.84u,0.003s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 0.343 secs (0.343u,0.s) (success)
 Params: n= 90
-Tactic call repeat-setoid_rewrite ran for 1.107 secs (1.107u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 1.147 secs (1.139u,0.007s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 0.478 secs (0.474u,0.003s) (success)
 Params: n= 110
-Tactic call repeat-setoid_rewrite ran for 1.937 secs (1.933u,0.004s) (success)
+Tactic call repeat-setoid_rewrite ran for 1.903 secs (1.899u,0.003s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 0.812 secs (0.812u,0.s) (success)
 Params: n= 120
-Tactic call repeat-setoid_rewrite ran for 2.376 secs (2.376u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 2.365 secs (2.353u,0.011s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 1.054 secs (1.054u,0.s) (success)
 Params: n= 130
-Tactic call repeat-setoid_rewrite ran for 2.93 secs (2.93u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 2.965 secs (2.957u,0.008s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 1.341 secs (1.341u,0.s) (success)
 Params: n= 140
-Tactic call repeat-setoid_rewrite ran for 3.81 secs (3.806u,0.003s) (success)
+Tactic call repeat-setoid_rewrite ran for 3.929 secs (3.921u,0.007s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 1.736 secs (1.736u,0.s) (success)
 Params: n= 160
-Tactic call repeat-setoid_rewrite ran for 5.485 secs (5.473u,0.012s) (success)
+Tactic call repeat-setoid_rewrite ran for 5.673 secs (5.653u,0.019s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 2.395 secs (2.391u,0.003s) (success)
 Params: n= 170
-Tactic call repeat-setoid_rewrite ran for 6.358 secs (6.353u,0.003s) (success)
+Tactic call repeat-setoid_rewrite ran for 6.14 secs (6.136u,0.003s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 2.891 secs (2.891u,0.s) (success)
 Params: n= 180
-Tactic call repeat-setoid_rewrite ran for 7.85 secs (7.85u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 7.409 secs (7.405u,0.003s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 3.626 secs (3.622u,0.003s) (success)
 Params: n= 190
-Tactic call repeat-setoid_rewrite ran for 9.11 secs (9.11u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 8.729 secs (8.705u,0.024s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 4.055 secs (4.035u,0.02s) (success)

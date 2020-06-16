@@ -12,9 +12,11 @@ Definition args_of_size (s : size) : list nat
      end.
 
 Ltac time_solve_goal0 n :=
-  time "repeat-rewrite_strat-topdown" repeat rewrite_strat topdown <- plus_n_O.
+  (time "repeat-rewrite_strat-topdown" repeat rewrite_strat topdown <- plus_n_O);
+  (time "noop-repeat-rewrite_strat-topdown" repeat rewrite_strat topdown <- plus_n_O).
 Ltac time_solve_goal1 n :=
-  time "repeat-rewrite_strat-bottomup" repeat rewrite_strat bottomup <- plus_n_O.
+  (time "repeat-rewrite_strat-bottomup" repeat rewrite_strat bottomup <- plus_n_O);
+  (time "noop-repeat-rewrite_strat-bottomup" repeat rewrite_strat bottomup <- plus_n_O).
 
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal0 sz.
 Ltac run1 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal1 sz.

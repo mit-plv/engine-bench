@@ -12,7 +12,8 @@ Definition args_of_size (s : size) : list nat
      end.
 
 Ltac time_solve_goal0 n :=
-  time "repeat-setoid_rewrite" repeat setoid_rewrite <- plus_n_O.
+  (time "repeat-setoid_rewrite" repeat setoid_rewrite <- plus_n_O);
+  (time "noop-repeat-setoid_rewrite" repeat setoid_rewrite <- plus_n_O).
 
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal0 sz.
 
