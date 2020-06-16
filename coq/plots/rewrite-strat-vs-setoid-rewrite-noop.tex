@@ -1,0 +1,59 @@
+\begin{figure*}
+  \beginTikzpictureStamped{
+    \einput{generated/repeat-setoid-rewrite-under-binders-table.txt}
+    \einput{generated/rewrite-strat-under-binders-table.txt}
+  }
+    \begin{axis}[xlabel=\# binders,
+        ylabel=time (s),
+        legend pos=outer north east,
+        width=0.95\textwidth,
+        axis lines=left,
+        xmin=0,
+        ymin=0,
+        scaled x ticks=false,
+        scaled y ticks=false]
+
+        \addplot[only marks,mark=oplus,color=green] table[x=param-n,y=noop-repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addlegendentry{\texttt{repeat rewrite\_strat bottomup <- plus\_n\_O} (noop)}
+        \addplotcubicregression[no markers, green][x=param-n,y=noop-repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
+        \xdef\nooprewritestratbottomupa{\pgfplotstableregressiona}
+        \xdef\nooprewritestratbottomupb{\pgfplotstableregressionb}
+        \xdef\nooprewritestratbottomupc{\pgfplotstableregressionc}
+        \xdef\nooprewritestratbottomupd{\pgfplotstableregressiond}
+        \addlegendentry{
+            $\pgfmathprintnumber{\nooprewritestratbottomupa}(\text{\# binders})^3
+            \pgfmathprintnumber[print sign]{\nooprewritestratbottomupb}(\text{\# binders})^2
+            \pgfmathprintnumber[print sign]{\nooprewritestratbottomupc}(\text{\# binders})
+            \pgfmathprintnumber[print sign]{\nooprewritestratbottomupd}$
+        }
+
+        \addplot[only marks,mark=otimes,color=blue] table[x=param-n,y=noop-repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addlegendentry{\texttt{repeat rewrite\_strat topdown <- plus\_n\_O} (noop)}
+        \addplotcubicregression[no markers, blue][x=param-n,y=noop-repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
+        \xdef\nooprewritestrattopdowna{\pgfplotstableregressiona}
+        \xdef\nooprewritestrattopdownb{\pgfplotstableregressionb}
+        \xdef\nooprewritestrattopdownc{\pgfplotstableregressionc}
+        \xdef\nooprewritestrattopdownd{\pgfplotstableregressiond}
+        \addlegendentry{
+            $\pgfmathprintnumber{\nooprewritestrattopdowna}(\text{\# binders})^3
+            \pgfmathprintnumber[print sign]{\nooprewritestrattopdownb}(\text{\# binders})^2
+            \pgfmathprintnumber[print sign]{\nooprewritestrattopdownc}(\text{\# binders})
+            \pgfmathprintnumber[print sign]{\nooprewritestrattopdownd}$
+        }
+        \addplot[only marks,mark=square,color=red] table[x=param-n,y=noop-repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
+        \addlegendentry{\texttt{repeat setoid\_rewrite <- plus\_n\_O} (noop)}
+        \addplotcubicregression[no markers, red][x=param-n,y=noop-repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
+        \xdef\noopsetoidrewritea{\pgfplotstableregressiona}
+        \xdef\noopsetoidrewriteb{\pgfplotstableregressionb}
+        \xdef\noopsetoidrewritec{\pgfplotstableregressionc}
+        \xdef\noopsetoidrewrited{\pgfplotstableregressiond}
+        \addlegendentry{
+            $\pgfmathprintnumber{\noopsetoidrewritea}(\text{\# binders})^3
+            \pgfmathprintnumber[print sign]{\noopsetoidrewriteb}(\text{\# binders})^2
+            \pgfmathprintnumber[print sign]{\noopsetoidrewritec}(\text{\# binders})
+            \pgfmathprintnumber[print sign]{\noopsetoidrewrited}$
+        }
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Timing of \texttt{rewrite\_strat} and \texttt{setoid\_rewrite} under binders} \label{fig:timing-rewrite-strat-vs-setoid-rewrite}
+\end{figure*}
