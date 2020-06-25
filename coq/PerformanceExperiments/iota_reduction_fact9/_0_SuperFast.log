@@ -26,5 +26,5 @@ Params: a-n= 900 , fact-n= 9
 Tactic call beta-iota-slow ran for 0. secs (0.u,0.s)
 Tactic call unify-beta-iota-slow ran for 0. secs (0.u,0.s) (success)
 Params: a-n= 1000 , fact-n= 9
-Tactic call beta-iota-slow ran for 0.001 secs (0.001u,0.s)
+Tactic call beta-iota-slow ran for 0. secs (0.u,0.s)
 Tactic call unify-beta-iota-slow ran for 0.001 secs (0.001u,0.s) (success)

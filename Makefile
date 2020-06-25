@@ -23,14 +23,15 @@ targets::
 
 $(patsubst %,doc-build/%.pdf,$(COMPONENTS)) : doc-build/%.pdf :
 	$(HIDE)mkdir -p doc-build
-	$(HIDE)+$(MAKE) --no-print-directory -C $* copy-pdf OUTPUT=../$@
+	$(HIDE)+$(MAKE) --no-print-directory -C $* copy-pdf OUTPUT="$(abspath $@)"
 
 .PHONY: copy-pdf
 copy-pdf: $(patsubst %,doc-build/%.pdf,$(COMPONENTS))
 
+.PHONY: $(patsubst %,doc-build/%,$(COMPONENTS))
 $(patsubst %,doc-build/%,$(COMPONENTS)) : doc-build/% :
 	$(HIDE)mkdir -p $@
-	$(HIDE)+$(MAKE) --no-print-directory -C $* copy-doc OUTPUT=../$@
+	$(HIDE)+$(MAKE) --no-print-directory -C $* copy-doc OUTPUT="$(abspath $@)"
 
 .PHONY: copy-doc
 copy-doc: $(patsubst %,doc-build/%,$(COMPONENTS))

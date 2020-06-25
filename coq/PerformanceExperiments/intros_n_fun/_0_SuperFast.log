@@ -84,11 +84,11 @@ Tactic call abstract-intros ran for 0. secs (0.u,0.s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 24
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-intros ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 25
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-intros ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 26
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
@@ -112,23 +112,23 @@ Tactic call abstract-intros ran for 0.001 secs (0.u,0.001s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 31
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-intros ran for 0.001 secs (0.u,0.001s) (success)
+Tactic call abstract-intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 32
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-intros ran for 0.001 secs (0.u,0.001s) (success)
+Tactic call abstract-intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 33
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-intros ran for 0.001 secs (0.u,0.001s) (success)
+Tactic call abstract-intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 34
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-intros ran for 0.001 secs (0.u,0.001s) (success)
+Tactic call abstract-intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 35
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-intros ran for 0.001 secs (0.u,0.s) (success)
+Tactic call abstract-intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 36
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
@@ -136,15 +136,15 @@ Tactic call abstract-intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 37
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-intros ran for 0.001 secs (0.u,0.s) (success)
+Tactic call abstract-intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 38
-Tactic call intros ran for 0.054 secs (0.052u,0.002s) (success)
-Tactic call abstract-intros ran for 0.055 secs (0.052u,0.002s) (success)
+Tactic call intros ran for 0.055 secs (0.052u,0.003s) (success)
+Tactic call abstract-intros ran for 0.056 secs (0.052u,0.003s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 39
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-intros ran for 0.001 secs (0.001u,0.s) (success)
+Tactic call abstract-intros ran for 0.001 secs (0.u,0.s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 40
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
@@ -236,8 +236,8 @@ Tactic call abstract-intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call close-abstract ran for 0. secs (0.u,0.s)
 Params: n= 62
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-intros ran for 0.001 secs (0.001u,0.s) (success)
-Tactic call close-abstract ran for 0. secs (0.u,0.s)
+Tactic call abstract-intros ran for 0.002 secs (0.002u,0.s) (success)
+Tactic call close-abstract ran for 0.001 secs (0.001u,0.s)
 Params: n= 63
 Tactic call intros ran for 0. secs (0.u,0.s) (success)
 Tactic call abstract-intros ran for 0.002 secs (0.002u,0.s) (success)
@@ -344,20 +344,20 @@ Tactic call abstract-intros ran for 0.003 secs (0.003u,0.s) (success)
 Tactic call close-abstract ran for 0.001 secs (0.001u,0.s)
 Params: n= 89
 Tactic call intros ran for 0.001 secs (0.001u,0.s) (success)
-Tactic call abstract-intros ran for 0.007 secs (0.007u,0.s) (success)
+Tactic call abstract-intros ran for 0.006 secs (0.006u,0.s) (success)
 Tactic call close-abstract ran for 0.001 secs (0.001u,0.s)
 Params: n= 90
 Tactic call intros ran for 0.001 secs (0.001u,0.s) (success)
-Tactic call abstract-intros ran for 0.004 secs (0.004u,0.s) (success)
-Tactic call close-abstract ran for 0.002 secs (0.002u,0.s)
+Tactic call abstract-intros ran for 0.003 secs (0.003u,0.s) (success)
+Tactic call close-abstract ran for 0.001 secs (0.001u,0.s)
 Params: n= 91
 Tactic call intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call abstract-intros ran for 0.004 secs (0.004u,0.s) (success)
-Tactic call close-abstract ran for 0.002 secs (0.002u,0.s)
+Tactic call close-abstract ran for 0.001 secs (0.001u,0.s)
 Params: n= 92
 Tactic call intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call abstract-intros ran for 0.004 secs (0.004u,0.s) (success)
-Tactic call close-abstract ran for 0.002 secs (0.002u,0.s)
+Tactic call close-abstract ran for 0.001 secs (0.001u,0.s)
 Params: n= 93
 Tactic call intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call abstract-intros ran for 0.004 secs (0.004u,0.s) (success)
@@ -371,15 +371,15 @@ Tactic call intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call abstract-intros ran for 0.004 secs (0.004u,0.s) (success)
 Tactic call close-abstract ran for 0.002 secs (0.002u,0.s)
 Params: n= 96
-Tactic call intros ran for 0.002 secs (0.002u,0.s) (success)
+Tactic call intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call abstract-intros ran for 0.004 secs (0.004u,0.s) (success)
 Tactic call close-abstract ran for 0.002 secs (0.002u,0.s)
 Params: n= 97
-Tactic call intros ran for 0.002 secs (0.002u,0.s) (success)
+Tactic call intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call abstract-intros ran for 0.004 secs (0.004u,0.s) (success)
 Tactic call close-abstract ran for 0.002 secs (0.002u,0.s)
 Params: n= 98
-Tactic call intros ran for 0.002 secs (0.002u,0.s) (success)
+Tactic call intros ran for 0.001 secs (0.001u,0.s) (success)
 Tactic call abstract-intros ran for 0.004 secs (0.004u,0.s) (success)
 Tactic call close-abstract ran for 0.002 secs (0.002u,0.s)
 Params: n= 99

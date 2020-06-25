@@ -42,9 +42,17 @@ doc:
 	+$(MAKE) --no-print-directory -C plots svg
 
 
-.PHONY: copy-doc
-copy-doc:
+.PHONY: copy-svg
+copy-svg:
 	cp -t $(OUTPUT) plots/*.svg
+
+.PHONY: copy-perf
+copy-perf:
+	+$(MAKE) --no-print-directory -C PerformanceExperiments copy-perf OUTPUT="$(abspath $(OUTPUT))"
+
+.PHONY: copy-doc
+copy-doc: copy-svg copy-perf
+
 
 include PerformanceExperiments/Makefile.variables
 PERF_KINDS := $(addprefix perf-,$(SIZES))

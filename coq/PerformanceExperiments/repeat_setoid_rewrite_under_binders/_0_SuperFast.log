@@ -1,12 +1,20 @@
 Params: n= 50
-Tactic call repeat-setoid_rewrite ran for 0.322 secs (0.306u,0.015s) (success)
-Tactic call noop-repeat-setoid_rewrite ran for 0.098 secs (0.098u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 0.329 secs (0.31u,0.019s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 0.099 secs (0.099u,0.s) (success)
+Tactic call abstract+repeat-setoid_rewrite ran for 0.479 secs (0.459u,0.019s) (success)
+Tactic call close-abstract+repeat-setoid_rewrite ran for 0.049 secs (0.049u,0.s)
 Params: n= 100
-Tactic call repeat-setoid_rewrite ran for 1.489 secs (1.487u,0.s) (success)
-Tactic call noop-repeat-setoid_rewrite ran for 0.641 secs (0.64u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 1.58 secs (1.577u,0.003s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 0.644 secs (0.644u,0.s) (success)
+Tactic call abstract+repeat-setoid_rewrite ran for 2.41 secs (2.406u,0.003s) (success)
+Tactic call close-abstract+repeat-setoid_rewrite ran for 0.184 secs (0.184u,0.s)
 Params: n= 150
-Tactic call repeat-setoid_rewrite ran for 4.748 secs (4.727u,0.015s) (success)
-Tactic call noop-repeat-setoid_rewrite ran for 2.014 secs (2.012u,0.s) (success)
+Tactic call repeat-setoid_rewrite ran for 4.676 secs (4.668u,0.007s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 2.047 secs (2.047u,0.s) (success)
+Tactic call abstract+repeat-setoid_rewrite ran for 7.106 secs (7.098u,0.007s) (success)
+Tactic call close-abstract+repeat-setoid_rewrite ran for 0.382 secs (0.382u,0.s)
 Params: n= 200
-Tactic call repeat-setoid_rewrite ran for 10.531 secs (10.421u,0.097s) (success)
-Tactic call noop-repeat-setoid_rewrite ran for 4.969 secs (4.952u,0.011s) (success)
+Tactic call repeat-setoid_rewrite ran for 10.766 secs (10.749u,0.015s) (success)
+Tactic call noop-repeat-setoid_rewrite ran for 5.078 secs (5.078u,0.s) (success)
+Tactic call abstract+repeat-setoid_rewrite ran for 16.567 secs (16.55u,0.015s) (success)
+Tactic call close-abstract+repeat-setoid_rewrite ran for 0.721 secs (0.721u,0.s)

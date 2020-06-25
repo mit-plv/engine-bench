@@ -12,9 +12,21 @@ Definition args_of_size (s : size) : list nat
      end.
 
 Ltac time_solve_goal0 n :=
-  wrap_abstract_tac ltac:(fun _ => (time "rewrite_strat-topdown" rewrite_strat topdown hints rew_fg); reflexivity).
+  time_abstract_gen
+    (fun tac => time "abstract+rewrite_strat-topdown" (tac ()))
+    restart_timer
+    (finish_timing ( "Tactic call close-abstract+rewrite_strat-topdown" ))
+    ((time "rewrite_strat-topdown" rewrite_strat topdown hints rew_fg);
+     (time "rewrite_strat-topdown-noop" assert_fails (progress rewrite_strat topdown hints rew_fg));
+     reflexivity).
 Ltac time_solve_goal1 n :=
-  wrap_abstract_tac ltac:(fun _ => (time "rewrite_strat-bottomup" rewrite_strat bottomup hints rew_fg); reflexivity).
+  time_abstract_gen
+    (fun tac => time "abstract+rewrite_strat-bottomup" (tac ()))
+    restart_timer
+    (finish_timing ( "Tactic call close-abstract+rewrite_strat-bottomup" ))
+    ((time "rewrite_strat-bottomup" rewrite_strat bottomup hints rew_fg);
+     (time "rewrite_strat-bottomup-noop" assert_fails (progress rewrite_strat bottomup hints rew_fg));
+     reflexivity).
 
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal0 sz.
 Ltac run1 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal1 sz.

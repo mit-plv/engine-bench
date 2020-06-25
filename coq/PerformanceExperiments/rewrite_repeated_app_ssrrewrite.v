@@ -13,8 +13,13 @@ Definition args_of_size (s : size) : list nat
 
 Require Import Coq.ssr.ssreflect.
 
+Ltac do_rewrite := rewrite !fg.
+
 Ltac time_solve_goal0 n :=
-  wrap_abstract_tac ltac:(fun _ => time "ssr-rewrite!" rewrite !fg; reflexivity).
+  time_abstract
+    ((time "ssr-rewrite!" rewrite !fg);
+     (time "ssr-rewrite?-noop" assert_fails rewrite! fg);
+     reflexivity).
 
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal0 sz.
 

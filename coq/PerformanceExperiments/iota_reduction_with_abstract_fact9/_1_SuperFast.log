@@ -5,11 +5,11 @@ Tactic call abstract-unify-beta-iota-fast ran for 0.003 secs (0.003u,0.s) (succe
 Params: a-n= 200 , fact-n= 9
 Tactic call beta-iota-fast ran for 0. secs (0.u,0.s)
 Tactic call unify-beta-iota-fast ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-unify-beta-iota-fast ran for 0.005 secs (0.005u,0.s) (success)
+Tactic call abstract-unify-beta-iota-fast ran for 0.006 secs (0.006u,0.s) (success)
 Params: a-n= 300 , fact-n= 9
 Tactic call beta-iota-fast ran for 0. secs (0.u,0.s)
 Tactic call unify-beta-iota-fast ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-unify-beta-iota-fast ran for 0.009 secs (0.009u,0.s) (success)
+Tactic call abstract-unify-beta-iota-fast ran for 0.008 secs (0.008u,0.s) (success)
 Params: a-n= 400 , fact-n= 9
 Tactic call beta-iota-fast ran for 0. secs (0.u,0.s)
 Tactic call unify-beta-iota-fast ran for 0. secs (0.u,0.s) (success)
@@ -17,11 +17,11 @@ Tactic call abstract-unify-beta-iota-fast ran for 0.012 secs (0.012u,0.s) (succe
 Params: a-n= 500 , fact-n= 9
 Tactic call beta-iota-fast ran for 0. secs (0.u,0.s)
 Tactic call unify-beta-iota-fast ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-unify-beta-iota-fast ran for 0.014 secs (0.014u,0.s) (success)
+Tactic call abstract-unify-beta-iota-fast ran for 0.015 secs (0.015u,0.s) (success)
 Params: a-n= 600 , fact-n= 9
 Tactic call beta-iota-fast ran for 0. secs (0.u,0.s)
 Tactic call unify-beta-iota-fast ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-unify-beta-iota-fast ran for 0.017 secs (0.017u,0.s) (success)
+Tactic call abstract-unify-beta-iota-fast ran for 0.018 secs (0.018u,0.s) (success)
 Params: a-n= 700 , fact-n= 9
 Tactic call beta-iota-fast ran for 0. secs (0.u,0.s)
 Tactic call unify-beta-iota-fast ran for 0. secs (0.u,0.s) (success)
@@ -29,7 +29,7 @@ Tactic call abstract-unify-beta-iota-fast ran for 0.021 secs (0.021u,0.s) (succe
 Params: a-n= 800 , fact-n= 9
 Tactic call beta-iota-fast ran for 0. secs (0.u,0.s)
 Tactic call unify-beta-iota-fast ran for 0. secs (0.u,0.s) (success)
-Tactic call abstract-unify-beta-iota-fast ran for 0.023 secs (0.023u,0.s) (success)
+Tactic call abstract-unify-beta-iota-fast ran for 0.025 secs (0.025u,0.s) (success)
 Params: a-n= 900 , fact-n= 9
 Tactic call beta-iota-fast ran for 0. secs (0.u,0.s)
 Tactic call unify-beta-iota-fast ran for 0. secs (0.u,0.s) (success)

@@ -12,9 +12,21 @@ Definition args_of_size (s : size) : list nat
      end.
 
 Ltac time_solve_goal0 n :=
-  wrap_abstract_tac ltac:(fun _ => time "autorewrite" autorewrite with rew_fg; reflexivity).
+  time_abstract_gen
+    (fun tac => time "abstract+autorewrite" (tac ()))
+    restart_timer
+    (finish_timing ( "Tactic call close-abstract+autorewrite" ))
+    (time "autorewrite" autorewrite with rew_fg;
+     time "autorewrite-noop" autorewrite with rew_fg;
+     reflexivity).
 Ltac time_solve_goal1 n :=
-  wrap_abstract_tac ltac:(fun _ => time "rewrite!" rewrite !fg; reflexivity).
+  time_abstract_gen
+    (fun tac => time "abstract+rewrite!" (tac ()))
+    restart_timer
+    (finish_timing ( "Tactic call close-abstract+rewrite!" ))
+    (time "rewrite!" rewrite !fg;
+     time "rewrite?-noop" rewrite ?fg;
+     reflexivity).
 
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal0 sz.
 Ltac run1 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal1 sz.

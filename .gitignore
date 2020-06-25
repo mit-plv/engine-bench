@@ -332,7 +332,4 @@ coq/plots/generated/
 coq/plots/*.log
 coq/plots/*.svg
 coq/plots/*.txt
-doc-build/*.pdf
-doc-build/*.svg
-doc-build/*/*.pdf
-doc-build/*/*.svg
+doc-build/*

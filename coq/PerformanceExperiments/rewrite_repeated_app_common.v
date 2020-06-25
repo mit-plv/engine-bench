@@ -60,14 +60,3 @@ Ltac fast_rewrite :=
            ltac:(fun x' y' pf
                  => time "refine" refine pf)
     end.
-
-Ltac wrap_abstract_tac tac :=
-  cut True;
-  [ intros _;
-    time "abstract+tac"
-         abstract (
-           cut True;
-           [ intros _;
-             tac ()
-           | restart_timer; exact I ])
-  | finish_timing ("Tactic call close-abstract"); exact I ].

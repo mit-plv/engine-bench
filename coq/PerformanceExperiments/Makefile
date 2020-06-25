@@ -22,6 +22,9 @@ include Makefile.variables
 all:: invoke-coqmakefile
 .PHONY: all
 
+copy-perf:: invoke-coqmakefile
+.PHONY: copy-perf
+
 WARNINGS:=-notation-overridden
 
 ifneq ($(wildcard ../../.git),)

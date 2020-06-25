@@ -1,30 +1,30 @@
 Params: n= 2000
-Tactic call do-100-pose-I ran for 0.179 secs (0.179u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.236 secs (0.236u,0.s) (success)
 Params: n= 2200
-Tactic call do-100-pose-I ran for 0.225 secs (0.225u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.203 secs (0.203u,0.s) (success)
 Params: n= 2400
-Tactic call do-100-pose-I ran for 0.263 secs (0.263u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.235 secs (0.235u,0.s) (success)
 Params: n= 2600
-Tactic call do-100-pose-I ran for 0.294 secs (0.294u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.29 secs (0.29u,0.s) (success)
 Params: n= 2800
-Tactic call do-100-pose-I ran for 0.253 secs (0.253u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.291 secs (0.291u,0.s) (success)
 Params: n= 3000
-Tactic call do-100-pose-I ran for 0.256 secs (0.256u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.26 secs (0.26u,0.s) (success)
 Params: n= 3200
-Tactic call do-100-pose-I ran for 0.316 secs (0.316u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.275 secs (0.275u,0.s) (success)
 Params: n= 3400
-Tactic call do-100-pose-I ran for 0.358 secs (0.358u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.383 secs (0.383u,0.s) (success)
 Params: n= 3600
-Tactic call do-100-pose-I ran for 0.381 secs (0.381u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.379 secs (0.379u,0.s) (success)
 Params: n= 3800
-Tactic call do-100-pose-I ran for 0.53 secs (0.53u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.481 secs (0.481u,0.s) (success)
 Params: n= 4000
-Tactic call do-100-pose-I ran for 0.557 secs (0.556u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.555 secs (0.551u,0.003s) (success)
 Params: n= 4200
-Tactic call do-100-pose-I ran for 0.677 secs (0.677u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.559 secs (0.559u,0.s) (success)
 Params: n= 4400
-Tactic call do-100-pose-I ran for 0.718 secs (0.718u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.71 secs (0.706u,0.003s) (success)
 Params: n= 4600
-Tactic call do-100-pose-I ran for 0.656 secs (0.656u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.607 secs (0.607u,0.s) (success)
 Params: n= 4800
-Tactic call do-100-pose-I ran for 0.689 secs (0.689u,0.s) (success)
+Tactic call do-100-pose-I ran for 0.686 secs (0.686u,0.s) (success)

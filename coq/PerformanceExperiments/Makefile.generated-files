@@ -38,3 +38,7 @@ perf.csv:
 perf-txts: perf.csv
 	$(PYTHON3) $(PERF_DIR)/csv_to_txt.py $<
 .PHONY: perf-txts
+
+copy-perf::
+	cp -t $(OUTPUT) perf.csv $(wildcard *.txt)
+.PHONY: copy-perf

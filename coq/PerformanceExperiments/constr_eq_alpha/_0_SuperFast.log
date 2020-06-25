@@ -11,7 +11,7 @@ Tactic call constr-eq_refl ran for 0.004 secs (0.004u,0.s) (success)
 Params: n= 6000
 Tactic call constr-eq_refl ran for 0.005 secs (0.005u,0.s) (success)
 Params: n= 7000
-Tactic call constr-eq_refl ran for 0.006 secs (0.006u,0.s) (success)
+Tactic call constr-eq_refl ran for 0.005 secs (0.005u,0.s) (success)
 Params: n= 8000
 Tactic call constr-eq_refl ran for 0.006 secs (0.006u,0.s) (success)
 Params: n= 9000
