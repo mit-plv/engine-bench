@@ -19,7 +19,7 @@ Ltac time_solve_goal0 n :=
     (fun tac => time "abstract-regression-cubic" (tac ()))
     restart_timer
     (finish_timing ("Tactic call close-abstract-regression-cubic"))
-    (time "fast_rewrite-regression-quadratic" fast_rewrite).
+    (time "fast_rewrite-regression-cubic" fast_rewrite).
 
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal0 sz.
 

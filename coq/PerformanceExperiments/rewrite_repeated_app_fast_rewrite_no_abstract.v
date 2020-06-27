@@ -15,7 +15,7 @@ Definition args_of_size (s : size) : list nat
      end.
 
 Ltac time_solve_goal0 n :=
-  time "fast_rewrite-regression-quadratic" fast_rewrite.
+  time "fast_rewrite-regression-cubic" fast_rewrite.
 
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal0 sz.
 (*

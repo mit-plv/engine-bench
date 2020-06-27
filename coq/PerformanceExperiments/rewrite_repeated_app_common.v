@@ -71,7 +71,7 @@ Ltac preshare_pf f g fx gy Hfg_ext cont :=
   end.
 
 Ltac fast_rewrite :=
-  time "pose-build-and-refine-regression-quadratic"
+  time "pose-build-and-refine-regression-cubic"
     lazymatch goal with
     | [ |- f ?x = g ?y :> ?A ]
       => refine (_ : f x = g y :> A);
