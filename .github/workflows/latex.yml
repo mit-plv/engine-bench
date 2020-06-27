@@ -14,6 +14,7 @@ jobs:
       run: |
         sudo apt-get -o Acquire::Retries=30 update -q
         sudo apt-get -o Acquire::Retries=30 install -y --allow-unauthenticated \
+          coq \
           texlive \
           texlive-latex-extra \
           texlive-bibtex-extra \
