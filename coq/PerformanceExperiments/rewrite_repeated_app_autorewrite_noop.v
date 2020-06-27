@@ -14,14 +14,22 @@ Definition args_of_size (s : size) : list nat
      end.
 
 Ltac do_autorewrite := autorewrite with rew_fg.
-Ltac do_rewrite := rewrite ?fg.
+Ltac do_rewrite_bang := try rewrite !fg.
+Ltac do_rewrite_once := try rewrite fg.
+Ltac do_rewrite_ques := try rewrite ?fg.
 Require Import Coq.ssr.ssreflect.
-Ltac do_ssr_rewrite := rewrite ?fg.
+Ltac do_ssr_rewrite_bang := try rewrite !fg.
+Ltac do_ssr_rewrite_once := try rewrite fg.
+Ltac do_ssr_rewrite_ques := try rewrite ?fg.
 
 Ltac time_solve_goal0 n :=
-  time "autorewrite-noop-regression-linear" do_autorewrite;
-  time "rewrite?-noop-regression-linear" do_rewrite;
-  time "ssr-rewrite?-noop-regression-linear" do_ssr_rewrite;
+  time "autorewrite-noop-regression-quadratic" do_autorewrite;
+  time "try-rewrite!-noop-regression-linear" do_rewrite_bang;
+  time "try-rewrite-noop-regression-linear" do_rewrite_once;
+  time "try-rewrite?-noop-regression-quadratic" do_rewrite_ques;
+  time "try-ssr-rewrite!-noop-regression-linear" do_ssr_rewrite_bang;
+  time "try-ssr-rewrite-noop-regression-linear" do_ssr_rewrite_once;
+  time "try-ssr-rewrite?-noop-regression-linear" do_ssr_rewrite_ques;
   reflexivity.
 
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal_noop redgoal time_solve_goal0 sz.

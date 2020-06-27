@@ -20,6 +20,7 @@ KINDS := \
 	rewrite_repeated_app_autorewrite \
 	rewrite_repeated_app_autorewrite_noop \
 	rewrite_repeated_app_ssrrewrite \
+	rewrite_repeated_app_ssrrewrite_noop \
 	rewrite_repeated_app_rewrite_strat \
 	rewrite_repeated_app_fast_rewrite \
 	rewrite_repeated_app_fast_rewrite_no_abstract \

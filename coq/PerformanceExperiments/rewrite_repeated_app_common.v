@@ -1,9 +1,15 @@
+Require Import Coq.ZArith.ZArith.
 Require Import Coq.Setoids.Setoid Coq.Classes.Morphisms.
+Local Open Scope core_scope.
 Axiom f : nat -> nat.
 Axiom g : nat -> nat.
 Axiom fg : forall x, f x = g x.
 Lemma fg_ext : forall x y, x = y -> f x = g y.
 Proof. intros; subst; apply fg. Qed.
+
+Axiom f' : nat -> nat -> nat.
+Axiom g' : nat -> nat -> nat.
+Axiom f'g' : forall x y, f' x y = g' x y.
 
 Hint Rewrite fg : rew_fg.
 
@@ -11,6 +17,12 @@ Fixpoint comp_pow {A} (f : A -> A) (n : nat) (x : A) {struct n} : A
   := match n with
      | O => x
      | S n => f (comp_pow f n x)
+     end.
+
+Fixpoint comp_pow_tree {A} (f : A -> A -> A) (n : nat) (x : A) {struct n} : A
+  := match n with
+     | O => x
+     | S n => f (comp_pow_tree f n x) (comp_pow_tree f n x)
      end.
 
 Local Infix "^" := comp_pow : core_scope.
@@ -25,9 +37,15 @@ Proof. repeat intro; subst; reflexivity. Qed.
 
 Notation goal n := (forall x, (f^n) x = (g^n) x).
 Notation goal_noop n := (forall x, (g^n) x = (g^n) x).
+Notation goal_noop_exp lgn := (forall x, comp_pow_tree g' lgn x = comp_pow_tree g' lgn x).
 Ltac mkgoal n := constr:(goal n).
 Ltac mkgoal_noop n := constr:(goal_noop n).
-Ltac redgoal _ := cbv [comp_pow]; intro.
+Ltac mkgoal_noop_exp n := constr:(goal_noop_exp n).
+Ltac redgoal _ := cbv [comp_pow comp_pow_tree]; intro.
+Ltac describe_goal_noop_exp lgn :=
+  let lgnz := (eval cbv in (Z.of_nat lgn)) in
+  let nz := (eval cbv in ((2^(lgnz+1) - 1)%Z)) in
+  idtac "Params: 0-n=" nz ", 1-lgn=" lgnz.
 
 Ltac preshare_pf f g fx gy Hfg_ext cont :=
   lazymatch fx with
