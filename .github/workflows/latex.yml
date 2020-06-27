@@ -9,12 +9,18 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      COQ_VERSION: "master"
+      COQ_PACKAGE: "coq libcoq-ocaml-dev"
+      PPA: "ppa:jgross-h/coq-master-daily"
+
     steps:
     - name: install deps
       run: |
+        if [ ! -z "$PPA" ]; then sudo add-apt-repository "$PPA" -y; fi
         sudo apt-get -o Acquire::Retries=30 update -q
         sudo apt-get -o Acquire::Retries=30 install -y --allow-unauthenticated \
-          coq \
+          ocaml-findlib $COQ_PACKAGE \
           texlive \
           texlive-latex-extra \
           texlive-bibtex-extra \
