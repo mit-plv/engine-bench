@@ -23,6 +23,7 @@ KINDS := \
 	rewrite_repeated_app_ssrrewrite_noop \
 	rewrite_repeated_app_rewrite_strat \
 	rewrite_repeated_app_fast_rewrite \
+	rewrite_repeated_app_fast_rewrite_ltac2 \
 	rewrite_repeated_app_fast_rewrite_no_abstract \
 	constr_eq_alpha \
 	lift_identity_evar_subst_nevars \
