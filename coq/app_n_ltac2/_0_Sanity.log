@@ -1,0 +1,15 @@
+Params: n= 0
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
+Tactic call build-and-typecheck ran for 0. secs (0.u,0.s) (success)
+Tactic call refine ran for 0. secs (0.u,0.s) (success)
+Params: n= 1
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
+Tactic call build-and-typecheck ran for 0. secs (0.u,0.s) (success)
+Tactic call refine ran for 0. secs (0.u,0.s) (success)
+Params: n= 2
+Tactic call build ran for 0. secs (0.u,0.s) (success)
+Tactic call typecheck ran for 0. secs (0.u,0.s) (success)
+Tactic call build-and-typecheck ran for 0. secs (0.u,0.s) (success)
+Tactic call refine ran for 0. secs (0.u,0.s) (success)

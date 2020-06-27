@@ -1,0 +1,570 @@
+Params: a-n= 1100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.001 secs (0.001u,0.s) (success)
+Params: a-n= 1200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.001 secs (0.001u,0.s) (success)
+Params: a-n= 1300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.001 secs (0.001u,0.s) (success)
+Params: a-n= 1400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.001 secs (0.001u,0.s) (success)
+Params: a-n= 1500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.001 secs (0.001u,0.s) (success)
+Params: a-n= 1600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.001 secs (0.001u,0.s) (success)
+Params: a-n= 1700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.001 secs (0.001u,0.s) (success)
+Params: a-n= 1800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.001 secs (0.001u,0.s) (success)
+Params: a-n= 1900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.002 secs (0.002u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.002 secs (0.002u,0.s) (success)
+Params: a-n= 2000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.001 secs (0.001u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.002 secs (0.002u,0.s) (success)
+Params: a-n= 2100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.002 secs (0.002u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.002 secs (0.002u,0.s) (success)
+Params: a-n= 2200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.002 secs (0.002u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.002 secs (0.002u,0.s) (success)
+Params: a-n= 2300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.002 secs (0.002u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.002 secs (0.002u,0.s) (success)
+Params: a-n= 2400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.002 secs (0.002u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.002 secs (0.002u,0.s) (success)
+Params: a-n= 2500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.002 secs (0.002u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.002 secs (0.002u,0.s) (success)
+Params: a-n= 2600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.002 secs (0.002u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.002 secs (0.002u,0.s) (success)
+Params: a-n= 2700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.002 secs (0.002u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.003 secs (0.002u,0.s) (success)
+Params: a-n= 2800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.003 secs (0.003u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.003 secs (0.003u,0.s) (success)
+Params: a-n= 2900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.003 secs (0.003u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.003 secs (0.003u,0.s) (success)
+Params: a-n= 3000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.003 secs (0.003u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.003 secs (0.003u,0.s) (success)
+Params: a-n= 3100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.003 secs (0.003u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.003 secs (0.003u,0.s) (success)
+Params: a-n= 3200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.003 secs (0.003u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.003 secs (0.003u,0.s) (success)
+Params: a-n= 3300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.003 secs (0.003u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.003 secs (0.003u,0.s) (success)
+Params: a-n= 3400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.003 secs (0.003u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.003 secs (0.003u,0.s) (success)
+Params: a-n= 3500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.003 secs (0.003u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.004 secs (0.004u,0.s) (success)
+Params: a-n= 3600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.003 secs (0.003u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.003 secs (0.003u,0.s) (success)
+Params: a-n= 3700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.004 secs (0.004u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.004 secs (0.004u,0.s) (success)
+Params: a-n= 3800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.004 secs (0.004u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.004 secs (0.004u,0.s) (success)
+Params: a-n= 3900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.004 secs (0.004u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.004 secs (0.004u,0.s) (success)
+Params: a-n= 4000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.004 secs (0.004u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.004 secs (0.004u,0.s) (success)
+Params: a-n= 4100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.004 secs (0.004u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.004 secs (0.004u,0.s) (success)
+Params: a-n= 4200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.004 secs (0.004u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.004 secs (0.004u,0.s) (success)
+Params: a-n= 4300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.004 secs (0.004u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.004 secs (0.004u,0.s) (success)
+Params: a-n= 4400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.005 secs (0.005u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.005 secs (0.005u,0.s) (success)
+Params: a-n= 4500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.004 secs (0.004u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.005 secs (0.005u,0.s) (success)
+Params: a-n= 4600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.005 secs (0.005u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.005 secs (0.005u,0.s) (success)
+Params: a-n= 4700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.004 secs (0.004u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.005 secs (0.005u,0.s) (success)
+Params: a-n= 4800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.005 secs (0.005u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.005 secs (0.005u,0.s) (success)
+Params: a-n= 4900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.005 secs (0.005u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.006 secs (0.006u,0.s) (success)
+Params: a-n= 5000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.005 secs (0.005u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.005 secs (0.005u,0.s) (success)
+Params: a-n= 5100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.005 secs (0.005u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.005 secs (0.005u,0.s) (success)
+Params: a-n= 5200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.005 secs (0.005u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.006 secs (0.006u,0.s) (success)
+Params: a-n= 5300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.005 secs (0.005u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.006 secs (0.006u,0.s) (success)
+Params: a-n= 5400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.005 secs (0.005u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.006 secs (0.006u,0.s) (success)
+Params: a-n= 5500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.005 secs (0.005u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.006 secs (0.006u,0.s) (success)
+Params: a-n= 5600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.006 secs (0.006u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.007 secs (0.007u,0.s) (success)
+Params: a-n= 5700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.006 secs (0.006u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.006 secs (0.006u,0.s) (success)
+Params: a-n= 5800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.006 secs (0.006u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.007 secs (0.007u,0.s) (success)
+Params: a-n= 5900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.006 secs (0.006u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.007 secs (0.006u,0.s) (success)
+Params: a-n= 6000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.007 secs (0.007u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.007 secs (0.007u,0.s) (success)
+Params: a-n= 6100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.007 secs (0.007u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.007 secs (0.007u,0.s) (success)
+Params: a-n= 6200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.007 secs (0.007u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.008 secs (0.008u,0.s) (success)
+Params: a-n= 6300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.007 secs (0.007u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.007 secs (0.007u,0.s) (success)
+Params: a-n= 6400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.007 secs (0.007u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.008 secs (0.008u,0.s) (success)
+Params: a-n= 6500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.007 secs (0.007u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.007 secs (0.007u,0.s) (success)
+Params: a-n= 6600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.007 secs (0.007u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.007 secs (0.007u,0.s) (success)
+Params: a-n= 6700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.007 secs (0.007u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.007 secs (0.007u,0.s) (success)
+Params: a-n= 6800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.007 secs (0.007u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.008 secs (0.008u,0.s) (success)
+Params: a-n= 6900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.007 secs (0.007u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.008 secs (0.008u,0.s) (success)
+Params: a-n= 7000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.008 secs (0.008u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.008 secs (0.008u,0.s) (success)
+Params: a-n= 7100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.008 secs (0.008u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.009 secs (0.009u,0.s) (success)
+Params: a-n= 7200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.008 secs (0.008u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.009 secs (0.009u,0.s) (success)
+Params: a-n= 7300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.008 secs (0.008u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.008 secs (0.008u,0.s) (success)
+Params: a-n= 7400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.008 secs (0.008u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.009 secs (0.009u,0.s) (success)
+Params: a-n= 7500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.008 secs (0.008u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.009 secs (0.009u,0.s) (success)
+Params: a-n= 7600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.008 secs (0.008u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.009 secs (0.009u,0.s) (success)
+Params: a-n= 7700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.008 secs (0.008u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.009 secs (0.009u,0.s) (success)
+Params: a-n= 7800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.008 secs (0.008u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.009 secs (0.009u,0.s) (success)
+Params: a-n= 7900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.009 secs (0.009u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.011 secs (0.011u,0.s) (success)
+Params: a-n= 8000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.009 secs (0.009u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.011 secs (0.011u,0.s) (success)
+Params: a-n= 8100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.011 secs (0.011u,0.s) (success)
+Params: a-n= 8200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.008 secs (0.008u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.009 secs (0.009u,0.s) (success)
+Params: a-n= 8300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.009 secs (0.009u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.01 secs (0.01u,0.s) (success)
+Params: a-n= 8400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.009 secs (0.009u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.01 secs (0.01u,0.s) (success)
+Params: a-n= 8500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.011 secs (0.011u,0.s) (success)
+Params: a-n= 8600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.009 secs (0.009u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.011 secs (0.011u,0.s) (success)
+Params: a-n= 8700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.011 secs (0.011u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.011 secs (0.011u,0.s) (success)
+Params: a-n= 8800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.01 secs (0.01u,0.s) (success)
+Params: a-n= 8900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.011 secs (0.011u,0.s) (success)
+Params: a-n= 9000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.011 secs (0.011u,0.s) (success)
+Params: a-n= 9100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.011 secs (0.011u,0.s) (success)
+Params: a-n= 9200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.012 secs (0.012u,0.s) (success)
+Params: a-n= 9300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.011 secs (0.011u,0.s) (success)
+Params: a-n= 9400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.012 secs (0.012u,0.s) (success)
+Params: a-n= 9500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.012 secs (0.012u,0.s) (success)
+Params: a-n= 9600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.012 secs (0.012u,0.s) (success)
+Params: a-n= 9700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.011 secs (0.011u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.012 secs (0.012u,0.s) (success)
+Params: a-n= 9800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.01 secs (0.01u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.012 secs (0.012u,0.s) (success)
+Params: a-n= 9900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.012 secs (0.012u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.015 secs (0.015u,0.s) (success)
+Params: a-n= 10000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.011 secs (0.011u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.014 secs (0.014u,0.s) (success)
+Params: a-n= 10100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.012 secs (0.012u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.013 secs (0.013u,0.s) (success)
+Params: a-n= 10200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.012 secs (0.012u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.014 secs (0.014u,0.s) (success)
+Params: a-n= 10300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.013 secs (0.013u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.016 secs (0.016u,0.s) (success)
+Params: a-n= 10400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.012 secs (0.012u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.013 secs (0.013u,0.s) (success)
+Params: a-n= 10500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.012 secs (0.012u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.015 secs (0.015u,0.s) (success)
+Params: a-n= 10600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.012 secs (0.012u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.013 secs (0.013u,0.s) (success)
+Params: a-n= 10700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.013 secs (0.013u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.014 secs (0.014u,0.s) (success)
+Params: a-n= 10800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.012 secs (0.012u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.014 secs (0.014u,0.s) (success)
+Params: a-n= 10900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.013 secs (0.013u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.016 secs (0.016u,0.s) (success)
+Params: a-n= 11000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.013 secs (0.013u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.014 secs (0.014u,0.s) (success)
+Params: a-n= 11100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.013 secs (0.013u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.014 secs (0.014u,0.s) (success)
+Params: a-n= 11200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.014 secs (0.014u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.017 secs (0.017u,0.s) (success)
+Params: a-n= 11300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.013 secs (0.013u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.014 secs (0.014u,0.s) (success)
+Params: a-n= 11400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.014 secs (0.014u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.017 secs (0.017u,0.s) (success)
+Params: a-n= 11500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.013 secs (0.013u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.014 secs (0.014u,0.s) (success)
+Params: a-n= 11600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.013 secs (0.013u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.015 secs (0.015u,0.s) (success)
+Params: a-n= 11700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.013 secs (0.013u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.017 secs (0.017u,0.s) (success)
+Params: a-n= 11800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.013 secs (0.013u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.017 secs (0.017u,0.s) (success)
+Params: a-n= 11900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.015 secs (0.015u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.019 secs (0.019u,0.s) (success)
+Params: a-n= 12000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.014 secs (0.014u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.018 secs (0.018u,0.s) (success)
+Params: a-n= 12100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.014 secs (0.014u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.018 secs (0.018u,0.s) (success)
+Params: a-n= 12200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.015 secs (0.015u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.018 secs (0.018u,0.s) (success)
+Params: a-n= 12300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.014 secs (0.014u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.018 secs (0.018u,0.s) (success)
+Params: a-n= 12400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.014 secs (0.014u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.016 secs (0.016u,0.s) (success)
+Params: a-n= 12500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.014 secs (0.014u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.017 secs (0.017u,0.s) (success)
+Params: a-n= 12600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.015 secs (0.015u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.018 secs (0.018u,0.s) (success)
+Params: a-n= 12700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.014 secs (0.014u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.018 secs (0.018u,0.s) (success)
+Params: a-n= 12800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.015 secs (0.015u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.019 secs (0.019u,0.s) (success)
+Params: a-n= 12900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.015 secs (0.015u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.019 secs (0.019u,0.s) (success)
+Params: a-n= 13000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.015 secs (0.015u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.02 secs (0.02u,0.s) (success)
+Params: a-n= 13100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.015 secs (0.015u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.018 secs (0.018u,0.s) (success)
+Params: a-n= 13200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.015 secs (0.015u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.018 secs (0.018u,0.s) (success)
+Params: a-n= 13300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.017 secs (0.017u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.021 secs (0.021u,0.s) (success)
+Params: a-n= 13400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.015 secs (0.015u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.019 secs (0.019u,0.s) (success)
+Params: a-n= 13500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.016 secs (0.016u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.021 secs (0.021u,0.s) (success)
+Params: a-n= 13600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.016 secs (0.016u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.02 secs (0.02u,0.s) (success)
+Params: a-n= 13700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.016 secs (0.016u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.019 secs (0.019u,0.s) (success)
+Params: a-n= 13800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.015 secs (0.015u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.018 secs (0.018u,0.s) (success)
+Params: a-n= 13900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.018 secs (0.018u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.019 secs (0.019u,0.s) (success)
+Params: a-n= 14000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.016 secs (0.016u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.019 secs (0.019u,0.s) (success)
+Params: a-n= 14100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.018 secs (0.018u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.019 secs (0.019u,0.s) (success)
+Params: a-n= 14200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.016 secs (0.016u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.019 secs (0.019u,0.s) (success)
+Params: a-n= 14300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.016 secs (0.016u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.019 secs (0.019u,0.s) (success)
+Params: a-n= 14400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.018 secs (0.018u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.021 secs (0.021u,0.s) (success)
+Params: a-n= 14500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.016 secs (0.016u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.021 secs (0.021u,0.s) (success)
+Params: a-n= 14600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.017 secs (0.017u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.022 secs (0.022u,0.s) (success)
+Params: a-n= 14700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.017 secs (0.017u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.023 secs (0.023u,0.s) (success)
+Params: a-n= 14800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.017 secs (0.017u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.022 secs (0.022u,0.s) (success)
+Params: a-n= 14900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.018 secs (0.018u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.021 secs (0.021u,0.s) (success)
+Params: a-n= 15000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.017 secs (0.017u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.022 secs (0.022u,0.s) (success)
+Params: a-n= 15100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.018 secs (0.018u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.024 secs (0.024u,0.s) (success)
+Params: a-n= 15200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.019 secs (0.019u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.024 secs (0.024u,0.s) (success)
+Params: a-n= 15300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.02 secs (0.02u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.024 secs (0.024u,0.s) (success)
+Params: a-n= 15400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.018 secs (0.018u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.023 secs (0.023u,0.s) (success)
+Params: a-n= 15500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.018 secs (0.018u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.023 secs (0.023u,0.s) (success)
+Params: a-n= 15600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.018 secs (0.018u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.023 secs (0.023u,0.s) (success)
+Params: a-n= 15700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.019 secs (0.019u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.025 secs (0.025u,0.s) (success)
+Params: a-n= 15800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.018 secs (0.018u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.022 secs (0.022u,0.s) (success)
+Params: a-n= 15900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.019 secs (0.019u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.023 secs (0.023u,0.s) (success)
+Params: a-n= 16000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.019 secs (0.019u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.024 secs (0.024u,0.s) (success)
+Params: a-n= 16100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.019 secs (0.019u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.023 secs (0.023u,0.s) (success)
+Params: a-n= 16200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.019 secs (0.019u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.023 secs (0.023u,0.s) (success)
+Params: a-n= 16300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.019 secs (0.019u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.026 secs (0.026u,0.s) (success)
+Params: a-n= 16400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.019 secs (0.019u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.026 secs (0.026u,0.s) (success)
+Params: a-n= 16500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.02 secs (0.02u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.025 secs (0.025u,0.s) (success)
+Params: a-n= 16600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.02 secs (0.02u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.025 secs (0.025u,0.s) (success)
+Params: a-n= 16700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.02 secs (0.02u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.024 secs (0.024u,0.s) (success)
+Params: a-n= 16800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.02 secs (0.02u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.025 secs (0.025u,0.s) (success)
+Params: a-n= 16900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.02 secs (0.02u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.025 secs (0.025u,0.s) (success)
+Params: a-n= 17000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.02 secs (0.02u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.025 secs (0.025u,0.s) (success)
+Params: a-n= 17100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.02 secs (0.02u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.025 secs (0.025u,0.s) (success)
+Params: a-n= 17200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.021 secs (0.021u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.025 secs (0.025u,0.s) (success)
+Params: a-n= 17300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.022 secs (0.022u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.028 secs (0.028u,0.s) (success)
+Params: a-n= 17400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.022 secs (0.022u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.027 secs (0.027u,0.s) (success)
+Params: a-n= 17500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.02 secs (0.02u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.026 secs (0.026u,0.s) (success)
+Params: a-n= 17600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.021 secs (0.021u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.026 secs (0.026u,0.s) (success)
+Params: a-n= 17700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.021 secs (0.021u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.026 secs (0.022u,0.003s) (success)
+Params: a-n= 17800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.021 secs (0.021u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.028 secs (0.028u,0.s) (success)
+Params: a-n= 17900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.021 secs (0.021u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.027 secs (0.027u,0.s) (success)
+Params: a-n= 18000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.022 secs (0.022u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.028 secs (0.028u,0.s) (success)
+Params: a-n= 18100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.022 secs (0.022u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.029 secs (0.029u,0.s) (success)
+Params: a-n= 18200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.021 secs (0.021u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.026 secs (0.026u,0.s) (success)
+Params: a-n= 18300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.022 secs (0.022u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.028 secs (0.028u,0.s) (success)
+Params: a-n= 18400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.022 secs (0.022u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.028 secs (0.028u,0.s) (success)
+Params: a-n= 18500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.022 secs (0.022u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.03 secs (0.03u,0.s) (success)
+Params: a-n= 18600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.023 secs (0.023u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.03 secs (0.03u,0.s) (success)
+Params: a-n= 18700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.022 secs (0.022u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.027 secs (0.027u,0.s) (success)
+Params: a-n= 18800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.022 secs (0.022u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.029 secs (0.029u,0.s) (success)
+Params: a-n= 18900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.023 secs (0.023u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.028 secs (0.028u,0.s) (success)
+Params: a-n= 19000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.022 secs (0.022u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.031 secs (0.031u,0.s) (success)
+Params: a-n= 19100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.023 secs (0.023u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.03 secs (0.03u,0.s) (success)
+Params: a-n= 19200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.023 secs (0.023u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.03 secs (0.03u,0.s) (success)
+Params: a-n= 19300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.024 secs (0.024u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.03 secs (0.03u,0.s) (success)
+Params: a-n= 19400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.025 secs (0.025u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.032 secs (0.032u,0.s) (success)
+Params: a-n= 19500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.024 secs (0.024u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.03 secs (0.03u,0.s) (success)
+Params: a-n= 19600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.023 secs (0.023u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.031 secs (0.031u,0.s) (success)
+Params: a-n= 19700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.025 secs (0.025u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.031 secs (0.031u,0.s) (success)
+Params: a-n= 19800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.024 secs (0.024u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.031 secs (0.031u,0.s) (success)
+Params: a-n= 19900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.024 secs (0.024u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.031 secs (0.031u,0.s) (success)
+Params: a-n= 20000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0.025 secs (0.025u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.032 secs (0.032u,0.s) (success)

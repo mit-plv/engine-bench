@@ -1,0 +1,20 @@
+Params: n= 1000
+Tactic call do-100-pose-I ran for 0.092 secs (0.092u,0.s) (success)
+Params: n= 1100
+Tactic call do-100-pose-I ran for 0.097 secs (0.097u,0.s) (success)
+Params: n= 1200
+Tactic call do-100-pose-I ran for 0.109 secs (0.109u,0.s) (success)
+Params: n= 1300
+Tactic call do-100-pose-I ran for 0.121 secs (0.121u,0.s) (success)
+Params: n= 1400
+Tactic call do-100-pose-I ran for 0.129 secs (0.129u,0.s) (success)
+Params: n= 1500
+Tactic call do-100-pose-I ran for 0.164 secs (0.164u,0.s) (success)
+Params: n= 1600
+Tactic call do-100-pose-I ran for 0.16 secs (0.16u,0.s) (success)
+Params: n= 1700
+Tactic call do-100-pose-I ran for 0.174 secs (0.174u,0.s) (success)
+Params: n= 1800
+Tactic call do-100-pose-I ran for 0.212 secs (0.212u,0.s) (success)
+Params: n= 1900
+Tactic call do-100-pose-I ran for 0.216 secs (0.216u,0.s) (success)

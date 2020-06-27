@@ -1,0 +1,18 @@
+Params: n= 14
+Tactic call ζ-1-fast ran for 0.052 secs (0.052u,0.s)
+Tactic call unify-ζ-1-fast ran for 0.714 secs (0.682u,0.031s) (success)
+Tactic call ζ-2-fast ran for 0.051 secs (0.051u,0.s)
+Tactic call unify-ζ-2-fast ran for 0.695 secs (0.695u,0.s) (success)
+Tactic call ζ-1-slow ran for 0.051 secs (0.051u,0.s)
+Tactic call unify-ζ-1-slow ran for 0.694 secs (0.686u,0.007s) (success)
+Tactic call ζ-2-slow ran for 0.052 secs (0.052u,0.s)
+Tactic call unify-ζ-2-slow ran for 0.714 secs (0.714u,0.s) (success)
+Params: n= 15
+Tactic call ζ-1-fast ran for 0.102 secs (0.102u,0.s)
+Tactic call unify-ζ-1-fast ran for 1.458 secs (1.438u,0.019s) (success)
+Tactic call ζ-2-fast ran for 0.104 secs (0.104u,0.s)
+Tactic call unify-ζ-2-fast ran for 1.423 secs (1.415u,0.007s) (success)
+Tactic call ζ-1-slow ran for 0.103 secs (0.103u,0.s)
+Tactic call unify-ζ-1-slow ran for 1.427 secs (1.427u,0.s) (success)
+Tactic call ζ-2-slow ran for 0.101 secs (0.101u,0.s)
+Tactic call unify-ζ-2-slow ran for 1.426 secs (1.426u,0.s) (success)

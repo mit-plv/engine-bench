@@ -1,0 +1,152 @@
+Params: n= 100
+Tactic call intros ran for 0.003 secs (0.003u,0.s) (success)
+Tactic call abstract-intros ran for 0.006 secs (0.006u,0.s) (success)
+Tactic call close-abstract ran for 0.003 secs (0.002u,0.s)
+Params: n= 150
+Tactic call intros ran for 0.006 secs (0.002u,0.003s) (success)
+Tactic call abstract-intros ran for 0.075 secs (0.064u,0.011s) (success)
+Tactic call close-abstract ran for 0.068 secs (0.061u,0.007s)
+Params: n= 200
+Tactic call intros ran for 0.007 secs (0.007u,0.s) (success)
+Tactic call abstract-intros ran for 0.017 secs (0.017u,0.s) (success)
+Tactic call close-abstract ran for 0.009 secs (0.009u,0.s)
+Params: n= 250
+Tactic call intros ran for 0.011 secs (0.011u,0.s) (success)
+Tactic call abstract-intros ran for 0.029 secs (0.029u,0.s) (success)
+Tactic call close-abstract ran for 0.016 secs (0.016u,0.s)
+Params: n= 300
+Tactic call intros ran for 0.017 secs (0.017u,0.s) (success)
+Tactic call abstract-intros ran for 0.046 secs (0.046u,0.s) (success)
+Tactic call close-abstract ran for 0.027 secs (0.027u,0.s)
+Params: n= 350
+Tactic call intros ran for 0.026 secs (0.026u,0.s) (success)
+Tactic call abstract-intros ran for 0.069 secs (0.069u,0.s) (success)
+Tactic call close-abstract ran for 0.04 secs (0.04u,0.s)
+Params: n= 400
+Tactic call intros ran for 0.032 secs (0.032u,0.s) (success)
+Tactic call abstract-intros ran for 0.107 secs (0.107u,0.s) (success)
+Tactic call close-abstract ran for 0.071 secs (0.071u,0.s)
+Params: n= 450
+Tactic call intros ran for 0.041 secs (0.041u,0.s) (success)
+Tactic call abstract-intros ran for 0.13 secs (0.126u,0.003s) (success)
+Tactic call close-abstract ran for 0.084 secs (0.08u,0.003s)
+Params: n= 500
+Tactic call intros ran for 0.06 secs (0.06u,0.s) (success)
+Tactic call abstract-intros ran for 0.18 secs (0.18u,0.s) (success)
+Tactic call close-abstract ran for 0.114 secs (0.114u,0.s)
+Params: n= 550
+Tactic call intros ran for 0.089 secs (0.089u,0.s) (success)
+Tactic call abstract-intros ran for 0.251 secs (0.247u,0.003s) (success)
+Tactic call close-abstract ran for 0.155 secs (0.152u,0.003s)
+Params: n= 600
+Tactic call intros ran for 0.075 secs (0.071u,0.003s) (success)
+Tactic call abstract-intros ran for 0.328 secs (0.324u,0.004s) (success)
+Tactic call close-abstract ran for 0.234 secs (0.234u,0.s)
+Params: n= 650
+Tactic call intros ran for 0.101 secs (0.101u,0.s) (success)
+Tactic call abstract-intros ran for 0.361 secs (0.357u,0.003s) (success)
+Tactic call close-abstract ran for 0.251 secs (0.247u,0.003s)
+Params: n= 700
+Tactic call intros ran for 0.135 secs (0.135u,0.s) (success)
+Tactic call abstract-intros ran for 0.467 secs (0.459u,0.007s) (success)
+Tactic call close-abstract ran for 0.323 secs (0.315u,0.007s)
+Params: n= 750
+Tactic call intros ran for 0.115 secs (0.115u,0.s) (success)
+Tactic call abstract-intros ran for 0.526 secs (0.522u,0.003s) (success)
+Tactic call close-abstract ran for 0.4 secs (0.396u,0.003s)
+Params: n= 800
+Tactic call intros ran for 0.141 secs (0.141u,0.s) (success)
+Tactic call abstract-intros ran for 0.629 secs (0.629u,0.s) (success)
+Tactic call close-abstract ran for 0.475 secs (0.475u,0.s)
+Params: n= 850
+Tactic call intros ran for 0.177 secs (0.17u,0.007s) (success)
+Tactic call abstract-intros ran for 0.8 secs (0.793u,0.007s) (success)
+Tactic call close-abstract ran for 0.608 secs (0.608u,0.s)
+Params: n= 900
+Tactic call intros ran for 0.217 secs (0.213u,0.003s) (success)
+Tactic call abstract-intros ran for 0.907 secs (0.903u,0.003s) (success)
+Tactic call close-abstract ran for 0.673 secs (0.673u,0.s)
+Params: n= 950
+Tactic call intros ran for 0.236 secs (0.232u,0.003s) (success)
+Tactic call abstract-intros ran for 1.072 secs (1.068u,0.003s) (success)
+Tactic call close-abstract ran for 0.817 secs (0.817u,0.s)
+Params: n= 1000
+Tactic call intros ran for 0.225 secs (0.221u,0.004s) (success)
+Tactic call abstract-intros ran for 1.172 secs (1.164u,0.007s) (success)
+Tactic call close-abstract ran for 0.927 secs (0.923u,0.003s)
+Params: n= 1050
+Tactic call intros ran for 0.25 secs (0.246u,0.003s) (success)
+Tactic call abstract-intros ran for 1.369 secs (1.357u,0.011s) (success)
+Tactic call close-abstract ran for 1.098 secs (1.09u,0.008s)
+Params: n= 1100
+Tactic call intros ran for 0.276 secs (0.268u,0.007s) (success)
+Tactic call abstract-intros ran for 1.585 secs (1.573u,0.011s) (success)
+Tactic call close-abstract ran for 1.285 secs (1.281u,0.004s)
+Params: n= 1150
+Tactic call intros ran for 0.32 secs (0.32u,0.s) (success)
+Tactic call abstract-intros ran for 1.842 secs (1.842u,0.s) (success)
+Tactic call close-abstract ran for 1.495 secs (1.495u,0.s)
+Params: n= 1200
+Tactic call intros ran for 0.346 secs (0.346u,0.s) (success)
+Tactic call abstract-intros ran for 2.093 secs (2.093u,0.s) (success)
+Tactic call close-abstract ran for 1.661 secs (1.661u,0.s)
+Params: n= 1250
+Tactic call intros ran for 0.362 secs (0.362u,0.s) (success)
+Tactic call abstract-intros ran for 2.347 secs (2.347u,0.s) (success)
+Tactic call close-abstract ran for 1.939 secs (1.939u,0.s)
+Params: n= 1300
+Tactic call intros ran for 0.377 secs (0.377u,0.s) (success)
+Tactic call abstract-intros ran for 2.723 secs (2.723u,0.s) (success)
+Tactic call close-abstract ran for 2.29 secs (2.29u,0.s)
+Params: n= 1350
+Tactic call intros ran for 0.474 secs (0.474u,0.s) (success)
+Tactic call abstract-intros ran for 3.018 secs (3.018u,0.s) (success)
+Tactic call close-abstract ran for 2.495 secs (2.495u,0.s)
+Params: n= 1400
+Tactic call intros ran for 0.434 secs (0.434u,0.s) (success)
+Tactic call abstract-intros ran for 3.368 secs (3.368u,0.s) (success)
+Tactic call close-abstract ran for 2.881 secs (2.881u,0.s)
+Params: n= 1450
+Tactic call intros ran for 0.488 secs (0.488u,0.s) (success)
+Tactic call abstract-intros ran for 3.844 secs (3.844u,0.s) (success)
+Tactic call close-abstract ran for 3.314 secs (3.314u,0.s)
+Params: n= 1500
+Tactic call intros ran for 0.571 secs (0.571u,0.s) (success)
+Tactic call abstract-intros ran for 4.308 secs (4.304u,0.003s) (success)
+Tactic call close-abstract ran for 3.692 secs (3.688u,0.003s)
+Params: n= 1550
+Tactic call intros ran for 0.539 secs (0.539u,0.s) (success)
+Tactic call abstract-intros ran for 4.739 secs (4.735u,0.003s) (success)
+Tactic call close-abstract ran for 4.137 secs (4.137u,0.s)
+Params: n= 1600
+Tactic call intros ran for 0.633 secs (0.633u,0.s) (success)
+Tactic call abstract-intros ran for 5.397 secs (5.388u,0.s) (success)
+Tactic call close-abstract ran for 4.686 secs (4.677u,0.s)
+Params: n= 1650
+Tactic call intros ran for 0.612 secs (0.612u,0.s) (success)
+Tactic call abstract-intros ran for 5.866 secs (5.866u,0.s) (success)
+Tactic call close-abstract ran for 5.194 secs (5.194u,0.s)
+Params: n= 1700
+Tactic call intros ran for 0.687 secs (0.687u,0.s) (success)
+Tactic call abstract-intros ran for 6.62 secs (6.62u,0.s) (success)
+Tactic call close-abstract ran for 5.859 secs (5.859u,0.s)
+Params: n= 1750
+Tactic call intros ran for 0.69 secs (0.67u,0.019s) (success)
+Tactic call abstract-intros ran for 7.33 secs (7.298u,0.031s) (success)
+Tactic call close-abstract ran for 6.551 secs (6.539u,0.011s)
+Params: n= 1800
+Tactic call intros ran for 0.741 secs (0.741u,0.s) (success)
+Tactic call abstract-intros ran for 8.16 secs (8.16u,0.s) (success)
+Tactic call close-abstract ran for 7.333 secs (7.332u,0.s)
+Params: n= 1850
+Tactic call intros ran for 0.788 secs (0.788u,0.s) (success)
+Tactic call abstract-intros ran for 8.883 secs (8.883u,0.s) (success)
+Tactic call close-abstract ran for 8.009 secs (8.009u,0.s)
+Params: n= 1900
+Tactic call intros ran for 0.948 secs (0.948u,0.s) (success)
+Tactic call abstract-intros ran for 9.911 secs (9.91u,0.s) (success)
+Tactic call close-abstract ran for 8.881 secs (8.881u,0.s)
+Params: n= 1950
+Tactic call intros ran for 0.861 secs (0.861u,0.s) (success)
+Tactic call abstract-intros ran for 10.718 secs (10.718u,0.s) (success)
+Tactic call close-abstract ran for 9.763 secs (9.763u,0.s)

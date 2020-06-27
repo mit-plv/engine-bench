@@ -1,0 +1,18 @@
+Params: n= 0
+Tactic call build ran for 0. secs (0.u,0.s)
+Tactic call to_constr ran for 0. secs (0.u,0.s)
+Tactic call type_of ran for 0. secs (0.u,0.s)
+Tactic call refine ran for 0. secs (0.u,0.s) (success)
+Tactic call build-and-refine ran for 0. secs (0.u,0.s) (success)
+Params: n= 1
+Tactic call build ran for 0. secs (0.u,0.s)
+Tactic call to_constr ran for 0. secs (0.u,0.s)
+Tactic call type_of ran for 0. secs (0.u,0.s)
+Tactic call refine ran for 0. secs (0.u,0.s) (success)
+Tactic call build-and-refine ran for 0. secs (0.u,0.s) (success)
+Params: n= 2
+Tactic call build ran for 0. secs (0.u,0.s)
+Tactic call to_constr ran for 0. secs (0.u,0.s)
+Tactic call type_of ran for 0. secs (0.u,0.s)
+Tactic call refine ran for 0. secs (0.u,0.s) (success)
+Tactic call build-and-refine ran for 0. secs (0.u,0.s) (success)

@@ -1,0 +1,12 @@
+Params: n= 1
+Tactic call repeat-constructor ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-repeat-constructor ran for 0. secs (0.u,0.s) (success)
+Tactic call close-abstract ran for 0. secs (0.u,0.s)
+Params: n= 2
+Tactic call repeat-constructor ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-repeat-constructor ran for 0. secs (0.u,0.s) (success)
+Tactic call close-abstract ran for 0. secs (0.u,0.s)
+Params: n= 3
+Tactic call repeat-constructor ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-repeat-constructor ran for 0. secs (0.u,0.s) (success)
+Tactic call close-abstract ran for 0. secs (0.u,0.s)

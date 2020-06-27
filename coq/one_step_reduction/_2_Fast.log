@@ -1,0 +1,18 @@
+Params: n= 14
+Tactic call zeta-1-fast ran for 0.046 secs (0.046u,0.s)
+Tactic call unify-zeta-1-fast ran for 0.654 secs (0.614u,0.039s) (success)
+Tactic call zeta-2-fast ran for 0.046 secs (0.046u,0.s)
+Tactic call unify-zeta-2-fast ran for 0.591 secs (0.591u,0.s) (success)
+Tactic call zeta-1-slow ran for 0.046 secs (0.046u,0.s)
+Tactic call unify-zeta-1-slow ran for 0.619 secs (0.619u,0.s) (success)
+Tactic call zeta-2-slow ran for 0.046 secs (0.046u,0.s)
+Tactic call unify-zeta-2-slow ran for 0.61 secs (0.61u,0.s) (success)
+Params: n= 15
+Tactic call zeta-1-fast ran for 0.093 secs (0.093u,0.s)
+Tactic call unify-zeta-1-fast ran for 1.284 secs (1.276u,0.008s) (success)
+Tactic call zeta-2-fast ran for 0.092 secs (0.092u,0.s)
+Tactic call unify-zeta-2-fast ran for 1.242 secs (1.226u,0.015s) (success)
+Tactic call zeta-1-slow ran for 0.091 secs (0.091u,0.s)
+Tactic call unify-zeta-1-slow ran for 1.236 secs (1.236u,0.s) (success)
+Tactic call zeta-2-slow ran for 0.092 secs (0.092u,0.s)
+Tactic call unify-zeta-2-slow ran for 1.262 secs (1.258u,0.003s) (success)

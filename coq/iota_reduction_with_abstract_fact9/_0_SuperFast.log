@@ -1,0 +1,40 @@
+Params: a-n= 100 , fact-n= 9
+Tactic call beta-iota-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-beta-iota-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-beta-iota-slow ran for 1.842 secs (1.81u,0.031s) (success)
+Params: a-n= 200 , fact-n= 9
+Tactic call beta-iota-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-beta-iota-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-beta-iota-slow ran for 1.8 secs (1.799u,0.s) (success)
+Params: a-n= 300 , fact-n= 9
+Tactic call beta-iota-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-beta-iota-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-beta-iota-slow ran for 1.819 secs (1.819u,0.s) (success)
+Params: a-n= 400 , fact-n= 9
+Tactic call beta-iota-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-beta-iota-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-beta-iota-slow ran for 1.802 secs (1.802u,0.s) (success)
+Params: a-n= 500 , fact-n= 9
+Tactic call beta-iota-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-beta-iota-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-beta-iota-slow ran for 1.761 secs (1.761u,0.s) (success)
+Params: a-n= 600 , fact-n= 9
+Tactic call beta-iota-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-beta-iota-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-beta-iota-slow ran for 1.764 secs (1.764u,0.s) (success)
+Params: a-n= 700 , fact-n= 9
+Tactic call beta-iota-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-beta-iota-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-beta-iota-slow ran for 1.774 secs (1.774u,0.s) (success)
+Params: a-n= 800 , fact-n= 9
+Tactic call beta-iota-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-beta-iota-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-beta-iota-slow ran for 1.787 secs (1.787u,0.s) (success)
+Params: a-n= 900 , fact-n= 9
+Tactic call beta-iota-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-beta-iota-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-beta-iota-slow ran for 1.758 secs (1.758u,0.s) (success)
+Params: a-n= 1000 , fact-n= 9
+Tactic call beta-iota-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-beta-iota-slow ran for 0.001 secs (0.001u,0.s) (success)
+Tactic call abstract-unify-beta-iota-slow ran for 1.753 secs (1.753u,0.s) (success)

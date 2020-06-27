@@ -1,0 +1,18 @@
+Params: n= 14
+Tactic call β-1-fast ran for 0.051 secs (0.051u,0.s)
+Tactic call unify-β-1-fast ran for 0.714 secs (0.681u,0.032s) (success)
+Tactic call β-2-fast ran for 0.052 secs (0.052u,0.s)
+Tactic call unify-β-2-fast ran for 0.697 secs (0.696u,0.s) (success)
+Tactic call β-1-slow ran for 0.051 secs (0.051u,0.s)
+Tactic call unify-β-1-slow ran for 0.704 secs (0.699u,0.003s) (success)
+Tactic call β-2-slow ran for 0.051 secs (0.051u,0.s)
+Tactic call unify-β-2-slow ran for 0.719 secs (0.715u,0.003s) (success)
+Params: n= 15
+Tactic call β-1-fast ran for 0.102 secs (0.102u,0.s)
+Tactic call unify-β-1-fast ran for 1.438 secs (1.416u,0.019s) (success)
+Tactic call β-2-fast ran for 0.103 secs (0.103u,0.s)
+Tactic call unify-β-2-fast ran for 1.441 secs (1.423u,0.016s) (success)
+Tactic call β-1-slow ran for 0.106 secs (0.105u,0.s)
+Tactic call unify-β-1-slow ran for 1.433 secs (1.431u,0.s) (success)
+Tactic call β-2-slow ran for 0.104 secs (0.1u,0.004s)
+Tactic call unify-β-2-slow ran for 1.45 secs (1.445u,0.003s) (success)

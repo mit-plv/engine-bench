@@ -1,0 +1,7 @@
+Params: n= 1
+Tactic call delta-1-fast ran for 0. secs (0.u,0.s)
+Tactic call unify-delta-1-fast ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-delta-1-fast ran for 0. secs (0.u,0.s) (success)
+Tactic call delta-1-slow ran for 0. secs (0.u,0.s)
+Tactic call unify-delta-1-slow ran for 0. secs (0.u,0.s) (success)
+Tactic call abstract-unify-delta-1-slow ran for 2.401 secs (2.338u,0.059s) (success)
