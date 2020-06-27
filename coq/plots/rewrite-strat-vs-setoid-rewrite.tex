@@ -12,9 +12,9 @@
         ymin=0,
         scaled x ticks=false,
         scaled y ticks=false]
-        \addplot[only marks,mark=o,color=green] table[x=param-n,y=repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplot[only marks,mark=o,color=green] table[x=param-n,y=repeat-rewrite-strat-bottomup-regression-cubic-user]{generated/rewrite-strat-under-binders-table.txt};
         \addlegendentry{\texttt{repeat rewrite\_strat bottomup <- plus\_n\_O}}
-        \addplotcubicregression[no markers, green][x=param-n,y=repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplotcubicregression[no markers, green][x=param-n,y=repeat-rewrite-strat-bottomup-regression-cubic-user]{generated/rewrite-strat-under-binders-table.txt};
         \xdef\rewritestratbottomupa{\pgfplotstableregressiona}
         \xdef\rewritestratbottomupb{\pgfplotstableregressionb}
         \xdef\rewritestratbottomupc{\pgfplotstableregressionc}
@@ -26,9 +26,9 @@
             \pgfmathprintnumber[print sign]{\rewritestratbottomupd}$
         }
 
-        \addplot[only marks,mark=star,color=blue] table[x=param-n,y=repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplot[only marks,mark=star,color=blue] table[x=param-n,y=repeat-rewrite-strat-topdown-regression-cubic-user]{generated/rewrite-strat-under-binders-table.txt};
         \addlegendentry{\texttt{repeat rewrite\_strat topdown <- plus\_n\_O}}
-        \addplotcubicregression[no markers, blue][x=param-n,y=repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplotcubicregression[no markers, blue][x=param-n,y=repeat-rewrite-strat-topdown-regression-cubic-user]{generated/rewrite-strat-under-binders-table.txt};
         \xdef\rewritestrattopdowna{\pgfplotstableregressiona}
         \xdef\rewritestrattopdownb{\pgfplotstableregressionb}
         \xdef\rewritestrattopdownc{\pgfplotstableregressionc}
@@ -39,9 +39,9 @@
             \pgfmathprintnumber[print sign]{\rewritestrattopdownc}(\text{\# binders})
             \pgfmathprintnumber[print sign]{\rewritestrattopdownd}$
         }
-        \addplot[only marks,mark=asterisk,color=red] table[x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
+        \addplot[only marks,mark=asterisk,color=red] table[x=param-n,y=repeat-setoid-rewrite-regression-cubic-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
         \addlegendentry{\texttt{repeat setoid\_rewrite <- plus\_n\_O}}
-        \addplotcubicregression[no markers, red][x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
+        \addplotcubicregression[no markers, red][x=param-n,y=repeat-setoid-rewrite-regression-cubic-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
         \xdef\setoidrewritea{\pgfplotstableregressiona}
         \xdef\setoidrewriteb{\pgfplotstableregressionb}
         \xdef\setoidrewritec{\pgfplotstableregressionc}
@@ -53,9 +53,9 @@
             \pgfmathprintnumber[print sign]{\setoidrewrited}$
         }
 
-        \addplot[only marks,mark=o,color=green] table[x=param-n,y=repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplot[only marks,mark=o,color=green] table[x=param-n,y=repeat-rewrite-strat-bottomup-regression-cubic-user]{generated/rewrite-strat-under-binders-table.txt};
         \addlegendentry{\texttt{repeat rewrite\_strat bottomup <- plus\_n\_O}}
-        \addplotcubicregression[no markers, green][x=param-n,y=repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplotcubicregression[no markers, green][x=param-n,y=repeat-rewrite-strat-bottomup-regression-cubic-user]{generated/rewrite-strat-under-binders-table.txt};
         \xdef\rewritestratbottomupa{\pgfplotstableregressiona}
         \xdef\rewritestratbottomupb{\pgfplotstableregressionb}
         \xdef\rewritestratbottomupc{\pgfplotstableregressionc}
@@ -67,9 +67,9 @@
             \pgfmathprintnumber[print sign]{\rewritestratbottomupd}$
         }
 
-        \addplot[only marks,mark=star,color=blue] table[x=param-n,y=repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplot[only marks,mark=star,color=blue] table[x=param-n,y=repeat-rewrite-strat-topdown-regression-cubic-user]{generated/rewrite-strat-under-binders-table.txt};
         \addlegendentry{\texttt{repeat rewrite\_strat topdown <- plus\_n\_O}}
-        \addplotcubicregression[no markers, blue][x=param-n,y=repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplotcubicregression[no markers, blue][x=param-n,y=repeat-rewrite-strat-topdown-regression-cubic-user]{generated/rewrite-strat-under-binders-table.txt};
         \xdef\rewritestrattopdowna{\pgfplotstableregressiona}
         \xdef\rewritestrattopdownb{\pgfplotstableregressionb}
         \xdef\rewritestrattopdownc{\pgfplotstableregressionc}
@@ -80,9 +80,9 @@
             \pgfmathprintnumber[print sign]{\rewritestrattopdownc}(\text{\# binders})
             \pgfmathprintnumber[print sign]{\rewritestrattopdownd}$
         }
-        \addplot[only marks,mark=asterisk,color=red] table[x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
+        \addplot[only marks,mark=asterisk,color=red] table[x=param-n,y=repeat-setoid-rewrite-regression-cubic-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
         \addlegendentry{\texttt{repeat setoid\_rewrite <- plus\_n\_O}}
-        \addplotcubicregression[no markers, red][x=param-n,y=repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
+        \addplotcubicregression[no markers, red][x=param-n,y=repeat-setoid-rewrite-regression-cubic-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
         \xdef\setoidrewritea{\pgfplotstableregressiona}
         \xdef\setoidrewriteb{\pgfplotstableregressionb}
         \xdef\setoidrewritec{\pgfplotstableregressionc}
@@ -124,9 +124,9 @@
             \pgfmathprintnumber[print sign]{\nooprewritestrattopdownc}(\text{\# binders})
             \pgfmathprintnumber[print sign]{\nooprewritestrattopdownd}$
         }
-        \addplot[only marks,mark=square,color=red] table[x=param-n,y=noop-repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
+        \addplot[only marks,mark=square,color=red] table[x=param-n,y=noop-repeat-setoid-rewrite-regression-cubic-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
         \addlegendentry{\texttt{repeat setoid\_rewrite <- plus\_n\_O} (noop)}
-        \addplotcubicregression[no markers, red][x=param-n,y=noop-repeat-setoid-rewrite-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
+        \addplotcubicregression[no markers, red][x=param-n,y=noop-repeat-setoid-rewrite-regression-cubic-user]{generated/repeat-setoid-rewrite-under-binders-table.txt};
         \xdef\noopsetoidrewritea{\pgfplotstableregressiona}
         \xdef\noopsetoidrewriteb{\pgfplotstableregressionb}
         \xdef\noopsetoidrewritec{\pgfplotstableregressionc}

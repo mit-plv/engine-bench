@@ -1,4 +1,5 @@
 Require Import PerformanceExperiments.Harness.
+Require Import PerformanceExperiments.HarnessTimeAbstract.
 Require Export PerformanceExperiments.rewrite_repeated_app_common.
 
 Definition args_of_size (s : size) : list nat

@@ -1,4 +1,5 @@
 Require Import PerformanceExperiments.Harness.
+Require Import PerformanceExperiments.HarnessTimeAbstract.
 Require Export PerformanceExperiments.rewrite_repeated_app_common.
 
 Definition args_of_size (s : size) : list nat
@@ -16,9 +17,9 @@ Require Import Coq.ssr.ssreflect.
 Ltac do_rewrite := rewrite !fg.
 
 Ltac time_solve_goal0 n :=
-  time_abstract
-    ((time "ssr-rewrite!" rewrite !fg);
-     (time "ssr-rewrite?-noop" assert_fails rewrite! fg);
+  time_abstract_regression_quadratic
+    ((time "ssr-rewrite!-regression-quadratic" rewrite !fg);
+     (time "ssr-rewrite?-noop-regression-linear" assert_fails rewrite! fg);
      reflexivity).
 
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal0 sz.

@@ -45,7 +45,15 @@ Fixpoint make_lets_def (n : nat) (v : nat) (acc : nat) {struct n} :=
   | S n => dlet acc := acc + acc + v in make_lets_def n v acc
   end.
 
+Fixpoint make_lets_noop_def (n : nat) (acc : nat) {struct n} :=
+  match n with
+  | 0 => acc + acc
+  | S n => dlet acc := acc + acc in make_lets_noop_def n acc
+  end.
+
 Notation goal n := (forall acc, make_lets_def n 0 acc = acc) (only parsing).
+Notation goal_noop n := (forall acc, make_lets_noop_def n acc = acc) (only parsing).
 
 Ltac mkgoal n := constr:(goal n).
-Ltac redgoal _ := cbv [make_lets_def].
+Ltac mkgoal_noop n := constr:(goal_noop n).
+Ltac redgoal _ := cbv [make_lets_def make_lets_noop_def].

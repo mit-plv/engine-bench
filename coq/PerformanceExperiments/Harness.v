@@ -6,7 +6,7 @@ Require Export Coq.Lists.List.
 Require Export Coq.ZArith.ZArith.
 Export ListNotations.
 
-Global Set Printing Width 200.
+Global Set Printing Width 1000.
 Global Open Scope Z_scope.
 Global Open Scope nat_scope.
 Global Open Scope list_scope.
@@ -308,32 +308,3 @@ Ltac constr_run_tac f x :=
 
 Ltac runtests_step args_of_size describe_goal step_goal redgoal time_solve_goal sz :=
   runtests_step_arg_constr args_of_size describe_goal ltac:(fun n G => constr_run_tac step_goal n) ltac:(fun _ G => G) redgoal ltac:(fun n G args => time_solve_goal n) sz () ().
-
-Axiom admit : forall {T}, T.
-
-Ltac time_abstract_gen time_abstract_tac close_abstract_restart_timer close_abstract_finish_timing tac :=
-  cut True;
-  [ intros _;
-    time_abstract_tac
-      ltac:(fun _
-            => abstract (
-                   cut True;
-                   [ intros _;
-                     tac ();
-                     exact admit
-                   | close_abstract_restart_timer ();
-                     exact I ]))
-  | close_abstract_finish_timing ();
-    exact I ].
-Tactic Notation "time_abstract_gen" tactic0(time_abstract_tac) tactic0(close_abstract_restart_timer) tactic0(close_abstract_finish_timing) tactic0(tac) :=
-  time_abstract_gen time_abstract_tac ltac:(fun _ => close_abstract_restart_timer) ltac:(fun _ => close_abstract_finish_timing) ltac:(fun _ => tac).
-
-Ltac default_time_abstract_tac tac := time "abstract" (tac ()).
-Ltac default_close_abstract_restart_timer := restart_timer.
-Ltac default_close_abstract_finish_timing := finish_timing ( "Tactic call close-abstract" ).
-
-Ltac time_abstract tac :=
-  time_abstract_gen default_time_abstract_tac default_close_abstract_restart_timer default_close_abstract_finish_timing tac.
-
-Tactic Notation "time_abstract" tactic3(tac) :=
-  time_abstract tac.

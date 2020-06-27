@@ -24,7 +24,9 @@ Global Instance g_Proper : Proper (eq ==> eq) g.
 Proof. repeat intro; subst; reflexivity. Qed.
 
 Notation goal n := (forall x, (f^n) x = (g^n) x).
+Notation goal_noop n := (forall x, (g^n) x = (g^n) x).
 Ltac mkgoal n := constr:(goal n).
+Ltac mkgoal_noop n := constr:(goal_noop n).
 Ltac redgoal _ := cbv [comp_pow]; intro.
 
 Ltac preshare_pf f g fx gy Hfg_ext cont :=
@@ -51,12 +53,12 @@ Ltac preshare_pf f g fx gy Hfg_ext cont :=
   end.
 
 Ltac fast_rewrite :=
-  time "pose build and refine"
+  time "pose-build-and-refine-regression-quadratic"
     lazymatch goal with
     | [ |- f ?x = g ?y :> ?A ]
       => refine (_ : f x = g y :> A);
          preshare_pf
            f g (f x) (g y) fg_ext
            ltac:(fun x' y' pf
-                 => time "refine" refine pf)
+                 => time "refine-regression-quadratic-regression-linear" refine pf)
     end.

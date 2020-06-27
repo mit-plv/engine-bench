@@ -40,5 +40,5 @@ perf-txts: perf.csv
 .PHONY: perf-txts
 
 copy-perf::
-	cp -t $(OUTPUT) perf.csv $(wildcard *.txt)
+	cp -t $(OUTPUT) $(wildcard perf.csv *.txt)
 .PHONY: copy-perf
