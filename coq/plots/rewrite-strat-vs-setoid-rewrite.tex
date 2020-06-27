@@ -97,9 +97,9 @@
 
 
 
-        \addplot[only marks,mark=oplus,color=green] table[x=param-n,y=noop-repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplot[only marks,mark=oplus,color=green] table[x=param-n,y=noop-repeat-rewrite-strat-bottomup-regression-cubic-user]{generated/rewrite-strat-under-binders-table.txt};
         \addlegendentry{\texttt{repeat rewrite\_strat bottomup <- plus\_n\_O} (noop)}
-        \addplotcubicregression[no markers, green][x=param-n,y=noop-repeat-rewrite-strat-bottomup-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplotcubicregression[no markers, green][x=param-n,y=noop-repeat-rewrite-strat-bottomup-regression-cubic-user]{generated/rewrite-strat-under-binders-table.txt};
         \xdef\nooprewritestratbottomupa{\pgfplotstableregressiona}
         \xdef\nooprewritestratbottomupb{\pgfplotstableregressionb}
         \xdef\nooprewritestratbottomupc{\pgfplotstableregressionc}
@@ -111,9 +111,9 @@
             \pgfmathprintnumber[print sign]{\nooprewritestratbottomupd}$
         }
 
-        \addplot[only marks,mark=otimes,color=blue] table[x=param-n,y=noop-repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplot[only marks,mark=otimes,color=blue] table[x=param-n,y=noop-repeat-rewrite-strat-bottomup-regression-cubic-user]{generated/rewrite-strat-under-binders-table.txt};
         \addlegendentry{\texttt{repeat rewrite\_strat topdown <- plus\_n\_O} (noop)}
-        \addplotcubicregression[no markers, blue][x=param-n,y=noop-repeat-rewrite-strat-topdown-user]{generated/rewrite-strat-under-binders-table.txt};
+        \addplotcubicregression[no markers, blue][x=param-n,y=noop-repeat-rewrite-strat-bottomup-regression-cubic-user]{generated/rewrite-strat-under-binders-table.txt};
         \xdef\nooprewritestrattopdowna{\pgfplotstableregressiona}
         \xdef\nooprewritestrattopdownb{\pgfplotstableregressionb}
         \xdef\nooprewritestrattopdownc{\pgfplotstableregressionc}

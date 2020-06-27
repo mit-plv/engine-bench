@@ -67,11 +67,11 @@ Adding a new binder underneath n binders (should be Õ(1))
   <img src="https://mit-plv.github.io/engine-bench/coq/intros-n-fun.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/fun-n-uconstr.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/fun-n-ltac2.svg" height=100px />
 
 - Needed for: good performance of rewrite/rewrite_strat under binders
-  + Coq: See [`coq/PerformanceDemos/rewrite_strat_under_binders.v`](./coq/PerformanceDemos/rewrite_strat_under_binders.v), [`coq/PerformanceExperiments/repeat_setoid_rewrite_under_binders.v`](./coq/PerformanceExperiments/repeat_setoid_rewrite_under_binders.v), and [`coq/PerformanceExperiments/rewrite_strat_under_binders.v`](./coq/PerformanceExperiments/rewrite_strat_under_binders.v)
+  + Coq: See [`coq/PerformanceDemos/rewrite_strat_under_binders.v`](./coq/PerformanceDemos/rewrite_strat_under_binders.v), [`coq/PerformanceExperiments/repeat_setoid_rewrite_under_binders.v`](./coq/PerformanceExperiments/repeat_setoid_rewrite_under_binders.v), [`coq/PerformanceExperiments/rewrite_strat_under_binders.v`](./coq/PerformanceExperiments/rewrite_strat_under_binders.v), and [`coq/PerformanceExperiments/repeat_setoid_rewrite_under_binders_noop.v`](./coq/PerformanceExperiments/repeat_setoid_rewrite_under_binders_noop.v)
 
-    `rewrite_strat` & `setoid_rewrite` | repeat_setoid_rewrite_under_binders | rewrite_strat_under_binders
-    --|--|--
-    <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-strat-vs-setoid-rewrite.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/repeat-setoid-rewrite-under-binders.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-strat-under-binders.svg" height=100px />
+    `rewrite_strat` & `setoid_rewrite` | repeat_setoid_rewrite_under_binders | rewrite_strat_under_binders | repeat_setoid_rewrite_under_binders_noop
+    --|--|--|--
+    <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-strat-vs-setoid-rewrite.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/repeat-setoid-rewrite-under-binders.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/rewrite-strat-under-binders.svg" height=100px /> | <img src="https://mit-plv.github.io/engine-bench/coq/repeat-setoid-rewrite-under-binders-noop.svg" height=100px />
 
 - Needed for: good performance of proving large conjunctions (structural types could be an alternative)
   + Coq: See [`coq/PerformanceDemos/repeated_conj.v`](./coq/PerformanceDemos/repeated_conj.v), [`coq/PerformanceExperiments/conj_True_repeat_constructor.v`](./coq/PerformanceExperiments/conj_True_repeat_constructor.v), and [`coq/PerformanceExperiments/conj_True_fast_conj.v`](./coq/PerformanceExperiments/conj_True_fast_conj.v)

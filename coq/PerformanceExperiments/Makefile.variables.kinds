@@ -13,6 +13,7 @@ KINDS := \
 	fun_n_ltac2 \
 	intros_n_fun \
 	repeat_setoid_rewrite_under_binders \
+	repeat_setoid_rewrite_under_binders_noop \
 	rewrite_strat_under_binders \
 	conj_True_repeat_constructor \
 	conj_True_fast_conj \

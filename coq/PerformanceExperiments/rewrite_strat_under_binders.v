@@ -18,14 +18,14 @@ Ltac time_solve_goal0 n :=
     restart_timer
     (finish_timing ( "Tactic call close-abstract+repeat-rewrite_strat-topdown-regression-quadratic" ))
     ((time "repeat-rewrite_strat-topdown-regression-cubic" repeat rewrite_strat topdown <- plus_n_O);
-     (time "noop-repeat-rewrite_strat-topdown" repeat rewrite_strat topdown <- plus_n_O)).
+     (time "noop-repeat-rewrite_strat-topdown-regression-cubic" repeat rewrite_strat topdown <- plus_n_O)).
 Ltac time_solve_goal1 n :=
   time_abstract_gen
     (fun tac => time "abstract+repeat-rewrite_strat-bottomup-regression-cubic" (tac ()))
     restart_timer
     (finish_timing ( "Tactic call close-abstract+repeat-rewrite_strat-bottomup-regression-quadratic" ))
     ((time "repeat-rewrite_strat-bottomup-regression-cubic" repeat rewrite_strat bottomup <- plus_n_O);
-     (time "noop-repeat-rewrite_strat-bottomup" repeat rewrite_strat bottomup <- plus_n_O)).
+     (time "noop-repeat-rewrite_strat-bottomup-regression-cubic" repeat rewrite_strat bottomup <- plus_n_O)).
 
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal0 sz.
 Ltac run1 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal1 sz.
