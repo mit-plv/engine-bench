@@ -13,14 +13,18 @@ Definition args_of_size (s : size) : list nat
      end.
 
 Ltac time_solve_goal0 n :=
+  ((time "repeat-setoid_rewrite-regression-cubic" repeat setoid_rewrite <- plus_n_O);
+   (time "noop-repeat-setoid_rewrite-regression-cubic" repeat setoid_rewrite <- plus_n_O)).
+
+Ltac time_solve_goal1 n :=
   time_abstract_gen
-    (fun tac => time "abstract+repeat-setoid_rewrite-regression-cubic" (tac ()))
+    (fun tac => time "abstract+setoid_rewrite-regression-cubic" (tac ()))
     restart_timer
-    (finish_timing ( "Tactic call close-abstract+repeat-setoid_rewrite-regression-quadratic" ))
-    ((time "repeat-setoid_rewrite-regression-cubic" repeat setoid_rewrite <- plus_n_O);
-     (time "noop-repeat-setoid_rewrite-regression-cubic" repeat setoid_rewrite <- plus_n_O)).
+    (finish_timing ( "Tactic call close-abstract+setoid_rewrite-regression-quadratic" ))
+    (time "setoid_rewrite-regression-cubic" setoid_rewrite <- plus_n_O).
 
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal0 sz.
+Ltac run1 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal1 sz.
 
 (*
 Goal True.
