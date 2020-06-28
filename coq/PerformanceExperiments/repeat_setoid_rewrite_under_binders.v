@@ -6,7 +6,8 @@ Definition args_of_size (s : size) : list nat
   := match s with
      | Sanity => seq 0 3
      | SuperFast => List.map (fun x => x * 50) (seq 1 4)
-     | Fast => List.map (fun x => x * 10) (seq 1 25)
+     | Fast => (List.map (fun x => x * 10) (seq 1 25))
+                 ++ (List.map (fun x => x * 100) (seq 1 4))
      | Medium => []
      | Slow => []
      | VerySlow => []
