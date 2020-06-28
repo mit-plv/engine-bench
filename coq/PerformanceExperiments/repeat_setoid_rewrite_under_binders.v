@@ -23,8 +23,12 @@ Ltac time_solve_goal1 n :=
     (finish_timing ( "Tactic call close-abstract+setoid_rewrite-regression-quadratic" ))
     (time "setoid_rewrite-regression-cubic" setoid_rewrite <- plus_n_O).
 
+Ltac time_solve_goal2 n :=
+  (time "noop-try-setoid_rewrite-regression-cubic" try setoid_rewrite <- plus_n_O).
+
 Ltac run0 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal0 sz.
 Ltac run1 sz := Harness.runtests args_of_size default_describe_goal mkgoal redgoal time_solve_goal1 sz.
+Ltac run2 sz := Harness.runtests args_of_size default_describe_goal mkgoal_noop redgoal time_solve_goal2 sz.
 
 (*
 Goal True.
