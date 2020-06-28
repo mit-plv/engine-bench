@@ -129,11 +129,11 @@ Module Import WithLtac2.
              (fun () => mk c_I) in
     let _
         := Control.time
-             (Some "check-I-regression-quadratic")
+             (Some "check-I-regression-linear")
              (fun () => Unsafe.check let_I) in
     let _
         := Control.time
-             (Some "type-I-regression-quadratic")
+             (Some "type-I-regression-linear")
              (fun () => Constr.type let_I) in
     let top_ty := Unsafe.make (Unsafe.App eq (Array.of_list [f_res_ty; fx; gy])) in
     let let_admit
