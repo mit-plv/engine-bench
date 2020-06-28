@@ -14,7 +14,7 @@ Global Open Scope list_scope.
 (** divisions should be roughly:
 - The [Sanity] tests should be just enough to ensure that the code compiles and runs.
 - All [SuperFast] tests in a file should finish in under 10 seconds total
-- The [Fast] tests should take under 10 seconds each
+- The [Fast] test files should take about a minute each
 - The [Medium] tests should go up to about a minute each
 - The [Slow] tests should go up to about 10 minutes each
 - The [VerySlow] tests may take longer than 10 minutes each *)
