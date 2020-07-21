@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := all
 
-COMPONENTS := coq
+COMPONENTS := coq lean
 KINDS := perf pdf doc install install-perf perf-Sanity install-perf-Sanity perf-lite install-perf-lite
 ALL_COMPONENTS := $(COMPONENTS)
 

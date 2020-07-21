@@ -333,3 +333,10 @@ coq/plots/*.log
 coq/plots/*.svg
 coq/plots/*.txt
 doc-build/*
+
+# Lean
+*.olean
+*.lock
+.lean_options
+/lean/_target
+/lean/leanpkg.path

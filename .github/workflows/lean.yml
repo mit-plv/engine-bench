@@ -1,0 +1,43 @@
+name: CI (Lean)
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 0 1 * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: install Lean
+      run: |
+        wget -q https://raw.githubusercontent.com/leanprover-community/mathlib-tools/master/scripts/install_debian.sh
+        bash install_debian.sh
+        rm -f install_debian.sh
+        source ~/.profile
+        for i in ~/.*; do echo "::group::$i"; cat "$i"; echo "::endgroup::"; done
+    - uses: actions/checkout@v2
+    - name: echo build params
+      run: |
+        echo "::group::lscpu"
+        lscpu
+        echo "::endgroup::"
+        echo "::group::uname -a"
+        uname -a
+        echo "::endgroup::"
+        echo "::group::lsb_release -a"
+        lsb_release -a
+        echo "::endgroup::"
+        echo "::group::etc/machine.sh"
+        etc/machine.sh
+        echo "::endgroup::"
+        echo "::group::lean -v"
+        lean -v
+        echo "::endgroup::"
+    - run: make lean
+    - run: make lean-perf-Sanity
+    - run: sudo make lean-install
+    - run: sudo make lean-install-perf-Sanity
