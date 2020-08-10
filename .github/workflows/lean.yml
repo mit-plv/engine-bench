@@ -18,7 +18,7 @@ jobs:
         bash install_debian.sh
         rm -f install_debian.sh
         source ~/.profile
-        for i in ~/.*; do echo "::group::$i"; cat "$i"; echo "::endgroup::"; done
+        for i in ~/.*; do echo "::group::$i"; cat "$i" || true; echo "::endgroup::"; done
     - uses: actions/checkout@v2
     - name: echo build params
       run: |
