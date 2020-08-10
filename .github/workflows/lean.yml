@@ -18,6 +18,10 @@ jobs:
         bash install_debian.sh
         rm -f install_debian.sh
         tail -2 ~/.profile >> ~/.bashrc
+        source ~/.profile
+        tail -2 ~/.profile
+        lean -v || true
+        find ~/.local
     - uses: actions/checkout@v2
     - name: echo build params
       run: |
