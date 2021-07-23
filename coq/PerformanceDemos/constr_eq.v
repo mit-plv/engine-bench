@@ -22,6 +22,8 @@ Ltac check n :=
 (* overhead to build the term is pretty big, though... *)
 Goal True.
   check 7000%Z. (* Tactic call ran for 0.006 secs (0.006u,0.s) (success) *)
+  Optimize Heap.
   check 8000%Z. (* Tactic call ran for 0.007 secs (0.007u,0.s) (success) *)
+  Optimize Heap.
   check 9000%Z. (* Tactic call ran for 0.008 secs (0.008u,0.s) (success) *)
 Abort.
