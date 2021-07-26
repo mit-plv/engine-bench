@@ -1,18 +1,18 @@
 (** * Performance Criterion: fast alpha-equivalence check (Õ(term size)) *)
 Require Import Coq.ZArith.ZArith.
 
-Fixpoint biga (n : nat) (P : Prop)
+Fixpoint biga (n : nat) (f : Prop -> Prop)
 := match n with
-   | 0 => P
-   | S n => forall a : Prop, biga n (a -> P)
+   | 0 => f True
+   | S n => biga n (fun x => forall a : Prop, f (a -> x))
    end.
-Fixpoint bigb (n : nat) (P : Prop)
+Fixpoint bigb (n : nat) (f : Prop -> Prop)
 := match n with
-   | 0 => P
-   | S n => forall b : Prop, bigb n (b -> P)
+   | 0 => f True
+   | S n => bigb n (fun x => forall b : Prop, f (b -> x))
    end.
 
-Definition goal n := biga n True = bigb n True.
+Definition goal n := biga n (fun x => x) = bigb n (fun x => x).
 
 Ltac check n :=
   let ty := (eval cbv in (goal (Z.to_nat n))) in
