@@ -220,27 +220,27 @@ Definition reflect_rel_of_beq_iff {T} {beq : T -> T -> bool} {R : T -> T -> Prop
   : reflect_rel R beq
   := reflect_rel_of_beq (fun x y => proj1 (bp x y)) (fun x y => proj2 (bp x y)).
 
-Instance reflect_eq_nat : reflect_rel (@eq nat) Nat.eqb
+Global Instance reflect_eq_nat : reflect_rel (@eq nat) Nat.eqb
   := reflect_rel_of_beq_iff Nat.eqb_eq.
 
-Instance reflect_eq_Z : reflect_rel (@eq Z) Z.eqb
+Global Instance reflect_eq_Z : reflect_rel (@eq Z) Z.eqb
   := reflect_rel_of_beq_iff Z.eqb_eq.
 
 Class has_sub T := sub : T -> T -> T.
-Instance: has_sub nat := Nat.sub.
-Instance: has_sub Z := Z.sub.
+Global Instance: has_sub nat := Nat.sub.
+Global Instance: has_sub Z := Z.sub.
 
 Class has_succ T := succ : T -> T.
-Instance: has_succ nat := S.
-Instance: has_succ Z := Z.succ.
+Global Instance: has_succ nat := S.
+Global Instance: has_succ Z := Z.succ.
 
 Class has_zero T := zero : T.
-Instance: has_zero nat := O.
-Instance: has_zero Z := Z0.
+Global Instance: has_zero nat := O.
+Global Instance: has_zero Z := Z0.
 
 Class has_sort T := sort : list T -> list T.
-Instance: has_sort nat := NatSort.sort.
-Instance: has_sort Z := ZSort.sort.
+Global Instance: has_sort nat := NatSort.sort.
+Global Instance: has_sort Z := ZSort.sort.
 
 Definition remove_smaller_args_of_size_by_reflect
            {T} {T_beq : T -> T -> bool}
