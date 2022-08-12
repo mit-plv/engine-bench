@@ -16,7 +16,7 @@ all:: invoke-coqmakefile
 
 include ../../Makefile.show
 
-WARNINGS:=-notation-overridden
+WARNINGS:=-notation-overridden,-unsupported-attributes
 
 SORT_COQPROJECT = sed 's,[^/]*/,~&,g' | env LC_COLLATE=C sort | sed 's,~,,g' | uniq
 .PHONY: update-_CoqProject

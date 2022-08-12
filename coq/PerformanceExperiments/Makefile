@@ -25,7 +25,7 @@ all:: invoke-coqmakefile
 copy-perf:: invoke-coqmakefile
 .PHONY: copy-perf
 
-WARNINGS:=-notation-overridden
+WARNINGS:=-notation-overridden,-unsupported-attributes
 
 ifneq ($(wildcard ../../.git),)
 FILE_FINDER := git ls-files

@@ -1,5 +1,5 @@
 -R . PerformanceDemos
--arg -w -arg -notation-overridden
+-arg -w -arg -notation-overridden,-unsupported-attributes
 app_n.v
 constr_eq.v
 do_n_binder.v
