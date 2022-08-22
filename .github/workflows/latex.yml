@@ -11,7 +11,7 @@ jobs:
 
     env:
       COQ_VERSION: "master"
-      COQ_PACKAGE: "coq libcoq-ocaml-dev"
+      COQ_PACKAGE: "coq libcoq-core-ocaml-dev"
       PPA: "ppa:jgross-h/coq-master-daily"
 
     steps:
