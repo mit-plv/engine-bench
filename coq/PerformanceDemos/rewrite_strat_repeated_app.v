@@ -6,6 +6,7 @@ Axiom fg : forall x, f x = g x.
 Lemma fg_ext : forall x y, x = y -> f x = g y.
 Proof. intros; subst; apply fg. Qed.
 
+#[global]
 Hint Rewrite fg : rew_fg.
 
 Fixpoint comp_pow {A} (f : A -> A) (n : nat) (x : A) {struct n} : A

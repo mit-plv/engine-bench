@@ -3,7 +3,7 @@ Require Import Coq.Classes.Morphisms.
 Require Import Coq.Setoids.Setoid.
 Definition Let_In {A P} (x : A) (f : forall a : A, P a) : P x := let y := x in f y.
 Strategy 100 [Let_In].
-Hint Opaque Let_In : rewrite.
+Global Hint Opaque Let_In : rewrite.
 Reserved Notation "'dlet_nd' x .. y := v 'in' f"
          (at level 200, x binder, y binder, f at level 200, format "'dlet_nd'  x .. y  :=  v  'in' '//' f").
 Reserved Notation "'dlet' x .. y := v 'in' f"
@@ -13,7 +13,7 @@ Notation "'dlet' x .. y := v 'in' f" := (Let_In v (fun x => .. (fun y => f) .. )
 Global Instance Let_In_nd_Proper {A P}
   : Proper (eq ==> pointwise_relation _ eq ==> eq) (@Let_In A (fun _ => P)).
 Proof. cbv; intros; subst; auto. Qed.
-Hint Extern 0 (Proper _ (@Let_In _ _)) => simple apply @Let_In_nd_Proper : typeclass_instances.
+Global Hint Extern 0 (Proper _ (@Let_In _ _)) => simple apply @Let_In_nd_Proper : typeclass_instances.
 Global Instance eq_eq_eq {A}
   : Proper (eq ==> eq ==> eq) (@eq A).
 Proof. repeat intro; subst; reflexivity. Qed.
