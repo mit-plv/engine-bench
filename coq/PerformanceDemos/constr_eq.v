@@ -1,5 +1,5 @@
 (** * Performance Criterion: fast alpha-equivalence check (Õ(term size)) *)
-Require Import Coq.ZArith.ZArith.
+From Coq Require Import ZArith.
 
 Fixpoint biga (n : nat) (f : Prop -> Prop)
 := match n with

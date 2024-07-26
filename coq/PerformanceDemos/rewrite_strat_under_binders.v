@@ -1,6 +1,6 @@
 (** * performance of rewrite/rewrite_strat under binders *)
-Require Import Coq.Classes.Morphisms.
-Require Import Coq.Setoids.Setoid.
+From Coq Require Import Morphisms.
+From Coq Require Import Setoid.
 Definition Let_In {A P} (x : A) (f : forall a : A, P a) : P x := let y := x in f y.
 Strategy 100 [Let_In].
 Global Hint Opaque Let_In : rewrite.

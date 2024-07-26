@@ -9,7 +9,7 @@ Tactic call try-ssr-rewrite!-noop-regression-linear ran for 0. secs (0.u,0.s) (s
 Tactic call try-ssr-rewrite-noop-regression-linear ran for 0. secs (0.u,0.s) (success)
 Tactic call try-ssr-rewrite?-noop-regression-linear ran for 0. secs (0.u,0.s) (success)
 Params: 0-n= 15 , 1-lgn= 3
-Tactic call try-ssr-rewrite!-cold-noop-regression-linear ran for 0. secs (0.u,0.s) (success)
+Tactic call try-ssr-rewrite!-cold-noop-regression-linear ran for 0.003 secs (0.u,0.003s) (success)
 Tactic call try-ssr-rewrite!-noop-regression-linear ran for 0. secs (0.u,0.s) (success)
 Tactic call try-ssr-rewrite-noop-regression-linear ran for 0. secs (0.u,0.s) (success)
 Tactic call try-ssr-rewrite?-noop-regression-linear ran for 0. secs (0.u,0.s) (success)

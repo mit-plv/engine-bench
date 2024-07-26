@@ -1,6 +1,6 @@
 (* -*- coq-prog-args: ("-debug") -*- *)
 (** * Full reduction on a function of complexity O(f) should be Õ(f + input term size + output term size) *)
-Require Import Coq.Lists.List.
+From Coq Require Import List.
 (** Copied from COQBUG(https://github.com/coq/coq/issues/11964) *)
 Module Red.
 Inductive type := NAT | LIST (t : type) | ARROW (A B : type).

@@ -1,5 +1,5 @@
 (** * performance of turning f (f (... (f x))) = g (g (... (g x))) given f x = g x (or x = y -> f x = g y) w/ rewrite_strat *)
-Require Import Coq.Setoids.Setoid Coq.Classes.Morphisms.
+From Coq Require Import Setoid Morphisms.
 Axiom f : nat -> nat.
 Axiom g : nat -> nat.
 Axiom fg : forall x, f x = g x.
@@ -109,7 +109,7 @@ Evars: 2012 -> 0
 Finished transaction in 8.697 secs (8.693u,0.004s) (successful)
 Finished transaction in 0.185 secs (0.185u,0.s) (successful) *)
 
-Require Import Coq.ssr.ssreflect.
+From Coq Require Import ssreflect.
 Goal forall x, (f^100) x = (g^100) x. cbv [comp_pow]; intro. Time rewrite !fg. reflexivity. Abort.
 (* Finished transaction in 0.114 secs (0.114u,0.s) (successful) *)
 Goal forall x, (f^200) x = (g^200) x. cbv [comp_pow]; intro. Time rewrite !fg. reflexivity. Abort.
