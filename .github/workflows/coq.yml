@@ -90,7 +90,7 @@ jobs:
         coq_version: ${{ matrix.COQ_VERSION }}
         ocaml_version: default
         custom_script: |
-          git config --global --add safe.directory '*'
+          sudo git config --global --add safe.directory '*'
           sudo make coq-install
     - name: sudo make coq-install-perf-Sanity
       uses: coq-community/docker-coq-action@v1
@@ -98,7 +98,7 @@ jobs:
         coq_version: ${{ matrix.COQ_VERSION }}
         ocaml_version: default
         custom_script: |
-          git config --global --add safe.directory '*'
+          sudo git config --global --add safe.directory '*'
           sudo make coq-install-perf-Sanity
 
   docker-check-all:
