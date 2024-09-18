@@ -3,9 +3,9 @@ Tactic call uconstr ran for 0. secs (0.u,0.s)
 Tactic call open_constr ran for 0. secs (0.u,0.s)
 Tactic call build-and-open ran for 0. secs (0.u,0.s) (success)
 Params: n= 1
-Tactic call uconstr ran for 0. secs (0.u,0.s)
+Tactic call uconstr ran for 0.002 secs (0.002u,0.s)
 Tactic call open_constr ran for 0. secs (0.u,0.s)
-Tactic call build-and-open ran for 0. secs (0.u,0.s) (success)
+Tactic call build-and-open ran for 0.002 secs (0.002u,0.s) (success)
 Params: n= 2
 Tactic call uconstr ran for 0. secs (0.u,0.s)
 Tactic call open_constr ran for 0. secs (0.u,0.s)
