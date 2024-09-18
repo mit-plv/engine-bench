@@ -36,18 +36,6 @@ jobs:
         echo "::group::etc/machine.sh"
         etc/machine.sh
         echo "::endgroup::"
-        echo "::group::ocamlc -config"
-        ocamlc -config
-        echo "::endgroup::"
-        echo "::group::coqc --config"
-        coqc --config
-        echo "::endgroup::"
-        echo "::group::coqc --version"
-        coqc --version
-        echo "::endgroup::"
-        echo "::group::echo | coqtop"
-        true | coqtop
-        echo "::endgroup::"
     -  name: echo build params (container)
        uses: coq-community/docker-coq-action@v1
        with:
