@@ -12,21 +12,17 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
-        env:
-        - { COQ_VERSION: "8.11.1", COQ_PACKAGE: "coq-8.11.1 libcoq-8.11.1-ocaml-dev", PPA: "ppa:jgross-h/many-coq-versions-ocaml-4-05" , TIMED: "1" }
-        - { COQ_VERSION: "master", COQ_PACKAGE: "coq libcoq-core-ocaml-dev"         , PPA: "ppa:jgross-h/coq-master-daily"             , TIMED: "1" }
+        COQ_VERSION: ["dev-native", "8.19-native", "8.18-native", "8.17-native", "8.16-native", "8.15", "8.14", "8.13", "8.12", "8.11", "8.10", "8.9", "8.8"]
 
-    env: ${{ matrix.env }}
+    concurrency:
+      group: ${{ github.workflow }}-${{ matrix.COQ_VERSION }}-${{ github.head_ref || ( github.ref == 'refs/heads/master' && github.run_id ) || github.ref }}
+      cancel-in-progress: true
 
     steps:
-    - name: install Coq
-      run: |
-        if [ ! -z "$PPA" ]; then sudo add-apt-repository "$PPA" -y; fi
-        sudo apt-get -o Acquire::Retries=30 update -q
-        sudo apt-get -o Acquire::Retries=30 install ocaml-findlib ${COQ_PACKAGE} -y --allow-unauthenticated
     - uses: actions/checkout@v2
-    - name: echo build params
+    - name: echo build params (host)
       run: |
         echo "::group::lscpu"
         lscpu
@@ -52,7 +48,57 @@ jobs:
         echo "::group::echo | coqtop"
         true | coqtop
         echo "::endgroup::"
-    - run: make coq
-    - run: make coq-perf-Sanity
-    - run: sudo make coq-install
-    - run: sudo make coq-install-perf-Sanity
+    -  name: echo build params (container)
+       uses: coq-community/docker-coq-action@v1
+       with:
+        coq_version: ${{ matrix.COQ_VERSION }}
+        ocaml_version: default
+        custom_script: |
+          startGroup "lscpu"
+          lscpu
+          endGroup
+          startGroup "uname -a"
+          uname -a
+          endGroup
+          startGroup "etc/machine.sh"
+          etc/machine.sh
+          endGroup
+          startGroup "ocamlc -config"
+          ocamlc -config
+          endGroup
+          startGroup "coqc --config"
+          coqc --config
+          endGroup
+          startGroup "coqc --version"
+          coqc --version
+          endGroup
+          startGroup "echo | coqtop"
+          true | coqtop
+          endGroup
+          sudo chmod -R a=u .
+          # Work around https://github.com/actions/checkout/issues/766
+          git config --global --add safe.directory "*"
+    - name: make coq
+      uses: coq-community/docker-coq-action@v1
+      with:
+        coq_version: ${{ matrix.COQ_VERSION }}
+        ocaml_version: default
+        custom_script: make coq
+    - name: make coq-perf-Sanity
+      uses: coq-community/docker-coq-action@v1
+      with:
+        coq_version: ${{ matrix.COQ_VERSION }}
+        ocaml_version: default
+        custom_script: make coq-perf-Sanity
+    - name: sudo make coq-install
+      uses: coq-community/docker-coq-action@v1
+      with:
+        coq_version: ${{ matrix.COQ_VERSION }}
+        ocaml_version: default
+        custom_script: sudo make coq-install
+    - name: sudo make coq-install-perf-Sanity
+      uses: coq-community/docker-coq-action@v1
+      with:
+        coq_version: ${{ matrix.COQ_VERSION }}
+        ocaml_version: default
+        custom_script: sudo make coq-install-perf-Sanity
