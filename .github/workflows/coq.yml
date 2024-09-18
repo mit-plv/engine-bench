@@ -20,7 +20,7 @@ jobs:
       group: ${{ github.workflow }}-${{ matrix.COQ_VERSION }}-${{ github.head_ref || ( github.ref == 'refs/heads/master' && github.run_id ) || github.ref }}
       cancel-in-progress: true
 
-    name: docker-${{ matrix.env.COQ_VERSION }}
+    name: docker-${{ matrix.COQ_VERSION }}
 
     steps:
     - uses: actions/checkout@v2
