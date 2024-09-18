@@ -20,6 +20,8 @@ jobs:
       group: ${{ github.workflow }}-${{ matrix.COQ_VERSION }}-${{ github.head_ref || ( github.ref == 'refs/heads/master' && github.run_id ) || github.ref }}
       cancel-in-progress: true
 
+    name: docker-${{ matrix.env.COQ_VERSION }}
+
     steps:
     - uses: actions/checkout@v2
     - name: echo build params (host)
@@ -90,3 +92,13 @@ jobs:
         coq_version: ${{ matrix.COQ_VERSION }}
         ocaml_version: default
         custom_script: sudo make coq-install-perf-Sanity
+
+  docker-check-all:
+    runs-on: ubuntu-latest
+    needs: build
+    if: always()
+    steps:
+    - run: echo 'build passed'
+      if: ${{ needs.build.result == 'success' }}
+    - run: echo 'build failed' && false
+      if: ${{ needs.build.result != 'success' }}
