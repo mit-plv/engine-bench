@@ -3,4 +3,4 @@ Tactic call vm_compute ran for 0. secs (0.u,0.s) (success)
 Params: a-num-binders= 1 , n= 1
 Tactic call vm_compute ran for 0. secs (0.u,0.s) (success)
 Params: a-num-binders= 4 , n= 2
-Tactic call vm_compute ran for 0. secs (0.u,0.s) (success)
+Tactic call vm_compute ran for 0.002 secs (0.002u,0.s) (success)

@@ -5,5 +5,5 @@ Params: a-num-binders= 1 , n= 1
 Tactic call cbv ran for 0. secs (0.u,0.s) (success)
 Tactic call lazy ran for 0. secs (0.u,0.s) (success)
 Params: a-num-binders= 4 , n= 2
-Tactic call cbv ran for 0. secs (0.u,0.s) (success)
+Tactic call cbv ran for 0.002 secs (0.002u,0.s) (success)
 Tactic call lazy ran for 0. secs (0.u,0.s) (success)

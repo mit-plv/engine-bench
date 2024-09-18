@@ -1,4 +1,4 @@
-Require Import Coq.Lists.List.
+From Coq Require Import List.
 Require Import PerformanceExperiments.Harness.
 (** https://github.com/coq/coq/issues/11151 *)
 

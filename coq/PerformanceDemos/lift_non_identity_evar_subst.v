@@ -1,5 +1,5 @@
 (** * Performance Criterion: lifting identity evar substitution should Õ(1) *)
-Require Import Coq.Lists.List.
+From Coq Require Import List.
 (** For this test, we construct [x] evars each with context size [y],
     then we β-reduce to make the substitution non-identity.  Then we
     β-reduce again to move them under a context with an additional [z]
