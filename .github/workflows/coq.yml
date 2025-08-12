@@ -24,7 +24,7 @@ jobs:
     name: docker-${{ matrix.COQ_VERSION }}
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - name: echo build params (host)
       run: |
         echo "::group::lscpu"
